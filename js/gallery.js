@@ -78,7 +78,10 @@ function renderSample(sample) {
     if (viewPaths.length) {
       viewPaths.forEach((path, viewIndex) => {
         variants.push({
-          label: viewPaths.length > 1 ? `cutout ${viewIndex + 1}` : "mask cutout",
+          label:
+            viewIndex === 0
+              ? "selected cutout"
+              : `cutout ${viewIndex + 1}`,
           path,
         });
       });
