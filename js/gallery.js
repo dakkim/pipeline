@@ -313,39 +313,42 @@ function renderSample(sample) {
   );
 }
 
-function applyFilter(dataset) {
+function applyFilter(task) {
   for (const button of document.querySelectorAll(".filter")) {
-    button.classList.toggle("is-active", button.dataset.task === dataset);
+    button.classList.toggle("is-active", button.dataset.task === task);
   }
   for (const card of document.querySelectorAll(".sample")) {
-    const show = dataset === "all" || card.dataset.dataset === dataset;
+    const show = task === "all" || card.dataset.task === task;
     card.classList.toggle("hidden", !show);
   }
 }
 
-function buildDatasetFilters(samples) {
+function buildTaskFilters(samples) {
   const nav = document.querySelector(".filters");
   if (!nav) return;
-  const datasets = [
+  const tasks = [
     ...new Set(
       samples
-        .map((sample) => sample.dataset)
+        .map((sample) => sample.task)
         .filter((name) => typeof name === "string" && name)
     ),
-  ].sort();
+  ].sort((a, b) => {
+    const order = Object.keys(TASK_LABELS);
+    return (order.indexOf(a) + 1 || 99) - (order.indexOf(b) + 1 || 99);
+  });
   nav.replaceChildren(
     el("button", {
       type: "button",
       className: "filter is-active",
       "data-task": "all",
-      text: "All sources",
+      text: "All tasks",
     }),
-    ...datasets.map((name) =>
+    ...tasks.map((name) =>
       el("button", {
         type: "button",
         className: "filter",
         "data-task": name,
-        text: name.replace(/_/g, " "),
+        text: TASK_LABELS[name] || name,
       })
     )
   );
@@ -356,18 +359,20 @@ async function main() {
   if (!res.ok) throw new Error(`catalog.json failed: ${res.status}`);
   const catalog = await res.json();
   const source = catalog.source || {};
-  const samples = (catalog.samples || []).filter(
-    (sample) => sample.task === "multi_imgs_to_v"
-  );
-  const byDataset = source.by_dataset || {};
+  const samples = catalog.samples || [];
+  const multiCount = samples.filter((s) => s.task === "multi_imgs_to_v").length;
 
   document.getElementById("hero-meta").replaceChildren(
     el("span", {}, [
       el("strong", { text: fmt(samples.length) }),
-      " multi_imgs_to_v",
+      " samples",
     ]),
     el("span", {}, [
-      el("strong", { text: fmt(Object.keys(byDataset).length || new Set(samples.map((s) => s.dataset)).size) }),
+      el("strong", { text: fmt(multiCount) }),
+      " multi-image → video",
+    ]),
+    el("span", {}, [
+      el("strong", { text: fmt(new Set(samples.map((s) => s.dataset)).size) }),
       " sources",
     ]),
     el("span", {}, [
@@ -376,7 +381,7 @@ async function main() {
     ])
   );
 
-  buildDatasetFilters(samples);
+  buildTaskFilters(samples);
   const gallery = document.getElementById("gallery");
   gallery.replaceChildren(...samples.map(renderSample));
 

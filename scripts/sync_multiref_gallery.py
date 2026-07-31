@@ -249,13 +249,21 @@ def main() -> None:
     runs = [p.resolve() for p in (args.runs or [DEFAULT_RUN])]
 
     media_root = ROOT / "media" / "samples" / "multi_imgs_to_v_real"
-    if media_root.exists():
-        shutil.rmtree(media_root)
-    media_root.mkdir(parents=True)
+    media_root.mkdir(parents=True, exist_ok=True)
 
     catalog_path = ROOT / "data" / "catalog.json"
+    # Preserve existing gallery samples (prepared omni + prior HOI). Only upsert
+    # samples produced by the requested runs; never wipe unrelated media/catalog.
     by_id: dict[str, dict] = {}
+    if catalog_path.is_file():
+        existing = json.loads(catalog_path.read_text())
+        for sample in existing.get("samples") or []:
+            sid = sample.get("id")
+            if isinstance(sid, str) and sid:
+                by_id[sid] = sample
+
     run_names: list[str] = []
+    upserted = 0
     for run in runs:
         manifest = run / "stages" / "report" / "part-00000.jsonl"
         if not manifest.is_file():
@@ -267,41 +275,59 @@ def main() -> None:
             sample = _sync_row(json.loads(line), media_root)
             if sample is None:
                 continue
+            # Replace only this sample's media dir contents via _sync_row writes.
             by_id[sample["id"]] = sample
+            upserted += 1
 
     new_samples = sorted(
         by_id.values(),
         key=lambda s: (
+            0 if s.get("task") == "multi_imgs_to_v" else 1,
             PRIORITY.index(s["dataset"]) if s.get("dataset") in PRIORITY else 99,
+            str(s.get("task") or ""),
             str(s.get("dataset") or ""),
             str(s.get("id") or ""),
         ),
     )
 
     by_dataset: dict[str, int] = {}
+    by_task: dict[str, int] = {}
     for sample in new_samples:
         key = str(sample.get("dataset") or "?")
         by_dataset[key] = by_dataset.get(key, 0) + 1
+        task = str(sample.get("task") or "?")
+        by_task[task] = by_task.get(task, 0) + 1
 
+    prev_source = {}
+    if catalog_path.is_file():
+        prev_source = (json.loads(catalog_path.read_text()).get("source") or {})
     catalog = {
-        "title": "HOI multi_imgs_to_v object-reference gallery",
+        "title": "Omni / S2V sample gallery",
         "samples": new_samples,
         "sample_count": len(new_samples),
         "source": {
-            "real_multiref_run": "+".join(run_names),
-            "real_multiref_count": len(new_samples),
-            "task": "multi_imgs_to_v",
-            "pipeline": "sam2_qwen_edit_hoi_object",
+            **prev_source,
+            "real_multiref_run": "+".join(run_names) if run_names else prev_source.get("real_multiref_run"),
+            "real_multiref_count": sum(
+                1
+                for s in new_samples
+                if s.get("task") == "multi_imgs_to_v"
+                and str(s.get("pipeline") or "").startswith("sam2")
+            ),
+            "task": "mixed",
+            "pipeline": "omni+hoi_object",
             "by_dataset": by_dataset,
+            "by_task": by_task,
         },
     }
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
     print(
         json.dumps(
             {
-                "added": len(new_samples),
+                "upserted": upserted,
                 "total": len(new_samples),
                 "by_dataset": by_dataset,
+                "by_task": by_task,
                 "runs": run_names,
             },
             indent=2,
