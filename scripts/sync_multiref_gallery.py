@@ -108,7 +108,15 @@ def main() -> None:
         out = media_root / sid
         out.mkdir(parents=True, exist_ok=True)
 
-        video = Path(row["source"]["video"]["path"])
+        media = row.get("media") if isinstance(row.get("media"), dict) else {}
+        video = Path(
+            row.get("video_path")
+            or media.get("video")
+            or ((row.get("source") or {}).get("video") or {}).get("path")
+            or ""
+        )
+        if not video.is_file():
+            raise FileNotFoundError(f"missing video for {sid}: {video}")
         meta = _ffmpeg_preview(video, out / "target.mp4", out / "poster.jpg")
 
         refs = []
@@ -142,17 +150,19 @@ def main() -> None:
         prompt = (
             text.get("user_prompt")
             or text.get("dense_caption")
+            or text.get("long")
+            or text.get("short")
             or row.get("caption")
             or ""
         )
+        source = row.get("source") if isinstance(row.get("source"), dict) else {}
         sample = {
             "id": sid,
             "task": "multi_imgs_to_v",
-            "dataset": row.get("source", {}).get("dataset") or row.get("dataset"),
+            "dataset": source.get("name") or row.get("dataset") or "human_w_object",
             "pipeline": "sam2_qwen_edit",
             "prompt": prompt,
-            "original_id": row.get("source", {}).get("video_id")
-            or row.get("original_id"),
+            "original_id": source.get("record_id") or row.get("original_id"),
             "target": {
                 "path": f"media/samples/{rel}/target.mp4",
                 "poster": f"media/samples/{rel}/poster.jpg",
