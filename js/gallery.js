@@ -89,14 +89,16 @@ function renderSample(sample) {
       variants.push({ label: "raw crop", path: ref.raw });
     }
     if (ref.mask) variants.push({ label: "SAM mask", path: ref.mask });
-    if (
-      ref.edited ||
-      (ref.path &&
-        (sample.pipeline === "sam2_qwen_edit" ||
-          sample.pipeline === "sam2_qwen_edit_hoi_object"))
+    if (ref.edited) {
+      variants.push({ label: "Qwen edit", path: ref.edited });
+    } else if (
+      ref.path &&
+      ref.path !== ref.raw &&
+      (sample.pipeline === "sam2_qwen_edit" ||
+        sample.pipeline === "sam2_qwen_edit_hoi_object")
     ) {
-      variants.push({ label: "Qwen edit", path: ref.edited || ref.path });
-    } else if (ref.path) {
+      variants.push({ label: "object ref", path: ref.path });
+    } else if (ref.path && !viewPaths.length) {
       variants.push({
         label: ref.media_type === "video" ? "source" : "ref",
         path: ref.media_type === "video" ? ref.poster || ref.path : ref.path,

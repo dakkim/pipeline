@@ -179,7 +179,9 @@ def main() -> None:
                 entry["path"] = f"media/samples/{rel}/{name}"
                 entry["edited"] = entry["path"]
             elif entry.get("raw"):
+                # Qwen skipped (incomplete / no hand fringe): photographic cutout is the ref.
                 entry["path"] = entry["raw"]
+                entry["qwen_skipped"] = ref.get("qwen_skipped")
             refs.append(entry)
 
         text = row.get("text") or {}
@@ -207,7 +209,7 @@ def main() -> None:
                 **meta,
             },
             "references": refs,
-            "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit",
+            "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe",
         }
         new_samples.append(sample)
         print("ok", sid, "refs", len(refs))
