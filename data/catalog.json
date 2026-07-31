@@ -72,7 +72,25 @@
           "qwen_skipped": "incomplete_cutout"
         }
       ],
-      "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe"
+      "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+      "gemma_scores": [
+        {
+          "name": "glass jar",
+          "overall": 8.0,
+          "sharpness": 7.0,
+          "completeness": 10.0,
+          "cleanliness": 9.0,
+          "reason": "Sharpest image of the set with full object visibility."
+        },
+        {
+          "name": "mixing bowl",
+          "overall": 7.0,
+          "sharpness": 7.0,
+          "completeness": 8.0,
+          "cleanliness": 10.0,
+          "reason": "Sharpest of the three views with clean masking."
+        }
+      ]
     },
     {
       "id": "s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558",
@@ -99,7 +117,8 @@
           "views": [
             "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-01.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-02.jpg"
+            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-02.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-03.jpg"
           ],
           "raw": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
@@ -108,7 +127,17 @@
           "qwen_skipped": "incomplete_cutout"
         }
       ],
-      "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe"
+      "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+      "gemma_scores": [
+        {
+          "name": "hair styling tool",
+          "overall": 9.0,
+          "sharpness": 8.0,
+          "completeness": 10.0,
+          "cleanliness": 9.0,
+          "reason": "Best balance of sharpness, completeness, and clean masking."
+        }
+      ]
     },
     {
       "id": "s2v_3c690f6c970663deab321e48fb858c80",
@@ -161,7 +190,25 @@
           "qwen_skipped": "incomplete_cutout"
         }
       ],
-      "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe"
+      "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+      "gemma_scores": [
+        {
+          "name": "chopsticks",
+          "overall": 8.0,
+          "sharpness": 8.0,
+          "completeness": 10.0,
+          "cleanliness": 10.0,
+          "reason": "Best balance of sharpness, completeness, and cleanliness."
+        },
+        {
+          "name": "bowl",
+          "overall": 8.0,
+          "sharpness": 6.0,
+          "completeness": 9.0,
+          "cleanliness": 9.0,
+          "reason": "Most complete and cleanest representation of the bowl."
+        }
+      ]
     },
     {
       "id": "s2v_b2fe07048d12ba188a45b854d20ebc97",
@@ -195,7 +242,17 @@
           "qwen_skipped": "incomplete_cutout"
         }
       ],
-      "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe"
+      "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+      "gemma_scores": [
+        {
+          "name": "small rectangular object",
+          "overall": 8.0,
+          "sharpness": 7.0,
+          "completeness": 9.0,
+          "cleanliness": 9.0,
+          "reason": "Most complete view of the object with good cleanliness and acceptable sharpness."
+        }
+      ]
     },
     {
       "id": "s2v_baaf21a0e1c6f5cfebe84f64723da49e",
@@ -231,7 +288,17 @@
           "qwen_skipped": "incomplete_cutout"
         }
       ],
-      "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe"
+      "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+      "gemma_scores": [
+        {
+          "name": "spray can",
+          "overall": 7.0,
+          "sharpness": 6.0,
+          "completeness": 7.0,
+          "cleanliness": 10.0,
+          "reason": "Most complete and cleanest mask of the can, despite some blur."
+        }
+      ]
     },
     {
       "id": "s2v_46ff73e5cf9345773eb183649843bcce",
@@ -256,7 +323,9 @@
           "name": "blender jar",
           "media_type": "image",
           "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg"
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-02.jpg"
           ],
           "raw": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
@@ -265,7 +334,17 @@
           "qwen_skipped": "incomplete_cutout"
         }
       ],
-      "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe"
+      "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+      "gemma_scores": [
+        {
+          "name": "blender jar",
+          "overall": 9.0,
+          "sharpness": 8.0,
+          "completeness": 9.0,
+          "cleanliness": 9.0,
+          "reason": "Most complete and sharpest view of the blender jar."
+        }
+      ]
     },
     {
       "id": "s2v_42d820c6f6554f4f9fa56f615222dcb0",
@@ -305,8 +384,7 @@
           "name": "item in box",
           "media_type": "image",
           "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-01.jpg"
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg"
           ],
           "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
@@ -315,7 +393,25 @@
           "qwen_skipped": "incomplete_cutout"
         }
       ],
-      "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe"
+      "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+      "gemma_scores": [
+        {
+          "name": "white coiled cable",
+          "overall": 9.0,
+          "sharpness": 7.0,
+          "completeness": 10.0,
+          "cleanliness": 9.0,
+          "reason": "Most complete view of the object with good clarity and clean masking."
+        },
+        {
+          "name": "item in box",
+          "overall": 8.0,
+          "sharpness": 7.0,
+          "completeness": 8.0,
+          "cleanliness": 9.0,
+          "reason": "Sharpest image with the cleanest mask and good object visibility."
+        }
+      ]
     },
     {
       "id": "omni_fcfa970385806077912cda9aa5312cd5",

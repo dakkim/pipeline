@@ -209,7 +209,19 @@ def main() -> None:
                 **meta,
             },
             "references": refs,
-            "notes": "SAM2 cutouts → pick most complete view; Qwen only if complete+hand fringe",
+            "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+            "gemma_scores": [
+                {
+                    "name": ref.get("name"),
+                    "overall": (ref.get("gemma_score") or {}).get("overall"),
+                    "sharpness": (ref.get("gemma_score") or {}).get("sharpness"),
+                    "completeness": (ref.get("gemma_score") or {}).get("completeness"),
+                    "cleanliness": (ref.get("gemma_score") or {}).get("cleanliness"),
+                    "reason": (ref.get("gemma_score") or {}).get("reason"),
+                }
+                for ref in object_refs
+                if ref.get("gemma_score")
+            ],
         }
         new_samples.append(sample)
         print("ok", sid, "refs", len(refs))
