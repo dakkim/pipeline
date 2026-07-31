@@ -74,9 +74,24 @@ function renderSample(sample) {
   const refTiles = [];
   for (const [index, ref] of refs.entries()) {
     const variants = [];
-    if (ref.raw) variants.push({ label: "raw crop", path: ref.raw });
+    const viewPaths = Array.isArray(ref.views) ? ref.views.filter(Boolean) : [];
+    if (viewPaths.length) {
+      viewPaths.forEach((path, viewIndex) => {
+        variants.push({
+          label: viewPaths.length > 1 ? `cutout ${viewIndex + 1}` : "mask cutout",
+          path,
+        });
+      });
+    } else if (ref.raw) {
+      variants.push({ label: "raw crop", path: ref.raw });
+    }
     if (ref.mask) variants.push({ label: "SAM mask", path: ref.mask });
-    if (ref.edited || (ref.path && sample.pipeline === "sam2_qwen_edit")) {
+    if (
+      ref.edited ||
+      (ref.path &&
+        (sample.pipeline === "sam2_qwen_edit" ||
+          sample.pipeline === "sam2_qwen_edit_hoi_object"))
+    ) {
       variants.push({ label: "Qwen edit", path: ref.edited || ref.path });
     } else if (ref.path) {
       variants.push({

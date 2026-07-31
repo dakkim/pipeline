@@ -44,40 +44,31 @@
           "role": "object",
           "name": "glass jar",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-01.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-edited.jpg"
         },
         {
           "role": "object",
-          "name": "glass jar",
+          "name": "mixing bowl",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-00.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "mixing bowl",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-02-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-02-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-02-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-02-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "mixing bowl",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-03-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-03-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-03-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-03-edited.jpg"
         }
       ],
-      "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion"
+      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558",
@@ -101,22 +92,19 @@
           "role": "object",
           "name": "hair styling tool",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-02.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "hair styling tool",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion"
+      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_3c690f6c970663deab321e48fb858c80",
@@ -141,40 +129,33 @@
           "role": "object",
           "name": "chopsticks",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-00.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-edited.jpg"
         },
         {
           "role": "object",
-          "name": "chopsticks",
+          "name": "bowl",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-02.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-03.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "bowl",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-02-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-02-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-02-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-02-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "bowl",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-03-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-03-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-03-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-03-edited.jpg"
         }
       ],
-      "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion"
+      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_b2fe07048d12ba188a45b854d20ebc97",
@@ -198,22 +179,19 @@
           "role": "object",
           "name": "small rectangular object",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-02.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "small rectangular object",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion"
+      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_baaf21a0e1c6f5cfebe84f64723da49e",
@@ -237,22 +215,19 @@
           "role": "object",
           "name": "spray can",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-02.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "spray can",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion"
+      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_46ff73e5cf9345773eb183649843bcce",
@@ -276,22 +251,20 @@
           "role": "object",
           "name": "blender jar",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-02.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-03.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "blender jar",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion"
+      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_42d820c6f6554f4f9fa56f615222dcb0",
@@ -316,40 +289,34 @@
           "role": "object",
           "name": "white coiled cable",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-02.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-03.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-edited.jpg"
         },
         {
           "role": "object",
-          "name": "white coiled cable",
+          "name": "item in box",
           "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-raw.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-01.jpg"
+          ],
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "item in box",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-02-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-02-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-02-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-02-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "item in box",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-03-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-03-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-03-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-03-edited.jpg"
         }
       ],
-      "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion"
+      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
     },
     {
       "id": "omni_fcfa970385806077912cda9aa5312cd5",

@@ -137,18 +137,38 @@ def main() -> None:
 
         refs = []
         for idx, ref in enumerate(object_refs):
-            raw = Path(ref.get("raw_context_crop") or ref.get("context_crop") or "")
+            cutouts = [
+                Path(path)
+                for path in (ref.get("multi_view_cutouts") or [])
+                if path
+            ]
+            if not cutouts:
+                primary = Path(
+                    ref.get("cutout")
+                    or ref.get("raw_context_crop")
+                    or ref.get("context_crop")
+                    or ""
+                )
+                if primary.is_file():
+                    cutouts = [primary]
             edited = Path(ref.get("edited_reference") or "")
             mask = Path(ref.get("mask_crop") or "")
             entry = {
                 "role": "object",
                 "name": ref.get("name"),
                 "media_type": "image",
+                "views": [],
             }
-            if raw.is_file():
-                name = f"ref-{idx:02d}-raw.jpg"
-                _copy_image(raw, out / name)
-                entry["raw"] = f"media/samples/{rel}/{name}"
+            for vidx, cutout in enumerate(cutouts):
+                if not cutout.is_file():
+                    continue
+                name = f"ref-{idx:02d}-view-{vidx:02d}.jpg"
+                _copy_image(cutout, out / name)
+                view_url = f"media/samples/{rel}/{name}"
+                entry["views"].append(view_url)
+                if vidx == 0:
+                    entry["raw"] = view_url
+                    entry["cutout"] = view_url
             if mask.is_file():
                 name = f"ref-{idx:02d}-mask.jpg"
                 _copy_image(mask, out / name)
@@ -158,7 +178,7 @@ def main() -> None:
                 _copy_image(edited, out / name)
                 entry["path"] = f"media/samples/{rel}/{name}"
                 entry["edited"] = entry["path"]
-            elif raw.is_file():
+            elif entry.get("raw"):
                 entry["path"] = entry["raw"]
             refs.append(entry)
 
@@ -187,7 +207,7 @@ def main() -> None:
                 **meta,
             },
             "references": refs,
-            "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion",
+            "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit",
         }
         new_samples.append(sample)
         print("ok", sid, "refs", len(refs))
