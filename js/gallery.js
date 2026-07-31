@@ -326,32 +326,19 @@ function applyFilter(task) {
 function buildTaskFilters(samples) {
   const nav = document.querySelector(".filters");
   if (!nav) return;
-  const tasks = [
-    ...new Set(
-      samples
-        .map((sample) => sample.task)
-        .filter((name) => typeof name === "string" && name)
-    ),
-  ].sort((a, b) => {
-    const order = Object.keys(TASK_LABELS);
-    return (order.indexOf(a) + 1 || 99) - (order.indexOf(b) + 1 || 99);
-  });
-  nav.replaceChildren(
-    el("button", {
-      type: "button",
-      className: "filter is-active",
-      "data-task": "all",
-      text: "All tasks",
-    }),
-    ...tasks.map((name) =>
-      el("button", {
-        type: "button",
-        className: "filter",
-        "data-task": name,
-        text: TASK_LABELS[name] || name,
-      })
-    )
+  // Keep static nav buttons from index.html when present; only ensure labels.
+  const present = new Set(
+    samples.map((sample) => sample.task).filter((name) => typeof name === "string")
   );
+  const buttons = [...nav.querySelectorAll(".filter")];
+  if (!buttons.length) return;
+  for (const button of buttons) {
+    const task = button.dataset.task;
+    if (task === "all") continue;
+    const count = samples.filter((sample) => sample.task === task).length;
+    button.textContent = `${TASK_LABELS[task] || task}${count ? ` (${count})` : ""}`;
+    button.hidden = task !== "all" && !present.has(task);
+  }
 }
 
 async function main() {
@@ -362,10 +349,15 @@ async function main() {
   const samples = catalog.samples || [];
   const multiCount = samples.filter((s) => s.task === "multi_imgs_to_v").length;
 
+  const taskCount = new Set(samples.map((s) => s.task)).size;
   document.getElementById("hero-meta").replaceChildren(
     el("span", {}, [
       el("strong", { text: fmt(samples.length) }),
       " samples",
+    ]),
+    el("span", {}, [
+      el("strong", { text: fmt(taskCount) }),
+      " tasks",
     ]),
     el("span", {}, [
       el("strong", { text: fmt(multiCount) }),
@@ -374,10 +366,6 @@ async function main() {
     el("span", {}, [
       el("strong", { text: fmt(new Set(samples.map((s) => s.dataset)).size) }),
       " sources",
-    ]),
-    el("span", {}, [
-      el("strong", { text: source.real_multiref_run || "—" }),
-      " run",
     ])
   );
 

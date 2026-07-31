@@ -1,5 +1,5 @@
 {
-  "title": "Omni / S2V sample gallery",
+  "title": "Omni / S2V prepared sample gallery",
   "samples": [
     {
       "id": "s2v_d6f8de6a67e70773aa543b1e8ca5ac59",
@@ -541,72 +541,6 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
-    },
-    {
-      "id": "omni_07f7d8bd154230ddafc59a73fad4528e",
-      "task": "multi_imgs_to_v",
-      "dataset": "humoset",
-      "prompt": "The scene takes place indoors, likely in an office or a similar professional setting. A large, abstract painting with warm colors hangs on the wall behind the main character. The man with dark, curly hair and glasses is dressed in a dark gray suit jacket over a dark green button - down shirt. He stands facing someone off - screen to his left, maintaining an upright posture. His body remains relatively still throughout the short clip. There are no visible hand gestures. His head is also mostly still, though he makes slight adjustments as he speaks. His facial expression is serious and engaged in the conversation. Only the back of the person with long, dark hair's head is visible. Their posture cannot be fully determined, but they appear to be standing or sitting and facing the man with dark, curly hair and glasses. No discernible motion or expressions can be observed from the limited view of this individual.",
-      "original_id": "09714a56400ae02abe533e50ab61322f",
-      "archive_group": "video_part_01.tar",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 6.196
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/ref-00.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_2066d3672b74117f0f89be48a0b948bc",
-      "task": "multi_imgs_to_v",
-      "dataset": "humoset",
-      "prompt": "The scene is set in a dimly - lit room with dark wood paneling on the walls. In the background, two decorative vases are visible, one placed on a table or shelf to the left and the other on a similar surface to the right. The man with short black hair and a goatee is wearing a dark blue military - style uniform with gold accents on the collar and cuffs. He also has brown leather straps across his chest. He sits upright, facing forward, with his hands resting on a table or desk that is not visible in the frame. Throughout the clip, the man remains relatively still. His head is straight, and he maintains direct eye contact with someone off - screen. His facial expression is serious and focused, with a slight frown. There's a subtle movement of his mouth as if he's speaking or about to speak.",
-      "original_id": "0559e68651fbcc4090cc6a509468c0ed",
-      "archive_group": "video_part_01.tar",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 8.984
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/ref-00.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_e3646fa2b9602608c22d675845a1f34d",
-      "task": "multi_imgs_to_v",
-      "dataset": "humoset",
-      "prompt": "The scene takes place indoors, likely in a home setting. A piece of artwork or calligraphy hangs on the wall behind the characters. The man with short, dark hair and light skin is wearing a light - colored, vertically striped shirt with dark suspenders. He stands facing the woman with dark hair styled in a neat updo, his body slightly angled towards her. Throughout the clip, the man's body remains relatively still. His hands are not visible. His head is also mostly still, though he makes slight movements as he speaks. His facial expression conveys concern and seriousness, with his eyebrows slightly furrowed and his mouth moving as he talks. He appears to be engaged in a serious conversation.\n\nThe woman with dark hair styled in a neat updo has light skin and is wearing what appears to be a light - colored garment. She stands facing the man, her body slightly angled towards him. The woman's body remains still throughout the clip. Her hands are not visible. Her head is also mostly still, though she makes subtle movements as she listens. Her facial expression is difficult to fully discern due to the angle of the shot, but she seems attentive and possibly concerned, mirroring the man's emotional tone.",
-      "original_id": "0ac51fe084e4dc14cc41882f88949cd5",
-      "archive_group": "video_part_01.tar",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 6.224
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/ref-00.jpg"
-        }
       ]
     },
     {
@@ -1932,6 +1866,72 @@
       ]
     },
     {
+      "id": "omni_07f7d8bd154230ddafc59a73fad4528e",
+      "task": "multi_imgs_to_v",
+      "dataset": "humoset",
+      "prompt": "The scene takes place indoors, likely in an office or a similar professional setting. A large, abstract painting with warm colors hangs on the wall behind the main character. The man with dark, curly hair and glasses is dressed in a dark gray suit jacket over a dark green button - down shirt. He stands facing someone off - screen to his left, maintaining an upright posture. His body remains relatively still throughout the short clip. There are no visible hand gestures. His head is also mostly still, though he makes slight adjustments as he speaks. His facial expression is serious and engaged in the conversation. Only the back of the person with long, dark hair's head is visible. Their posture cannot be fully determined, but they appear to be standing or sitting and facing the man with dark, curly hair and glasses. No discernible motion or expressions can be observed from the limited view of this individual.",
+      "original_id": "09714a56400ae02abe533e50ab61322f",
+      "archive_group": "video_part_01.tar",
+      "target": {
+        "path": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/poster.jpg",
+        "width": 1280,
+        "height": 720,
+        "duration_sec": 6.196
+      },
+      "references": [
+        {
+          "role": "reference",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/ref-00.jpg"
+        }
+      ]
+    },
+    {
+      "id": "omni_2066d3672b74117f0f89be48a0b948bc",
+      "task": "multi_imgs_to_v",
+      "dataset": "humoset",
+      "prompt": "The scene is set in a dimly - lit room with dark wood paneling on the walls. In the background, two decorative vases are visible, one placed on a table or shelf to the left and the other on a similar surface to the right. The man with short black hair and a goatee is wearing a dark blue military - style uniform with gold accents on the collar and cuffs. He also has brown leather straps across his chest. He sits upright, facing forward, with his hands resting on a table or desk that is not visible in the frame. Throughout the clip, the man remains relatively still. His head is straight, and he maintains direct eye contact with someone off - screen. His facial expression is serious and focused, with a slight frown. There's a subtle movement of his mouth as if he's speaking or about to speak.",
+      "original_id": "0559e68651fbcc4090cc6a509468c0ed",
+      "archive_group": "video_part_01.tar",
+      "target": {
+        "path": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/poster.jpg",
+        "width": 1282,
+        "height": 720,
+        "duration_sec": 8.984
+      },
+      "references": [
+        {
+          "role": "reference",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/ref-00.jpg"
+        }
+      ]
+    },
+    {
+      "id": "omni_e3646fa2b9602608c22d675845a1f34d",
+      "task": "multi_imgs_to_v",
+      "dataset": "humoset",
+      "prompt": "The scene takes place indoors, likely in a home setting. A piece of artwork or calligraphy hangs on the wall behind the characters. The man with short, dark hair and light skin is wearing a light - colored, vertically striped shirt with dark suspenders. He stands facing the woman with dark hair styled in a neat updo, his body slightly angled towards her. Throughout the clip, the man's body remains relatively still. His hands are not visible. His head is also mostly still, though he makes slight movements as he speaks. His facial expression conveys concern and seriousness, with his eyebrows slightly furrowed and his mouth moving as he talks. He appears to be engaged in a serious conversation.\n\nThe woman with dark hair styled in a neat updo has light skin and is wearing what appears to be a light - colored garment. She stands facing the man, her body slightly angled towards him. The woman's body remains still throughout the clip. Her hands are not visible. Her head is also mostly still, though she makes subtle movements as she listens. Her facial expression is difficult to fully discern due to the angle of the shot, but she seems attentive and possibly concerned, mirroring the man's emotional tone.",
+      "original_id": "0ac51fe084e4dc14cc41882f88949cd5",
+      "archive_group": "video_part_01.tar",
+      "target": {
+        "path": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/poster.jpg",
+        "width": 1282,
+        "height": 720,
+        "duration_sec": 6.224
+      },
+      "references": [
+        {
+          "role": "reference",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/ref-00.jpg"
+        }
+      ]
+    },
+    {
       "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
       "task": "multi_imgs_to_v",
       "dataset": "human_portrait_annolabeled",
@@ -1989,6 +1989,245 @@
         "duration_sec": 3.838
       },
       "references": []
+    },
+    {
+      "id": "omni_8995fb39804e2e456366d2bae09eabd5",
+      "task": "t2v",
+      "dataset": "human_w_object",
+      "prompt": "One main subject appears: a young woman in an indoor studio or room. The environment is warmly lit with artificial light, suggesting evening or night. The visual style is everyday lifestyle with a clean, polished digital look.\n\n[First frame] A medium close-up at eye level captures a young woman with long dark hair, wearing a white sleeveless top, positioned slightly left of center. She holds a large black microphone close to her face with her right hand, her gaze directed slightly off-camera to the left. To her right, a white artichoke-style lamp and a vase of pink tulips are visible against dark grey curtains.\n\n[Shot 1] [00:00-00:02] [Medium close-up, eye level, static] The camera remains fixed on the young woman as she holds the microphone steady, her lips slightly parted as if preparing to speak or sing. Her long black hair cascades over her shoulders, and a subtle light blue earbud is visible in her left ear. The warm, soft lighting from the lamp in the background creates a gentle glow on the right side of her face and the folds of the background curtains, maintaining a serene and intimate mood.\n\n[Shot 1] [00:02-00:04] [Medium close-up, eye level, static] Continuing the same quiet posture, the woman begins to blink and slightly shifts her gaze further toward the left. As the moment progresses, she slowly lowers the black microphone away from her face, moving it toward the bottom left corner of the frame. This action reveals more of her white ribbed top and the delicate silver necklace around her neck. The background elements, including the glowing lamp and tulips, remain unchanged, preserving the calm and professional atmosphere of the scene.\n\n[Last frame] A medium close-up at eye level shows the young woman with her gaze fixed off-camera to the left, her mouth closed in a neutral expression. The black microphone is now positioned lower in the frame, partially out of view near the bottom left. The white artichoke lamp and pink tulips remain clearly visible in the background against the dark grey curtains, illuminated by the same warm, soft light.",
+      "original_id": "228114390260072_frames=320-416_sim=0",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/target.mp4",
+        "poster": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 4.455
+      },
+      "references": []
+    },
+    {
+      "id": "omni_bcfed1cd800c89a16ab9edee07e10035",
+      "task": "t2v",
+      "dataset": "human_w_object",
+      "prompt": "A single female subject appears in an indoor setting at night. The lighting is artificial and dim, featuring a lamp in the background. The visual style is everyday lifestyle, characterized by a handheld vertical mobile-phone aesthetic.\n\n[First frame] A close-up shot at eye level frames a young woman with long dark hair and bangs in the center. She wears a fuzzy white cardigan and a pearl necklace with a silver pendant. She holds a white plastic bottle with pink and black text in the lower right foreground, gazing toward the camera with a slight smile.\n\n[Shot 1] [00:00-00:03] [Close-up, eye level, static] The camera maintains a tight frame on the woman as she speaks to the audience. She holds the bottle steady initially, then begins to tilt and rotate it slightly while her facial expressions shift from a smile to a more focused, talking state. The dim indoor background with a glowing lampshade remains consistent as she articulates her words. Her dark eyes reflect the soft frontal light, emphasizing her doll-like makeup and features.\n\n[Shot 1] [00:03-00:07] [Close-up, eye level, slight handheld shake] Continuing her dialogue, she begins to move the bottle more actively in the foreground, shaking it gently to draw attention to the product. The camera follows her subtle head tilts as she glances briefly at the bottle before returning her gaze to the lens. Her expression becomes more animated with frequent blinking and lip movements, while the pearl necklace catches the low-light glints. The scene maintains a personal, vlog-like atmosphere through the end of the sequence.\n\n[Last frame] A close-up at eye level captures the woman in a near-identical composition to the start, but her mouth is closed in a soft pout. She is centered in the frame, with the white cardigan and pearl necklace clearly visible. The plastic bottle is positioned in the lower right corner, partially obscuring her shoulder, while the warm glow of the lamp persists in the dark background.",
+      "original_id": "963627904099023_frames=160-320_sim=0",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/target.mp4",
+        "poster": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 7.364
+      },
+      "references": []
+    },
+    {
+      "id": "s2v_0d772056f9cc6685288b145a42d387a2",
+      "task": "i2v",
+      "dataset": "datatang_human_object_annolabeled",
+      "prompt": "[object1] is main subject",
+      "original_id": "s2v_0d772056f9cc6685288b145a42d387a2",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/i2v/s2v_0d772056f9cc6685288b145a42d387a2/target.mp4",
+        "poster": "media/samples/i2v/s2v_0d772056f9cc6685288b145a42d387a2/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.084
+      },
+      "references": []
+    },
+    {
+      "id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
+      "task": "i2v",
+      "dataset": "datatang_human_object_annolabeled",
+      "prompt": "The scene opens with a medium shot, framing a fair-skinned woman with shoulder-length, platinum blonde hair and clear-framed eyeglasses. She is wearing a light pink t-shirt with white text, partially visible as \"in My.\" The camera is static, maintaining a consistent eye-level perspective. The background reveals a domestic kitchen setting, with light beige cabinetry on the left, and a stainless steel refrigerator on the right, adorned with a small, dark rectangular magnet and a red and green holiday-themed ornament. The lighting is soft and even, emanating from an unseen overhead source, casting minimal shadows and illuminating the subject's face and the immediate surroundings with a warm, inviting glow. The woman holds a small, clear glass spice jar with a red label and a white lid in her left hand, positioned slightly below her chin. Her gaze is directed towards the jar, and her lips are slightly parted, suggesting a contemplative or curious expression. As the shot progresses, she lifts the jar slightly, bringing it closer to the camera, revealing the text \"CHILE LIME\" on the red label. Her expression shifts to a more direct, engaging look, as if addressing an unseen audience. She then briefly touches her right temple with the jar, a subtle, almost playful gesture, before returning it to its original position. Her eyes maintain direct contact with the camera, and a slight, knowing smile plays on her lips. The camera remains fixed, capturing the nuances of her facial expressions and the subtle shifts in her posture. The final action involves her bringing a long, rectangular, reddish-pink object, possibly a piece of fruit or candy, into the lower foreground, obscuring the bottom portion of her t-shirt. The object is held horizontally, parallel to the bottom edge of the frame, and is slightly out of focus, drawing attention to the woman's face and the spice jar. The overall composition is balanced, with the subject centrally framed, and the background providing context without distracting from the main action. The color palette is dominated by the warm tones of the woman's hair and skin, the soft pink of her shirt, and the muted beige of the cabinetry, contrasted by the cool metallic sheen of the refrigerator and the vibrant red of the spice jar label.",
+      "original_id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/i2v/s2v_dd22de8858bfc1e272092d0a9d5248df/target.mp4",
+        "poster": "media/samples/i2v/s2v_dd22de8858bfc1e272092d0a9d5248df/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 6.549
+      },
+      "references": []
+    },
+    {
+      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba__i2v",
+      "task": "i2v",
+      "dataset": "human_portrait_annolabeled",
+      "prompt": "One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand.",
+      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/i2v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
+        "poster": "media/samples/i2v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 6.417
+      },
+      "references": []
+    },
+    {
+      "id": "s2v_0d772056f9cc6685288b145a42d387a2__key_frames_to_v",
+      "task": "key_frames_to_v",
+      "dataset": "datatang_human_object_annolabeled",
+      "prompt": "[object1] is main subject",
+      "original_id": "s2v_0d772056f9cc6685288b145a42d387a2",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/target.mp4",
+        "poster": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.084
+      },
+      "references": [
+        {
+          "role": "key_frame",
+          "media_type": "image",
+          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-00.jpg"
+        },
+        {
+          "role": "key_frame",
+          "media_type": "image",
+          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "s2v_dd22de8858bfc1e272092d0a9d5248df__key_frames_to_v",
+      "task": "key_frames_to_v",
+      "dataset": "datatang_human_object_annolabeled",
+      "prompt": "The scene opens with a medium shot, framing a fair-skinned woman with shoulder-length, platinum blonde hair and clear-framed eyeglasses. She is wearing a light pink t-shirt with white text, partially visible as \"in My.\" The camera is static, maintaining a consistent eye-level perspective. The background reveals a domestic kitchen setting, with light beige cabinetry on the left, and a stainless steel refrigerator on the right, adorned with a small, dark rectangular magnet and a red and green holiday-themed ornament. The lighting is soft and even, emanating from an unseen overhead source, casting minimal shadows and illuminating the subject's face and the immediate surroundings with a warm, inviting glow. The woman holds a small, clear glass spice jar with a red label and a white lid in her left hand, positioned slightly below her chin. Her gaze is directed towards the jar, and her lips are slightly parted, suggesting a contemplative or curious expression. As the shot progresses, she lifts the jar slightly, bringing it closer to the camera, revealing the text \"CHILE LIME\" on the red label. Her expression shifts to a more direct, engaging look, as if addressing an unseen audience. She then briefly touches her right temple with the jar, a subtle, almost playful gesture, before returning it to its original position. Her eyes maintain direct contact with the camera, and a slight, knowing smile plays on her lips. The camera remains fixed, capturing the nuances of her facial expressions and the subtle shifts in her posture. The final action involves her bringing a long, rectangular, reddish-pink object, possibly a piece of fruit or candy, into the lower foreground, obscuring the bottom portion of her t-shirt. The object is held horizontally, parallel to the bottom edge of the frame, and is slightly out of focus, drawing attention to the woman's face and the spice jar. The overall composition is balanced, with the subject centrally framed, and the background providing context without distracting from the main action. The color palette is dominated by the warm tones of the woman's hair and skin, the soft pink of her shirt, and the muted beige of the cabinetry, contrasted by the cool metallic sheen of the refrigerator and the vibrant red of the spice jar label.",
+      "original_id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/target.mp4",
+        "poster": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 6.549
+      },
+      "references": [
+        {
+          "role": "key_frame",
+          "media_type": "image",
+          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-00.jpg"
+        },
+        {
+          "role": "key_frame",
+          "media_type": "image",
+          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba__key_frames_to_v",
+      "task": "key_frames_to_v",
+      "dataset": "human_portrait_annolabeled",
+      "prompt": "One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand.",
+      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
+      "archive_group": "loose_files",
+      "target": {
+        "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
+        "poster": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 6.417
+      },
+      "references": [
+        {
+          "role": "key_frame",
+          "media_type": "image",
+          "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-00.jpg"
+        },
+        {
+          "role": "key_frame",
+          "media_type": "image",
+          "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "omni_3f7306a0591f506cde63fc178e4b0580",
+      "task": "v2v",
+      "dataset": "goku",
+      "prompt": "Add the large, orange Staten Island Ferry back to the pier.",
+      "original_id": "000000014515_3918091_000000_000289_add",
+      "archive_group": "add.videos.part01.tar",
+      "target": {
+        "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/target.mp4",
+        "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/poster.jpg",
+        "width": 1282,
+        "height": 720,
+        "duration_sec": 5.08
+      },
+      "references": [
+        {
+          "role": "source",
+          "media_type": "video",
+          "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00.mp4",
+          "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00-poster.jpg",
+          "width": 1282,
+          "height": 720,
+          "duration_sec": 5.08
+        }
+      ]
+    },
+    {
+      "id": "omni_a1ecce127343ecda5d135918ed4898a3",
+      "task": "v2v",
+      "dataset": "goku",
+      "prompt": "Add the concrete stairs on the bottom left.",
+      "original_id": "000000011886_3704254_000300_000449_add",
+      "archive_group": "add.videos.part01.tar",
+      "target": {
+        "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/target.mp4",
+        "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/poster.jpg",
+        "width": 1372,
+        "height": 720,
+        "duration_sec": 5.08
+      },
+      "references": [
+        {
+          "role": "source",
+          "media_type": "video",
+          "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00.mp4",
+          "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00-poster.jpg",
+          "width": 1372,
+          "height": 720,
+          "duration_sec": 5.08
+        }
+      ]
+    },
+    {
+      "id": "omni_e749494f09daa39c57c6c2a849f7a25b",
+      "task": "v2v",
+      "dataset": "goku",
+      "prompt": "Add the person walking on the snowy path.",
+      "original_id": "000000004191_2125622_000000_000137_add",
+      "archive_group": "add.videos.part01.tar",
+      "target": {
+        "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/target.mp4",
+        "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/poster.jpg",
+        "width": 1282,
+        "height": 720,
+        "duration_sec": 5.08
+      },
+      "references": [
+        {
+          "role": "source",
+          "media_type": "video",
+          "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00.mp4",
+          "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00-poster.jpg",
+          "width": 1282,
+          "height": 720,
+          "duration_sec": 5.08
+        }
+      ]
     },
     {
       "id": "omni_006e6a3f1b03f888d251409f47fffedf",
@@ -2082,212 +2321,39 @@
           "path": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/ref-01.jpg"
         }
       ]
-    },
-    {
-      "id": "omni_3f7306a0591f506cde63fc178e4b0580",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the large, orange Staten Island Ferry back to the pier.",
-      "original_id": "000000014515_3918091_000000_000289_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/target.mp4",
-        "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00-poster.jpg",
-          "width": 1282,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_a1ecce127343ecda5d135918ed4898a3",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the concrete stairs on the bottom left.",
-      "original_id": "000000011886_3704254_000300_000449_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/target.mp4",
-        "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/poster.jpg",
-        "width": 1372,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00-poster.jpg",
-          "width": 1372,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_e749494f09daa39c57c6c2a849f7a25b",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the person walking on the snowy path.",
-      "original_id": "000000004191_2125622_000000_000137_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/target.mp4",
-        "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00-poster.jpg",
-          "width": 1282,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "task": "key_frames_to_v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "[object1] is main subject",
-      "original_id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 5.084
-      },
-      "references": [
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-00.jpg"
-        },
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "task": "key_frames_to_v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "The scene opens with a medium shot, framing a fair-skinned woman with shoulder-length, platinum blonde hair and clear-framed eyeglasses. She is wearing a light pink t-shirt with white text, partially visible as \"in My.\" The camera is static, maintaining a consistent eye-level perspective. The background reveals a domestic kitchen setting, with light beige cabinetry on the left, and a stainless steel refrigerator on the right, adorned with a small, dark rectangular magnet and a red and green holiday-themed ornament. The lighting is soft and even, emanating from an unseen overhead source, casting minimal shadows and illuminating the subject's face and the immediate surroundings with a warm, inviting glow. The woman holds a small, clear glass spice jar with a red label and a white lid in her left hand, positioned slightly below her chin. Her gaze is directed towards the jar, and her lips are slightly parted, suggesting a contemplative or curious expression. As the shot progresses, she lifts the jar slightly, bringing it closer to the camera, revealing the text \"CHILE LIME\" on the red label. Her expression shifts to a more direct, engaging look, as if addressing an unseen audience. She then briefly touches her right temple with the jar, a subtle, almost playful gesture, before returning it to its original position. Her eyes maintain direct contact with the camera, and a slight, knowing smile plays on her lips. The camera remains fixed, capturing the nuances of her facial expressions and the subtle shifts in her posture. The final action involves her bringing a long, rectangular, reddish-pink object, possibly a piece of fruit or candy, into the lower foreground, obscuring the bottom portion of her t-shirt. The object is held horizontally, parallel to the bottom edge of the frame, and is slightly out of focus, drawing attention to the woman's face and the spice jar. The overall composition is balanced, with the subject centrally framed, and the background providing context without distracting from the main action. The color palette is dominated by the warm tones of the woman's hair and skin, the soft pink of her shirt, and the muted beige of the cabinetry, contrasted by the cool metallic sheen of the refrigerator and the vibrant red of the spice jar label.",
-      "original_id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 6.549
-      },
-      "references": [
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-00.jpg"
-        },
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_8995fb39804e2e456366d2bae09eabd5",
-      "task": "t2v",
-      "dataset": "human_w_object",
-      "prompt": "One main subject appears: a young woman in an indoor studio or room. The environment is warmly lit with artificial light, suggesting evening or night. The visual style is everyday lifestyle with a clean, polished digital look.\n\n[First frame] A medium close-up at eye level captures a young woman with long dark hair, wearing a white sleeveless top, positioned slightly left of center. She holds a large black microphone close to her face with her right hand, her gaze directed slightly off-camera to the left. To her right, a white artichoke-style lamp and a vase of pink tulips are visible against dark grey curtains.\n\n[Shot 1] [00:00-00:02] [Medium close-up, eye level, static] The camera remains fixed on the young woman as she holds the microphone steady, her lips slightly parted as if preparing to speak or sing. Her long black hair cascades over her shoulders, and a subtle light blue earbud is visible in her left ear. The warm, soft lighting from the lamp in the background creates a gentle glow on the right side of her face and the folds of the background curtains, maintaining a serene and intimate mood.\n\n[Shot 1] [00:02-00:04] [Medium close-up, eye level, static] Continuing the same quiet posture, the woman begins to blink and slightly shifts her gaze further toward the left. As the moment progresses, she slowly lowers the black microphone away from her face, moving it toward the bottom left corner of the frame. This action reveals more of her white ribbed top and the delicate silver necklace around her neck. The background elements, including the glowing lamp and tulips, remain unchanged, preserving the calm and professional atmosphere of the scene.\n\n[Last frame] A medium close-up at eye level shows the young woman with her gaze fixed off-camera to the left, her mouth closed in a neutral expression. The black microphone is now positioned lower in the frame, partially out of view near the bottom left. The white artichoke lamp and pink tulips remain clearly visible in the background against the dark grey curtains, illuminated by the same warm, soft light.",
-      "original_id": "228114390260072_frames=320-416_sim=0",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/target.mp4",
-        "poster": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 4.455
-      },
-      "references": []
-    },
-    {
-      "id": "omni_bcfed1cd800c89a16ab9edee07e10035",
-      "task": "t2v",
-      "dataset": "human_w_object",
-      "prompt": "A single female subject appears in an indoor setting at night. The lighting is artificial and dim, featuring a lamp in the background. The visual style is everyday lifestyle, characterized by a handheld vertical mobile-phone aesthetic.\n\n[First frame] A close-up shot at eye level frames a young woman with long dark hair and bangs in the center. She wears a fuzzy white cardigan and a pearl necklace with a silver pendant. She holds a white plastic bottle with pink and black text in the lower right foreground, gazing toward the camera with a slight smile.\n\n[Shot 1] [00:00-00:03] [Close-up, eye level, static] The camera maintains a tight frame on the woman as she speaks to the audience. She holds the bottle steady initially, then begins to tilt and rotate it slightly while her facial expressions shift from a smile to a more focused, talking state. The dim indoor background with a glowing lampshade remains consistent as she articulates her words. Her dark eyes reflect the soft frontal light, emphasizing her doll-like makeup and features.\n\n[Shot 1] [00:03-00:07] [Close-up, eye level, slight handheld shake] Continuing her dialogue, she begins to move the bottle more actively in the foreground, shaking it gently to draw attention to the product. The camera follows her subtle head tilts as she glances briefly at the bottle before returning her gaze to the lens. Her expression becomes more animated with frequent blinking and lip movements, while the pearl necklace catches the low-light glints. The scene maintains a personal, vlog-like atmosphere through the end of the sequence.\n\n[Last frame] A close-up at eye level captures the woman in a near-identical composition to the start, but her mouth is closed in a soft pout. She is centered in the frame, with the white cardigan and pearl necklace clearly visible. The plastic bottle is positioned in the lower right corner, partially obscuring her shoulder, while the warm glow of the lamp persists in the dark background.",
-      "original_id": "963627904099023_frames=160-320_sim=0",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/target.mp4",
-        "poster": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 7.364
-      },
-      "references": []
     }
   ],
-  "sample_count": 44,
+  "sample_count": 48,
   "source": {
-    "omni_v3": "omni_v3",
-    "omni_aux_v1": "omni_aux_v1",
-    "records_omni": 4483787,
-    "records_aux": 64,
-    "tasks_omni": {
-      "multi_imgs_to_v": 670300,
-      "t2v": 1659532,
-      "tiv2v": 524712,
-      "v2v": 1629243
-    },
-    "tasks_aux": {
-      "i2v": 32,
-      "key_frames_to_v": 32
-    },
-    "rejected_zero_byte": 31083,
-    "real_multiref_run": "restored-original-multiref+hoi+omni",
-    "real_multiref_count": 20,
+    "real_multiref_run": "all-tasks+mi2v-first",
+    "real_multiref_count": 32,
     "task": "mixed",
-    "pipeline": "omni+hoi_object",
+    "pipeline": "omni+person_multiref+hoi_object",
     "by_dataset": {
       "abakatrain_gemmalabeled": 4,
-      "datatang_human_object_annolabeled": 13,
+      "datatang_human_object_annolabeled": 15,
       "datatang_human_woobject_gemmalabeled": 3,
-      "human_portrait_annolabeled": 5,
+      "human_portrait_annolabeled": 7,
       "human_portrait_gemmalabeled": 2,
       "tobabe_gemmalabeled_filter": 1,
       "HOIGen-1M": 3,
       "humoset": 3,
       "hoigen": 2,
-      "goku": 6,
-      "human_w_object": 2
+      "human_w_object": 2,
+      "goku": 6
     },
     "by_task": {
       "multi_imgs_to_v": 32,
       "t2v": 4,
-      "tiv2v": 3,
+      "i2v": 3,
+      "key_frames_to_v": 3,
       "v2v": 3,
-      "key_frames_to_v": 2
+      "tiv2v": 3
+    },
+    "mi2v_pipelines": {
+      "sam2_qwen_edit": 8,
+      "sam2_qwen_edit_hoi_object": 20,
+      "None": 4
     }
   }
 }
