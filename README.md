@@ -51,3 +51,4 @@ Refresh after a new run:
 ```bash
 python scripts/sync_multiref_gallery.py
 ```
+
