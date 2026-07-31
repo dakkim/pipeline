@@ -40,11 +40,17 @@ underlying archives / loose files.
 
 `media/samples/multi_imgs_to_v_real/` comes from run `real-hoi-object-gallery`:
 
-1. Gemma discovers **hand-interacted objects** (never the person)
-2. **SAM2** segments those objects across views
-3. **Qwen-Image-Edit** completes occluded/incomplete **object** crops
+1. Gemma-4 discovers **hand-interacted objects** (never the person)
+2. **SAM2** segments those objects → white-bg cutouts
+3. Gemma-4 (+ caption) ranks/rejects cutouts; **DINOv2** keeps same-object views
+4. **Nano Banana** completes the object from source frame + selected cutout + caption
 
-Each card shows raw object crop, SAM mask, and Qwen-completed object reference.
+Card layout (left → right):
+
+1. **Primary** (per object): selected cutout → edited output → SAM mask
+2. **Intermediates**: remaining multi-view cutouts
+
+Framework diagram: `DataPipe/s2v_datapipeline/docs/DESIGN.md` (HOI section).
 
 Refresh after a new run:
 

@@ -204,7 +204,27 @@ body {
   padding-bottom: 0.15rem;
 }
 
-.ref-row button {
+.ref-row-primary {
+  padding-top: 0.1rem;
+}
+
+.ref-row-aux {
+  opacity: 0.78;
+}
+
+.ref-row-aux::before {
+  content: "intermediates";
+  flex: 0 0 auto;
+  align-self: center;
+  margin-right: 0.15rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.ref-row button,
+.ref-tile {
   position: relative;
   flex: 0 0 auto;
   width: 104px;
@@ -216,12 +236,22 @@ body {
   overflow: hidden;
 }
 
+.ref-tile.is-primary {
+  width: 118px;
+  height: 132px;
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+}
+
 .ref-row img,
 .ref-row video {
   width: 100%;
   height: 92px;
   object-fit: cover;
   display: block;
+}
+
+.ref-tile.is-primary img {
+  height: 102px;
 }
 
 .ref-caption {
@@ -231,6 +261,9 @@ body {
   color: var(--ink-soft);
   text-align: center;
   background: color-mix(in srgb, var(--paper) 92%, transparent);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .meta h2 {

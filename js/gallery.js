@@ -53,6 +53,138 @@ function openLightbox(media) {
   dialog.showModal();
 }
 
+function shortName(name, max = 18) {
+  const text = (name || "").trim();
+  if (!text) return "";
+  if (text.length <= max) return text;
+  return `${text.slice(0, max - 1)}…`;
+}
+
+function tileLabel(objectName, kind, multiObject) {
+  const obj = shortName(objectName);
+  if (multiObject && obj) return `${obj} · ${kind}`;
+  return kind;
+}
+
+function makeTile({ label, path, media, primary = false, objectName = "" }) {
+  const payload = media || {
+    path,
+    media_type: "image",
+    role: label,
+  };
+  return el(
+    "button",
+    {
+      type: "button",
+      className: primary ? "ref-tile is-primary" : "ref-tile",
+      title: objectName ? `${objectName} · ${label}` : label,
+      onClick: () => openLightbox(payload),
+    },
+    [
+      el("img", { src: path, alt: label }),
+      el("span", { className: "ref-caption", text: label }),
+    ]
+  );
+}
+
+function collectReferenceTiles(sample) {
+  const refs = sample.references || [];
+  const multiObject = refs.length > 1;
+  const isHoi =
+    sample.pipeline === "sam2_qwen_edit" ||
+    sample.pipeline === "sam2_qwen_edit_hoi_object";
+
+  const primary = [];
+  const intermediates = [];
+
+  for (const [index, ref] of refs.entries()) {
+    const objectName = ref.name || ref.role || `object ${index + 1}`;
+    const viewPaths = Array.isArray(ref.views) ? ref.views.filter(Boolean) : [];
+    const selectedCutout = viewPaths[0] || ref.cutout || ref.raw || null;
+    const edited =
+      ref.edited ||
+      (ref.path &&
+      ref.path !== ref.raw &&
+      ref.path !== selectedCutout &&
+      isHoi
+        ? ref.path
+        : null);
+
+    // Front row: selected cutout → edited output → SAM mask (per object).
+    if (selectedCutout) {
+      primary.push(
+        makeTile({
+          label: tileLabel(objectName, "selected cutout", multiObject),
+          path: selectedCutout,
+          primary: true,
+          objectName,
+        })
+      );
+    }
+    if (edited) {
+      primary.push(
+        makeTile({
+          label: tileLabel(objectName, "edited output", multiObject),
+          path: edited,
+          primary: true,
+          objectName,
+        })
+      );
+    } else if (ref.path && !viewPaths.length && !isHoi) {
+      primary.push(
+        makeTile({
+          label: tileLabel(
+            objectName,
+            ref.media_type === "video" ? "source" : "ref",
+            multiObject
+          ),
+          path: ref.media_type === "video" ? ref.poster || ref.path : ref.path,
+          media: ref,
+          primary: true,
+          objectName,
+        })
+      );
+    }
+    if (ref.mask) {
+      primary.push(
+        makeTile({
+          label: tileLabel(objectName, "SAM mask", multiObject),
+          path: ref.mask,
+          primary: true,
+          objectName,
+        })
+      );
+    }
+
+    // Back row: remaining multi-view cutouts / raw crops.
+    if (viewPaths.length > 1) {
+      viewPaths.slice(1).forEach((path, viewIndex) => {
+        intermediates.push(
+          makeTile({
+            label: tileLabel(
+              objectName,
+              `cutout ${viewIndex + 2}`,
+              multiObject
+            ),
+            path,
+            objectName,
+          })
+        );
+      });
+    } else if (ref.raw && ref.raw !== selectedCutout && ref.raw !== edited) {
+      intermediates.push(
+        makeTile({
+          label: tileLabel(objectName, "raw crop", multiObject),
+          path: ref.raw,
+          objectName,
+        })
+      );
+    }
+  }
+
+  return { primary, intermediates };
+}
+
 function renderSample(sample) {
   const video = el("video", {
     src: sample.target.path,
@@ -71,69 +203,29 @@ function renderSample(sample) {
   });
 
   const refs = sample.references || [];
-  const refTiles = [];
-  for (const [index, ref] of refs.entries()) {
-    const variants = [];
-    const viewPaths = Array.isArray(ref.views) ? ref.views.filter(Boolean) : [];
-    if (viewPaths.length) {
-      viewPaths.forEach((path, viewIndex) => {
-        variants.push({
-          label:
-            viewIndex === 0
-              ? "selected cutout"
-              : `cutout ${viewIndex + 1}`,
-          path,
-        });
-      });
-    } else if (ref.raw) {
-      variants.push({ label: "raw crop", path: ref.raw });
-    }
-    if (ref.mask) variants.push({ label: "SAM mask", path: ref.mask });
-    if (ref.edited) {
-      variants.push({ label: "Qwen edit", path: ref.edited });
-    } else if (
-      ref.path &&
-      ref.path !== ref.raw &&
-      (sample.pipeline === "sam2_qwen_edit" ||
-        sample.pipeline === "sam2_qwen_edit_hoi_object")
-    ) {
-      variants.push({ label: "object ref", path: ref.path });
-    } else if (ref.path && !viewPaths.length) {
-      variants.push({
-        label: ref.media_type === "video" ? "source" : "ref",
-        path: ref.media_type === "video" ? ref.poster || ref.path : ref.path,
-        media: ref,
-      });
-    }
-    for (const variant of variants) {
-      const media = variant.media || {
-        path: variant.path,
-        media_type: "image",
-        role: `${ref.role || "ref"}/${variant.label}`,
-      };
-      refTiles.push(
-        el(
-          "button",
-          {
-            type: "button",
-            title: `${ref.name || ref.role || "ref"} · ${variant.label}`,
-            onClick: () => openLightbox(media),
-          },
-          [
-            el("img", {
-              src: variant.path,
-              alt: `${ref.role || "reference"} ${index + 1} ${variant.label}`,
-            }),
-            el("span", { className: "ref-caption", text: variant.label }),
-          ]
-        )
-      );
-    }
+  const { primary, intermediates } = collectReferenceTiles(sample);
+  const refBlocks = [];
+  if (primary.length) {
+    refBlocks.push(
+      el(
+        "div",
+        { className: "ref-row ref-row-primary", "aria-label": "Selected object references" },
+        primary
+      )
+    );
   }
-  const refRow =
-    refTiles.length === 0
-      ? null
-      : el("div", { className: "ref-row", "aria-label": "Condition references" }, refTiles);
+  if (intermediates.length) {
+    refBlocks.push(
+      el(
+        "div",
+        {
+          className: "ref-row ref-row-aux",
+          "aria-label": "Intermediate cutouts",
+        },
+        intermediates
+      )
+    );
+  }
 
   return el("article", { className: "sample", "data-task": sample.task }, [
     el("div", { className: "media-stack" }, [
@@ -141,7 +233,7 @@ function renderSample(sample) {
         video,
         el("span", { className: "play-hint", text: "hover to play · 2.5s preview" }),
       ]),
-      refRow,
+      ...refBlocks,
     ]),
     el("div", { className: "meta" }, [
       el("h2", { text: TASK_LABELS[sample.task] || sample.task }),
