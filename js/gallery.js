@@ -110,17 +110,7 @@ function collectReferenceTiles(sample) {
         ? ref.path
         : null);
 
-    // Front row: selected cutout → edited output → SAM mask (per object).
-    if (selectedCutout) {
-      primary.push(
-        makeTile({
-          label: tileLabel(objectName, "selected cutout", multiObject),
-          path: selectedCutout,
-          primary: true,
-          objectName,
-        })
-      );
-    }
+    // Front row: final training assets only (edited / object ref).
     if (edited) {
       primary.push(
         makeTile({
@@ -144,19 +134,37 @@ function collectReferenceTiles(sample) {
           objectName,
         })
       );
-    }
-    if (ref.mask) {
+    } else if (!edited && selectedCutout && isHoi) {
+      // Fallback when completion was skipped: photographic cutout is the used ref.
       primary.push(
         makeTile({
-          label: tileLabel(objectName, "SAM mask", multiObject),
-          path: ref.mask,
+          label: tileLabel(objectName, "object ref", multiObject),
+          path: selectedCutout,
           primary: true,
           objectName,
         })
       );
     }
 
-    // Back row: remaining multi-view cutouts / raw crops.
+    // Debug row: selected cutout, SAM mask, then remaining multi-view cutouts.
+    if (edited && selectedCutout) {
+      intermediates.push(
+        makeTile({
+          label: tileLabel(objectName, "selected cutout", multiObject),
+          path: selectedCutout,
+          objectName,
+        })
+      );
+    }
+    if (ref.mask) {
+      intermediates.push(
+        makeTile({
+          label: tileLabel(objectName, "SAM mask", multiObject),
+          path: ref.mask,
+          objectName,
+        })
+      );
+    }
     if (viewPaths.length > 1) {
       viewPaths.slice(1).forEach((path, viewIndex) => {
         intermediates.push(
@@ -209,7 +217,7 @@ function renderSample(sample) {
     refBlocks.push(
       el(
         "div",
-        { className: "ref-row ref-row-primary", "aria-label": "Selected object references" },
+        { className: "ref-row ref-row-primary", "aria-label": "Final edited object references" },
         primary
       )
     );
@@ -220,7 +228,7 @@ function renderSample(sample) {
         "div",
         {
           className: "ref-row ref-row-aux",
-          "aria-label": "Intermediate cutouts",
+          "aria-label": "Debug intermediates",
         },
         intermediates
       )

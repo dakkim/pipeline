@@ -47,8 +47,8 @@ underlying archives / loose files.
 
 Card layout (left → right):
 
-1. **Primary** (per object): selected cutout → edited output → SAM mask
-2. **Intermediates**: remaining multi-view cutouts
+1. **Primary** (per object): edited output — the training reference pair asset
+2. **Debug**: selected cutout → SAM mask → remaining multi-view cutouts
 
 Framework diagram: `DataPipe/s2v_datapipeline/docs/DESIGN.md` (HOI section).
 

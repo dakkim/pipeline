@@ -213,7 +213,7 @@ body {
 }
 
 .ref-row-aux::before {
-  content: "intermediates";
+  content: "debug";
   flex: 0 0 auto;
   align-self: center;
   margin-right: 0.15rem;
