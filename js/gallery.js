@@ -98,6 +98,7 @@ function collectReferenceTiles(sample) {
   const intermediates = [];
 
   for (const [index, ref] of refs.entries()) {
+    const isFace = ref.role === "face";
     const objectName = ref.name || ref.role || `object ${index + 1}`;
     const viewPaths = Array.isArray(ref.views) ? ref.views.filter(Boolean) : [];
     const selectedCutout =
@@ -111,8 +112,17 @@ function collectReferenceTiles(sample) {
         ? ref.path
         : null);
 
-    // Front row: final training assets only (edited / object ref).
-    if (edited) {
+    // Front row: final training assets only (edited / object ref / face crop).
+    if (isFace && (edited || ref.path || selectedCutout)) {
+      primary.push(
+        makeTile({
+          label: tileLabel("face", "yolov8 crop", multiObject || true),
+          path: edited || ref.path || selectedCutout,
+          primary: true,
+          objectName: "face",
+        })
+      );
+    } else if (edited) {
       primary.push(
         makeTile({
           label: tileLabel(objectName, "edited output", multiObject),
@@ -154,7 +164,7 @@ function collectReferenceTiles(sample) {
           : "extract frame";
       intermediates.push(
         makeTile({
-          label: tileLabel(objectName, frameLabel, multiObject),
+          label: tileLabel(objectName, frameLabel, multiObject || isFace),
           path: ref.source_frame,
           objectName,
           primary: false,
@@ -164,7 +174,7 @@ function collectReferenceTiles(sample) {
       const last = intermediates[intermediates.length - 1];
       last.classList.add("is-extract-frame");
     }
-    if (selectedCutout) {
+    if (!isFace && selectedCutout) {
       intermediates.push(
         makeTile({
           label: tileLabel(objectName, "pre-edit cutout", multiObject),

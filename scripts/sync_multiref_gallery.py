@@ -87,6 +87,9 @@ def _sync_row(row: dict, media_root: Path) -> dict | None:
         if str(ref.get("role") or "object") == "object"
         and not re_human(str(ref.get("name") or ""))
     ]
+    face_refs = [
+        ref for ref in refs_raw if str(ref.get("role") or "") == "face"
+    ]
     if not object_refs:
         print("skip-no-object-ref", row.get("sample_id"))
         return None
@@ -176,6 +179,38 @@ def _sync_row(row: dict, media_root: Path) -> dict | None:
             entry["path"] = entry["raw"]
             entry["qwen_skipped"] = ref.get("qwen_skipped")
             entry["nano_banana_skipped"] = ref.get("nano_banana_skipped")
+        refs.append(entry)
+
+    for fidx, ref in enumerate(face_refs):
+        face_path = Path(
+            ref.get("path")
+            or ref.get("cutout")
+            or ref.get("selected_cutout")
+            or ref.get("raw")
+            or ""
+        )
+        if not face_path.is_file():
+            continue
+        name = f"face-{fidx:02d}.jpg"
+        _copy_image(face_path, out / name, max_side=720)
+        face_url = f"media/samples/{rel}/{name}"
+        entry = {
+            "role": "face",
+            "name": "face",
+            "media_type": "image",
+            "path": face_url,
+            "edited": face_url,
+            "cutout": face_url,
+            "raw": face_url,
+            "confidence": ref.get("confidence"),
+            "source_frame_index": ref.get("source_frame_index"),
+            "views": [face_url],
+        }
+        source_frame = Path(ref.get("source_frame") or "")
+        if source_frame.is_file():
+            frame_name = f"face-{fidx:02d}-source-frame.jpg"
+            _copy_image(source_frame, out / frame_name, max_side=640)
+            entry["source_frame"] = f"media/samples/{rel}/{frame_name}"
         refs.append(entry)
 
     text = row.get("text") or {}

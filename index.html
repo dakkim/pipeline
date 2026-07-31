@@ -23,9 +23,9 @@
       <p class="brand">Pipeline</p>
       <h1>HOI object → multi-image refs</h1>
       <p class="lede">
-        Only cases from the hand-object pipeline: detect interacted objects,
-        SAM2 segment, then complete a clean object reference. Primary tiles are
-        the completed refs; debug shows extract frame, pre-edit cutout, and mask.
+        Hand-object pipeline cases: detect interacted objects, SAM2 segment,
+        complete object refs, plus YOLOv8-face crops from selected keyframes as
+        extra face references.
       </p>
       <div class="hero-meta" id="hero-meta"></div>
     </header>
@@ -50,6 +50,6 @@
       <div class="lightbox-body" id="lightbox-body"></div>
     </dialog>
 
-    <script src="./js/gallery.js?v=20260731-hoi-only" type="module"></script>
+    <script src="./js/gallery.js?v=20260731-face" type="module"></script>
   </body>
 </html>

@@ -67,6 +67,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-00.jpg"
+          ],
+          "confidence": 0.860714316368103,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-01.jpg"
+          ],
+          "confidence": 0.8290004730224609,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/face-01-source-frame.jpg",
+          "source_kind": "object_source"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -83,7 +113,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_a1c4858bccf4c5abc387e19f5a197889",
@@ -152,6 +183,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-00.jpg"
+          ],
+          "confidence": 0.7986464500427246,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-01.jpg"
+          ],
+          "confidence": 0.8189933896064758,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/face-01-source-frame.jpg",
+          "source_kind": "candidate"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -168,7 +229,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_a8356b8b490737fd1b822e389344c07a",
@@ -237,6 +299,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-00.jpg"
+          ],
+          "confidence": 0.8491442799568176,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-01.jpg"
+          ],
+          "confidence": 0.4935475289821625,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/face-01-source-frame.jpg",
+          "source_kind": "object_source"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -253,7 +345,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_3234cf767121b8a8675040564351e7b8",
@@ -321,6 +414,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-00.jpg"
+          ],
+          "confidence": 0.7753713726997375,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-01.jpg"
+          ],
+          "confidence": 0.7349615097045898,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_3234cf767121b8a8675040564351e7b8/face-01-source-frame.jpg",
+          "source_kind": "candidate"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -337,7 +460,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_3c690f6c970663deab321e48fb858c80",
@@ -387,6 +511,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-00.jpg"
+          ],
+          "confidence": 0.842781662940979,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-00-source-frame.jpg",
+          "source_kind": "frame"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-01.jpg"
+          ],
+          "confidence": 0.8498896360397339,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/face-01-source-frame.jpg",
+          "source_kind": "frame"
         }
       ],
       "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
@@ -413,7 +567,8 @@
       "completion_backend": [
         "nano_banana",
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_42d820c6f6554f4f9fa56f615222dcb0",
@@ -460,6 +615,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-00.jpg"
+          ],
+          "confidence": 0.8558735847473145,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-00-source-frame.jpg",
+          "source_kind": "frame"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-01.jpg"
+          ],
+          "confidence": 0.85492342710495,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/face-01-source-frame.jpg",
+          "source_kind": "frame"
         }
       ],
       "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
@@ -486,7 +671,8 @@
       "completion_backend": [
         "nano_banana",
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_46ff73e5cf9345773eb183649843bcce",
@@ -520,6 +706,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-00.jpg"
+          ],
+          "confidence": 0.8694681525230408,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-00-source-frame.jpg",
+          "source_kind": "frame"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-01.jpg"
+          ],
+          "confidence": 0.8420727252960205,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/face-01-source-frame.jpg",
+          "source_kind": "frame"
         }
       ],
       "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
@@ -536,7 +752,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558",
@@ -571,6 +788,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-00.jpg"
+          ],
+          "confidence": 0.8641296029090881,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-00-source-frame.jpg",
+          "source_kind": "frame"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-01.jpg"
+          ],
+          "confidence": 0.8543272018432617,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/face-01-source-frame.jpg",
+          "source_kind": "frame"
         }
       ],
       "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
@@ -587,7 +834,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_99e6641431434c95fcf687c94a73f197",
@@ -637,6 +885,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-00.jpg"
+          ],
+          "confidence": 0.883395254611969,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-00-source-frame.jpg",
+          "source_kind": "frame"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-01.jpg"
+          ],
+          "confidence": 0.88523930311203,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/face-01-source-frame.jpg",
+          "source_kind": "frame"
         }
       ],
       "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
@@ -663,7 +941,8 @@
       "completion_backend": [
         "nano_banana",
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_a03a4e8a07b47523c336977d8819debc",
@@ -733,6 +1012,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-00.jpg"
+          ],
+          "confidence": 0.8374926447868347,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-01.jpg"
+          ],
+          "confidence": 0.8336153030395508,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/face-01-source-frame.jpg",
+          "source_kind": "candidate"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -749,7 +1058,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_b2fe07048d12ba188a45b854d20ebc97",
@@ -781,6 +1091,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-00.jpg"
+          ],
+          "confidence": 0.8804681897163391,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-00-source-frame.jpg",
+          "source_kind": "frame"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-01.jpg"
+          ],
+          "confidence": 0.8793016672134399,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/face-01-source-frame.jpg",
+          "source_kind": "frame"
         }
       ],
       "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
@@ -797,7 +1137,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_baaf21a0e1c6f5cfebe84f64723da49e",
@@ -831,6 +1172,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-00.jpg"
+          ],
+          "confidence": 0.808337390422821,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-00-source-frame.jpg",
+          "source_kind": "frame"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-01.jpg"
+          ],
+          "confidence": 0.7690053582191467,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/face-01-source-frame.jpg",
+          "source_kind": "frame"
         }
       ],
       "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
@@ -847,7 +1218,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_e8f229e626a6f0f2ccc5a452c729a341",
@@ -917,6 +1289,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-00.jpg"
+          ],
+          "confidence": 0.8737437129020691,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-01.jpg"
+          ],
+          "confidence": 0.8186374306678772,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_e8f229e626a6f0f2ccc5a452c729a341/face-01-source-frame.jpg",
+          "source_kind": "candidate"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -933,7 +1335,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_9adf2e2a3a97fd16124562c0d8af7ac1",
@@ -1001,6 +1404,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-00.jpg"
+          ],
+          "confidence": 0.8861562609672546,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-01.jpg"
+          ],
+          "confidence": 0.8780087232589722,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/face-01-source-frame.jpg",
+          "source_kind": "candidate"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -1017,7 +1450,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_cc4ed075d26c8667233620688c82fdbc",
@@ -1086,6 +1520,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-00.jpg"
+          ],
+          "confidence": 0.8065181374549866,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-01.jpg"
+          ],
+          "confidence": 0.8294621706008911,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_cc4ed075d26c8667233620688c82fdbc/face-01-source-frame.jpg",
+          "source_kind": "candidate"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -1102,7 +1566,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99",
@@ -1169,6 +1634,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-00.jpg"
+          ],
+          "confidence": 0.8572995066642761,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-01.jpg"
+          ],
+          "confidence": 0.8557595610618591,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/face-01-source-frame.jpg",
+          "source_kind": "candidate"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -1185,7 +1680,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_98ea64044209d530af4a7fdac79717b4",
@@ -1269,6 +1765,36 @@
           "mask": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/ref-01-edited.jpg"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-00.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-00.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-00.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-00.jpg"
+          ],
+          "confidence": 0.8692899346351624,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-00-source-frame.jpg",
+          "source_kind": "object_source"
+        },
+        {
+          "role": "face",
+          "name": "face",
+          "media_type": "image",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-01.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-01.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-01.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-01.jpg",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-01.jpg"
+          ],
+          "confidence": 0.8495360016822815,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_98ea64044209d530af4a7fdac79717b4/face-01-source-frame.jpg",
+          "source_kind": "object_source"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
@@ -1295,7 +1821,8 @@
       "completion_backend": [
         "nano_banana",
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 2
     },
     {
       "id": "s2v_0b57ed834675de6f5f4838c0c2fce1c4",
@@ -1379,7 +1906,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 0
     },
     {
       "id": "s2v_663d090fbe589313f9cdb488ee6ed43b",
@@ -1462,7 +1990,8 @@
       ],
       "completion_backend": [
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 0
     },
     {
       "id": "s2v_671364170f15d4208eac8fc755defade",
@@ -1575,7 +2104,8 @@
       "completion_backend": [
         "nano_banana",
         "nano_banana"
-      ]
+      ],
+      "face_ref_count": 0
     }
   ],
   "sample_count": 20,
@@ -1591,6 +2121,12 @@
       "human_portrait_annolabeled": 2,
       "abakatrain_gemmalabeled": 3
     },
-    "note": "Only hand-object HOI pipeline cases: detect → SAM2 segment → complete object ref. Excludes raw omni peeks and person multi-ref previews."
+    "note": "Only hand-object HOI pipeline cases: detect → SAM2 segment → complete object ref. Excludes raw omni peeks and person multi-ref previews.",
+    "face_detector": "yolov8n-face (adetailer/ultralytics weights; derronqi yolov8-face family)",
+    "face_stats": {
+      "with_face": 17,
+      "no_face": 3,
+      "faces": 34
+    }
   }
 }
