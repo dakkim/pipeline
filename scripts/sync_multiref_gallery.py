@@ -209,7 +209,7 @@ def main() -> None:
                 **meta,
             },
             "references": refs,
-            "notes": "SAM2 cutouts → Gemma-4 quality score + geo → DINO same-object; Qwen only if complete+hand fringe",
+            "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
             "gemma_scores": [
                 {
                     "name": ref.get("name"),
@@ -217,10 +217,16 @@ def main() -> None:
                     "sharpness": (ref.get("gemma_score") or {}).get("sharpness"),
                     "completeness": (ref.get("gemma_score") or {}).get("completeness"),
                     "cleanliness": (ref.get("gemma_score") or {}).get("cleanliness"),
+                    "reject": (ref.get("gemma_score") or {}).get("reject"),
                     "reason": (ref.get("gemma_score") or {}).get("reason"),
                 }
                 for ref in object_refs
                 if ref.get("gemma_score")
+            ],
+            "completion_backend": [
+                ref.get("completion_backend")
+                for ref in object_refs
+                if ref.get("completion_backend")
             ],
         }
         new_samples.append(sample)
