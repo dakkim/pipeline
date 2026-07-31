@@ -242,6 +242,21 @@ body {
   border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
 }
 
+.ref-tile.is-extract-frame {
+  width: 118px;
+  height: 132px;
+  border-color: color-mix(in srgb, #c47a3a 65%, var(--line));
+}
+
+.ref-tile.is-extract-frame .ref-caption {
+  color: #7a4a1e;
+  font-weight: 600;
+}
+
+.ref-tile.is-extract-frame img {
+  height: 102px;
+}
+
 .ref-row img,
 .ref-row video {
   width: 100%;

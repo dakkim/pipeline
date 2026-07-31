@@ -146,24 +146,28 @@ function collectReferenceTiles(sample) {
       );
     }
 
-    // Debug row per object: source frame → pre-edit → mask → other cutouts.
+    // Debug row per object: extract frame (used for mask/ref) → pre-edit → mask → other cutouts.
     if (ref.source_frame) {
       const frameLabel =
         ref.source_frame_index != null
-          ? `source f${ref.source_frame_index}`
-          : "source frame";
+          ? `extract f${ref.source_frame_index}`
+          : "extract frame";
       intermediates.push(
         makeTile({
           label: tileLabel(objectName, frameLabel, multiObject),
           path: ref.source_frame,
           objectName,
+          primary: false,
         })
       );
+      // Mark extract-frame tiles for CSS emphasis in the debug row.
+      const last = intermediates[intermediates.length - 1];
+      last.classList.add("is-extract-frame");
     }
     if (selectedCutout) {
       intermediates.push(
         makeTile({
-          label: tileLabel(objectName, "pre-edit", multiObject),
+          label: tileLabel(objectName, "pre-edit cutout", multiObject),
           path: selectedCutout,
           objectName,
         })
