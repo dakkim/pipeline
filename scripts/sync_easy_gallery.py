@@ -19,7 +19,7 @@ _HUMAN_RE = re.compile(
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RUN = Path(
     "/mnt/data04/144632/zachxu@videorebirth.com/projects/DataPipe/"
-    "s2v_datapipeline/runs/real-hoi-easy-gallery"
+    "s2v_datapipeline/runs/real-hoi-easy-internal-gallery"
 )
 
 

@@ -1,131 +1,151 @@
 {
-  "title": "Easy HOI → multi-view bbox crops",
+  "title": "Easy HOI → internal multi-view bbox crops",
   "samples": [
     {
-      "id": "s2v_417bd76cb0bcad43d5bbc37dcf5dc969",
+      "id": "s2v_976f55a120ef50e77a1e32ead9ec4eee",
       "task": "multi_imgs_to_v",
-      "dataset": "HOIGen-1M",
+      "dataset": "datatang_human_object_annolabeled",
       "pipeline": "easy",
-      "prompt": "The video captures a scene inside a barber shop. A man is seated in a chair, facing away from the camera, while another man, presumably the barber, is standing behind him. The barber is wearing glasses and a patterned shirt, and he is focused on grooming the seated man's hair. The barber uses a clipper to trim the hair, and the sound of the clipper can be heard in the background. The setting includes a brick wall and a counter with various barbering tools. The camera remains stationary, providing a clear view of the interaction between the two men. The lighting is warm, creating a cozy atmosphere. The video ends with the barber finishing the grooming process and the two men engaging in conversation.",
-      "original_id": "Ql8vxawdRtg-0:01:26.961-0:01:30.048.mp4",
+      "prompt": "The scene opens with a medium shot, framing a young woman from the chest up, seated in what appears to be a well-lit interior space. The camera maintains a static position, capturing her upper torso and head, with a slight upward angle that emphasizes her facial expressions. She is engaged in the meticulous process of applying makeup, specifically focusing on her eyebrows with a small, slender brush. Her right hand, holding the brush, moves with precision, making delicate strokes across her brow. Her left hand, partially visible in the lower right quadrant of the frame, holds a small, light-colored container, likely a makeup product. The woman's expression is one of focused concentration, her eyes occasionally darting upwards as she works, suggesting she might be looking into a mirror just out of frame. Her lips are slightly parted, and her brow is furrowed in a subtle display of effort. She wears a light pink hooded sweatshirt with prominent white stripes running down the sleeves, indicative of athletic wear. The lighting is soft and natural, emanating from an unseen source to the left of the frame, casting gentle highlights on her face and the fabric of her sweatshirt. In the background, a white door with a glass panel is visible on the left, reflecting some ambient light. To the right, a large, dark-framed mirror is partially visible, reflecting a sliver of the room. A small, light-colored, wooden structure, possibly a cat tree or a stool, is positioned in the lower-left background, adding a touch of domesticity to the scene. The overall color palette is warm, dominated by the soft pink of her attire and the neutral tones of the room, creating an intimate and personal atmosphere. The camera's fixed perspective allows for an uninterrupted observation of her detailed actions and subtle shifts in expression, drawing the viewer into her personal grooming ritual. There is no prominent text appearing in the video.",
+      "original_id": "005391_human-object-interaction_2_frames_0-170",
       "hand_objects": [
-        "clipper"
+        "brush",
+        "container"
       ],
       "target": {
-        "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/target.mp4",
-        "poster": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 3.254
+        "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/target.mp4",
+        "poster": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.75
       },
       "candidate_frames": [
         {
-          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-00.jpg",
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/frame-00.jpg",
           "frame_index": 0,
           "timestamp": 0.0
         },
         {
-          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-01.jpg",
-          "frame_index": 15,
-          "timestamp": 0.625625
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/frame-01.jpg",
+          "frame_index": 27,
+          "timestamp": 1.125
         },
         {
-          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-02.jpg",
-          "frame_index": 31,
-          "timestamp": 1.2929583333333332
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/frame-02.jpg",
+          "frame_index": 54,
+          "timestamp": 2.25
         },
         {
-          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-03.jpg",
-          "frame_index": 46,
-          "timestamp": 1.9185833333333333
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/frame-03.jpg",
+          "frame_index": 81,
+          "timestamp": 3.375
         },
         {
-          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-04.jpg",
-          "frame_index": 62,
-          "timestamp": 2.5859166666666664
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/frame-04.jpg",
+          "frame_index": 108,
+          "timestamp": 4.5
         },
         {
-          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-05.jpg",
-          "frame_index": 77,
-          "timestamp": 3.2115416666666663
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/frame-05.jpg",
+          "frame_index": 135,
+          "timestamp": 5.625
         }
       ],
       "references": [
         {
           "role": "object",
-          "name": "clipper",
+          "name": "brush",
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-05.jpg"
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-05.jpg"
           ],
           "source_frame_index": 0,
-          "source_frame": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-source-frame.jpg",
-          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg",
-          "raw": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg"
+          "source_frame": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg"
+        },
+        {
+          "role": "object",
+          "name": "container",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-01.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-02.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-03.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-04.jpg",
+            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-source-frame.jpg",
+          "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
+          "raw": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg"
         }
       ],
       "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.516,
-          "total_s": 0.516
+          "crop_s": 0.356,
+          "total_s": 0.356
         }
       }
     },
     {
-      "id": "s2v_a1c4858bccf4c5abc387e19f5a197889",
+      "id": "s2v_b7e392b8c1eef56661cbcc32476250cf",
       "task": "multi_imgs_to_v",
-      "dataset": "HOIGen-1M",
+      "dataset": "datatang_human_object_annolabeled",
       "pipeline": "easy",
-      "prompt": "The video is a short, informative segment featuring a man in a kitchen setting. The man appears to be of African descent and is wearing a dark vest over a light-colored shirt. He is holding a small plate with a spoonful of what looks like coffee beans. The man is speaking in a language that uses the Devanagari script, which is commonly used in several Indian languages.  The background of the image shows a kitchen counter with various items on it, including a coffee machine, a blender, and several bottles and jars that might contain coffee-related products. There is also a sign that reads \"TIBETAN MINT\" in English, suggesting that the location might be a cafe or a place that serves coffee.  The man is gesturing with his hands as he speaks, and his facial expression is serious. The lighting in the room is bright, and the overall atmosphere seems to be one of instruction or explanation. The text on the screen is in Korean, and it reads \"커피 빵 맛 좋아요\" which translates to \"Coffee is delicious\" in English.  The video appears to be a part of a larger series or program, as indicated by the text at the bottom of the screen. The style of the video is straightforward and educational, with a focus on the man presenting",
-      "original_id": "wfeO34bxEWc-0:09:28.367-0:09:37.710.mp4",
+      "prompt": "The scene opens with a static medium shot, framing a blonde woman from the chest up, her torso angled slightly to the right, while her head is turned directly towards the camera, establishing a direct address. Her long, wavy blonde hair, with subtle grey streaks, cascades over her shoulders, framing a face with prominent eye makeup, including dark eyeliner and purple eyeshadow, and a bold, dark pink lipstick. She wears a low-cut, rust-orange and deep-purple patterned top, revealing significant cleavage. Her left hand, adorned with purple nail polish, holds a clear plastic cup filled with a light brown, frothy beverage, likely a coffee or tea, with a green straw protruding from the lid. The cup is positioned near her mouth, and she is actively sipping from it. The background is softly blurred, indicating a shallow depth of field, but discernible elements include a dark wardrobe or closet on the left, a light-colored wall on the right, and a wicker-like chair or decorative object behind her head. A black and white striped shopping bag, possibly from Sephora given the visible logo, rests on the left side of the frame. Overhead, a string of small, bright white LED lights is visible, casting a soft, diffused illumination on the subject, creating a warm, inviting atmosphere. As the shot progresses, the woman lowers the cup from her mouth, holding it steady in her left hand, and gestures with her right hand, first pointing a thumb towards herself, then touching her cheek, and finally making a circular motion with her fingers, as if emphasizing a point. Her facial expression shifts from a relaxed, sipping posture to a more animated, conversational look, with her eyes wide and her mouth slightly agape, conveying engagement and a sense of direct communication with the viewer. The camera remains perfectly still throughout, maintaining a consistent eye-level perspective, allowing the viewer to focus entirely on her expressions and gestures. The overall lighting is soft and even, with no harsh shadows, suggesting a controlled studio or well-lit indoor environment. The color palette is dominated by warm tones from her clothing and the beverage, contrasted by the cooler tones of her eye makeup and the subtle grey in her hair, creating a visually balanced composition.",
+      "original_id": "003601_human-object-interaction_5_frames_126-322",
       "hand_objects": [
         "cup"
       ],
       "target": {
-        "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/target.mp4",
-        "poster": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 9.377
+        "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/target.mp4",
+        "poster": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 6.625
       },
       "candidate_frames": [
         {
-          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-00.jpg",
+          "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/frame-00.jpg",
           "frame_index": 0,
           "timestamp": 0.0
         },
         {
-          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-01.jpg",
-          "frame_index": 56,
-          "timestamp": 1.8685333333333334
+          "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/frame-01.jpg",
+          "frame_index": 31,
+          "timestamp": 1.2916666666666667
         },
         {
-          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-02.jpg",
-          "frame_index": 112,
-          "timestamp": 3.7370666666666668
+          "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/frame-02.jpg",
+          "frame_index": 62,
+          "timestamp": 2.5833333333333335
         },
         {
-          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-03.jpg",
-          "frame_index": 168,
-          "timestamp": 5.6056
+          "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/frame-03.jpg",
+          "frame_index": 94,
+          "timestamp": 3.9166666666666665
         },
         {
-          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-04.jpg",
-          "frame_index": 224,
-          "timestamp": 7.4741333333333335
+          "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/frame-04.jpg",
+          "frame_index": 125,
+          "timestamp": 5.208333333333333
         },
         {
-          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-05.jpg",
-          "frame_index": 280,
-          "timestamp": 9.342666666666666
+          "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/frame-05.jpg",
+          "frame_index": 156,
+          "timestamp": 6.5
         }
       ],
       "references": [
@@ -135,132 +155,1152 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-05.jpg"
+            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-05.jpg"
           ],
           "source_frame_index": 0,
-          "source_frame": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-source-frame.jpg",
-          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
-          "raw": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg"
+          "source_frame": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg"
         }
       ],
       "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.117,
-          "total_s": 0.117
+          "crop_s": 0.068,
+          "total_s": 0.068
         }
       }
     },
     {
-      "id": "s2v_04cfc3b45e814cefb29ecfc7923ff49d",
+      "id": "s2v_0b0524fd2ed67507ac9e2fc34242e43d",
       "task": "multi_imgs_to_v",
-      "dataset": "HOIGen-1M",
+      "dataset": "datatang_human_object_annolabeled",
       "pipeline": "easy",
-      "prompt": "The video shows two boys engaged in a science experiment at a table. The boy on the left, wearing a yellow shirt and goggles, is holding a piece of paper and talking. The boy on the right, wearing a striped shirt and goggles, is stirring a mixture in a measuring cup. They are both sitting in front of a red wall with various items on it, including a globe and a poster. The table in front of them has a blue surface and is covered with various items, including a measuring cup, a bottle of liquid, and a clear container. The boys appear to be enjoying themselves, laughing and talking as they work on their experiment. The video captures a moment of learning and fun, with the boys exploring the world of science together.",
-      "original_id": "RQnw937GpFk-0:01:23.760-0:01:41.760.mp4",
+      "prompt": "The scene opens with a medium shot, framing a young woman from the chest up, seated in the driver's seat of a vehicle. The camera is positioned slightly to her right, capturing her upper torso and head, with the steering wheel partially obscuring the lower left of the frame. Her dark, straight hair falls over her shoulders, and she wears a long-sleeved black top. Her expression is neutral, with a slight upward tilt to her chin, as she appears to be speaking. The interior of the car is predominantly dark, with black leather seats and dashboard elements. Through the front windshield, a bright, overcast sky is visible, along with the upper portion of a building featuring a red and white sign that reads \"SAINSBURY'S\" in bold, sans-serif lettering. The ambient lighting is soft and diffused, characteristic of an overcast day, illuminating her face evenly without harsh shadows. As the sequence progresses, the woman's hands enter the frame from below, holding a small, rectangular, light-beige box. The camera executes a subtle push-in, transitioning to a close-up shot as she extends the box towards the lens. The focus shifts precisely to the box, revealing the text \"KAREN MILLEN\" embossed in a subtle, gold-toned, sans-serif font on its lid. Her manicured nails, adorned with a delicate white and green floral design, are clearly visible as her fingers gently grip the box. The background, including her face and the car interior, falls into a soft, shallow depth of field, emphasizing the product. The lighting remains consistent, highlighting the texture of the box and the intricate nail art. After a brief hold on the close-up, the camera pulls back to the original medium shot, and the woman retracts the box, placing it down out of frame. Her gaze shifts slightly to her right, then back towards the camera, maintaining a composed demeanor. The overall visual tone is clean and direct, with the camera work serving to highlight the subject and the presented object with precision and clarity.",
+      "original_id": "011031_human-object-interaction_4_frames_52-287",
       "hand_objects": [
-        "spoon",
-        "bag"
+        "box"
       ],
       "target": {
-        "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/target.mp4",
-        "poster": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 18.04
+        "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/target.mp4",
+        "poster": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 7.917
       },
       "candidate_frames": [
         {
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-00.jpg",
+          "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/frame-00.jpg",
           "frame_index": 0,
           "timestamp": 0.0
         },
         {
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-01.jpg",
-          "frame_index": 90,
-          "timestamp": 3.6
+          "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/frame-01.jpg",
+          "frame_index": 37,
+          "timestamp": 1.5416666666666667
         },
         {
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-02.jpg",
-          "frame_index": 180,
-          "timestamp": 7.2
+          "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/frame-02.jpg",
+          "frame_index": 75,
+          "timestamp": 3.125
         },
         {
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-03.jpg",
-          "frame_index": 270,
-          "timestamp": 10.8
+          "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/frame-03.jpg",
+          "frame_index": 112,
+          "timestamp": 4.666666666666667
         },
         {
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-04.jpg",
-          "frame_index": 360,
-          "timestamp": 14.4
+          "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/frame-04.jpg",
+          "frame_index": 150,
+          "timestamp": 6.25
         },
         {
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-05.jpg",
-          "frame_index": 450,
-          "timestamp": 18.0
+          "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/frame-05.jpg",
+          "frame_index": 187,
+          "timestamp": 7.791666666666667
         }
       ],
       "references": [
         {
           "role": "object",
-          "name": "spoon",
+          "name": "box",
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-05.jpg"
+            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-04.jpg"
           ],
           "source_frame_index": 0,
-          "source_frame": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-source-frame.jpg",
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
-          "raw": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg"
-        },
-        {
-          "role": "object",
-          "name": "bag",
-          "media_type": "image",
-          "reference_kind": "bbox_crop",
-          "views": [
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-01.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-02.jpg",
-            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-03.jpg"
-          ],
-          "source_frame_index": 0,
-          "source_frame": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-source-frame.jpg",
-          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg",
-          "raw": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg"
+          "source_frame": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg"
         }
       ],
       "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.13,
-          "total_s": 0.13
+          "crop_s": 0.066,
+          "total_s": 0.066
+        }
+      }
+    },
+    {
+      "id": "s2v_bd3d8f9e79735007784b168e08a04f71",
+      "task": "multi_imgs_to_v",
+      "dataset": "datatang_human_object_annolabeled",
+      "pipeline": "easy",
+      "prompt": "The scene opens with a static medium shot, framing a woman from the chest up, centered within the frame. Her dark hair, parted on the side, falls to her shoulders, and her complexion is fair with a subtle flush. She wears a vibrant magenta short-sleeved top, its fabric smooth and uncreased, and a delicate silver necklace with a small, circular pendant rests at the base of her throat. A light-colored smartwatch is visible on her left wrist. Her expression is one of pleasant engagement, with a slight smile and eyes that appear to be looking directly into the lens. The background reveals an interior space, likely an apartment, with a muted color palette. To the left, a stainless steel refrigerator with dark, possibly black, upper cabinets is partially visible, reflecting ambient light. To the right, a dark door frame and a dark door are discernible, with a light-colored wall extending beyond. A tall, dark, rectangular object, possibly a mirror or a piece of furniture, stands vertically against the wall. The lighting is soft and even, suggesting natural light from an unseen window, casting minimal shadows and illuminating her face and the immediate surroundings uniformly. As the shot progresses, the woman begins to lift a light yellow, possibly cream-colored, garment, which appears to be a jacket or hoodie, over her head. Her arms extend upwards, and the fabric drapes over her head and shoulders. The camera remains static, maintaining its medium shot framing, as she lowers the garment, revealing her face again. Her expression shifts slightly, maintaining a pleasant demeanor as she adjusts the garment over her shoulders, the light yellow fabric contrasting gently with her magenta top. The movement is fluid and unhurried, indicating a deliberate action, possibly demonstrating the garment. The depth of field is shallow, keeping the woman in sharp focus while the background elements are softly blurred, emphasizing her as the primary subject. The overall visual tone is bright and inviting, with a clean and uncluttered aesthetic.",
+      "original_id": "008504_human-object-interaction_3_frames_173-332",
+      "hand_objects": [
+        "garment"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/target.mp4",
+        "poster": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/poster.jpg",
+        "width": 2560,
+        "height": 1440,
+        "duration_sec": 5.417
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/frame-01.jpg",
+          "frame_index": 25,
+          "timestamp": 1.0416666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/frame-02.jpg",
+          "frame_index": 51,
+          "timestamp": 2.125
+        },
+        {
+          "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/frame-03.jpg",
+          "frame_index": 76,
+          "timestamp": 3.1666666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/frame-04.jpg",
+          "frame_index": 102,
+          "timestamp": 4.25
+        },
+        {
+          "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/frame-05.jpg",
+          "frame_index": 127,
+          "timestamp": 5.291666666666667
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "garment",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.159,
+          "total_s": 0.159
+        }
+      }
+    },
+    {
+      "id": "s2v_7644c937b0e598297727fb525a2b807a",
+      "task": "multi_imgs_to_v",
+      "dataset": "abakatrain_gemmalabeled",
+      "pipeline": "easy",
+      "prompt": "A single female subject appears in an indoor setting with high-contrast, silhouetted lighting. The environment is a minimalist studio space with a bright, neutral background that creates a stark backlit effect. The visual style is cinematic and artistic, focusing on the graphic quality of the silhouette and the expressive movements of the performer.\n\n[First frame] A medium shot at eye level captures a female singer in silhouette, positioned slightly to the right of the frame's center. She is standing and holding a microphone to her lips with her right hand, while her left arm is slightly extended to her side. To her left, a microphone stand is positioned in the midground, its long arm angled towards her, also appearing as a dark silhouette against the glowing, off-white studio background.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The camera remains fixed, emphasizing the subject's dark silhouette against the bright, diffused light of the background. The female singer, her hair falling to her shoulders, begins to sway her hips rhythmically while her left hand moves fluidly, gesturing downwards and then back up. She maintains her grip on the microphone, her profile turning slightly as she sings with focused energy. The lighting is bright and even from behind, casting her and the nearby microphone stand into deep black, creating a dramatic and high-contrast mood.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her performance from the previous moment, the singer turns her head more fully to her left, her silhouette now clearly showing the bridge of her nose and the curve of her chin. Her left hand rises higher, fingers splayed expressively as if punctuating the lyrics of the song. The microphone stand remains a steady vertical and diagonal element on the left side of the frame, providing a balanced compositional counterpoint to her more dynamic movements. The overall color palette is monochromatic, dominated by the stark white of the background and the deep black of the subject.\n\n[Shot 1] [00:04-00:05] [Medium shot, eye level, static] Carrying the momentum of the song forward, she continues to turn, her body now angled more towards the left side of the frame. Her left hand descends again in a sweeping motion, her fingers tracing a path through the air. The bright background light catches the edges of her hair and the microphone, creating a slight halo effect that defines her shape against the void. The atmosphere remains intense and artistic, focusing entirely on the interplay between her movement and the high-contrast lighting.\n\n[Last frame] A medium shot at eye level frames the female singer in a sharp silhouette, now angled towards the left. She holds the microphone close to her face, her head tilted slightly back, while her left arm is extended outwards to the right, fingers spread. The microphone stand on the left remains a thin, dark silhouette against the bright, glowing white background that fills the entire frame around her.",
+      "original_id": "79732210790_frames=0-160_sim=0",
+      "hand_objects": [
+        "microphone"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/target.mp4",
+        "poster": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.4
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/frame-01.jpg",
+          "frame_index": 32,
+          "timestamp": 1.0666666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/frame-02.jpg",
+          "frame_index": 64,
+          "timestamp": 2.1333333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/frame-03.jpg",
+          "frame_index": 95,
+          "timestamp": 3.1666666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/frame-04.jpg",
+          "frame_index": 127,
+          "timestamp": 4.233333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/frame-05.jpg",
+          "frame_index": 159,
+          "timestamp": 5.3
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "microphone",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.058,
+          "total_s": 0.058
+        }
+      }
+    },
+    {
+      "id": "s2v_9520323534f213aa6c3b9b2a666a520a",
+      "task": "multi_imgs_to_v",
+      "dataset": "abakatrain_gemmalabeled",
+      "pipeline": "easy",
+      "prompt": "A single woman is featured in a minimalist indoor setting during the daytime. The scene is rendered in a cinematic lifestyle style with soft, natural lighting. The focus is on a small green plant sprout held in the woman's hands against the backdrop of her pregnant belly, creating a symbolic connection between the two forms of life.\n\n[First frame] A medium shot at eye level captures the midsection of a pregnant woman wearing a white ribbed crop top and light pink joggers. She holds a small, green sprout with two heart-shaped leaves and a central budding leaf in her hands, centered in the frame. Her hands, with light-colored manicured nails, gently cradle the soil at the base of the sprout against her bare, rounded stomach. The background is softly blurred, focusing entirely on the sprout and her hands.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, slow push in] The camera begins a gradual physical movement toward the subject, tightening the frame on the small green sprout and the woman's hands. The woman's fingers slightly adjust their grip on the dark soil, cradling it delicately as if protecting the fragile plant. Her stomach remains still in the background, providing a pale, smooth surface that highlights the vibrant green of the leaves. The soft focus on her clothing and skin emphasizes the textures of the ribbed fabric and the organic sprout.\n\n[Shot 1] [00:02-00:05] [Close-up, eye level, continuous push in] Continuing the same forward motion, the camera framing moves into a close-up, making the sprout the dominant focal point. The fine details of the leaves, including the light-colored veins and the tiny hairs on the stem, become more prominent. The woman's hands move slightly closer together, her fingers overlapping as she continues to hold the seedling against her belly. This movement deepens the intimate and nurturing tone of the scene, visually linking the growth of the plant with the life developing within her. The lighting remains soft and even, casting gentle shadows that define the contours of her hands and the plant.\n\n[Last frame] A close-up shot at eye level frames the woman's hands and the green sprout in the center. The sprout, with its two broad green leaves and a small emerging leaf, is held firmly yet gently in her cupped hands against her pregnant stomach. Her light-pink manicured nails are clearly visible, and the pale pink waistband of her joggers is seen at the bottom of the frame. The focus is sharp on the plant and hands, with the skin of her belly and the white fabric of her top creating a soft, bright background.",
+      "original_id": "56001948485_frames=19-179_sim=0",
+      "hand_objects": [
+        "plant sprout"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/target.mp4",
+        "poster": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 5.4
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/frame-01.jpg",
+          "frame_index": 32,
+          "timestamp": 1.0666666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/frame-02.jpg",
+          "frame_index": 64,
+          "timestamp": 2.1333333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/frame-03.jpg",
+          "frame_index": 95,
+          "timestamp": 3.1666666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/frame-04.jpg",
+          "frame_index": 127,
+          "timestamp": 4.233333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/frame-05.jpg",
+          "frame_index": 159,
+          "timestamp": 5.3
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "plant sprout",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.083,
+          "total_s": 0.083
+        }
+      }
+    },
+    {
+      "id": "s2v_76297d95ff41bca37a01319a22995086",
+      "task": "multi_imgs_to_v",
+      "dataset": "abakatrain_gemmalabeled",
+      "pipeline": "easy",
+      "prompt": "A single male subject is indoors in a dimly lit room, likely a home office or gaming setup, during the evening. The visual style is everyday lifestyle with a casual, domestic atmosphere. A dark plastic bottle and a clear glass of dark soda are the focal points on a wooden desk.\n\n[First frame] A medium shot at eye level captures a man from the chest down, wearing a dark blue hoodie over a black shirt, seated behind a wooden desk. He is positioned slightly off-center to the left, with his hands resting near a clear glass. In the foreground, a large brown plastic bottle is tilted, pouring a dark, carbonated liquid into the glass, which is already about one-third full. A black and red gaming mouse sits on a mousepad to the right, and a potted plant is visible in the soft-focus background.\n\n[Shot 1] [00:00-00:03] [Medium shot, eye level, static] The camera remains fixed on the desk as the dark liquid continues to stream from the brown plastic bottle into the glass. The man's torso remains relatively still in the background, his hands adjusting slightly as the glass fills. The soda fizzes at the top, creating a thin layer of tan foam that rises toward the brim of the glass. The indoor lighting is dim, with a subtle warm glow reflecting off the surface of the soda and the plastic bottle, evoking a relaxed, casual mood.\n\n[Shot 1] [00:03-00:05] [Medium shot, eye level, static] Continuing the action, the man tilts the bottle back to a vertical position as the glass reaches near-full capacity. He then moves his right hand to grasp the bottle firmly while his left hand moves toward the glass. The foam on top of the soda begins to settle slightly as the pouring stops. Picking up from the previous motion, he starts to move the bottle across the frame toward the right side of the desk, momentarily obscuring his chest. The ambiance remains quiet and domestic, focusing on this simple, everyday task.\n\n[Last frame] A medium shot at eye level shows the man's hands as he finishes moving the large brown bottle to the right side of the desk. The clear glass, now nearly full of the dark soda with a settled layer of foam, stands alone on the left side of the wooden surface. The man's hands are blurred in motion near the right edge of the frame, having just placed the bottle down. The black and red gaming mouse and the potted plant in the background remain in their original positions under the same soft, dim lighting.",
+      "original_id": "47032390425_frames=0-168_sim=0",
+      "hand_objects": [
+        "bottle"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/target.mp4",
+        "poster": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.667
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/frame-01.jpg",
+          "frame_index": 33,
+          "timestamp": 1.1
+        },
+        {
+          "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/frame-02.jpg",
+          "frame_index": 67,
+          "timestamp": 2.2333333333333334
+        },
+        {
+          "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/frame-03.jpg",
+          "frame_index": 100,
+          "timestamp": 3.3333333333333335
+        },
+        {
+          "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/frame-04.jpg",
+          "frame_index": 134,
+          "timestamp": 4.466666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/frame-05.jpg",
+          "frame_index": 167,
+          "timestamp": 5.566666666666666
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "bottle",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.065,
+          "total_s": 0.065
+        }
+      }
+    },
+    {
+      "id": "s2v_726c67219222d47abfb17cf9db1eb86d",
+      "task": "multi_imgs_to_v",
+      "dataset": "abakatrain_gemmalabeled",
+      "pipeline": "easy",
+      "prompt": "Two people are present in a professional indoor skincare studio: a female client receiving a treatment and a technician. The lighting is bright and sterile, typical of a daytime clinical setting. The visual style is realistic and clinical, focusing on the details of a dermatological procedure.\n\n[First frame] A close-up at an eye-level angle captures a young woman with dark hair lying on a white treatment table, her face angled slightly upward toward the left. She has full pink lips and a light layer of white cleansing foam covering her jawline and cheek. A technician's gloved hand enters from the top right, using a white fan brush to spread the foam near the woman's ear. The background is a clean, blurred white medical environment.\n\n[Shot 1] [00:00-00:01] [Close-up, eye level, static] The clinical framing remains tight on the client's profile as the technician's gloved hand carefully maneuvers a soft white fan brush. The brush strokes are precise, spreading a thin, bubbly layer of white cleansing foam across the woman's jawline and toward her lower cheek. A small white cotton pad is placed over her closed left eye to protect it from the product. The atmosphere is quiet, sterile, and focused on the tactile nature of the facial treatment.\n\n[Shot 1] [00:01-00:03] [Close-up, eye level, static] Picking up from the previous motion, the technician momentarily lifts the fan brush away from the face before returning it to the chin area. The woman remains perfectly still, eyes closed under the protective cotton pad, while the brush redistributes the white foam in gentle, rhythmic sweeps around her mouth and lower jaw. The bright, even lighting emphasizes the texture of the foam and the smoothness of the woman's skin, maintaining a calm and professional mood.\n\n[Shot 1] [00:03-00:05] [Close-up, eye level, static] Continuing the cleansing process, the technician uses the fan brush to smooth the foam along the underside of the client's chin and neck. The white foam appears thicker in some areas as it is worked across the skin, while the woman's relaxed expression suggests a sense of comfort. The camera maintains its unwavering focus on the interaction between the soft bristles and the lathered skin, highlighting the meticulous care of the aesthetician.\n\n[Last frame] A close-up at an eye-level angle shows the client's face tilted upward, now more heavily covered in white cleansing foam along the chin and jawline. A white cotton pad remains secured over her left eye. The technician's hand is visible in the upper left, holding the clear handle of the fan brush as it makes contact with the foam on the woman's chin. The sterile white background and bright lighting remain consistent with the start.",
+      "original_id": "52451805055_frames=0-160_sim=0",
+      "hand_objects": [
+        "fan brush"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/target.mp4",
+        "poster": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.4
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/frame-01.jpg",
+          "frame_index": 32,
+          "timestamp": 1.0666666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/frame-02.jpg",
+          "frame_index": 64,
+          "timestamp": 2.1333333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/frame-03.jpg",
+          "frame_index": 95,
+          "timestamp": 3.1666666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/frame-04.jpg",
+          "frame_index": 127,
+          "timestamp": 4.233333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/frame-05.jpg",
+          "frame_index": 159,
+          "timestamp": 5.3
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "fan brush",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-04.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.056,
+          "total_s": 0.056
+        }
+      }
+    },
+    {
+      "id": "s2v_b1bf9ae3c841b4773b219494377c7d5d",
+      "task": "multi_imgs_to_v",
+      "dataset": "tobabe_gemmalabeled_filter",
+      "pipeline": "easy",
+      "prompt": "A bakery worker prepares small tarts indoors under bright kitchen lighting. The scene features multiple tarts in metal rings on a flat tray during a daytime production cycle. The visual style is everyday lifestyle, capturing a routine culinary process with realistic detail.\n\n[First frame] A medium shot at a slightly high angle shows several round tarts inside perforated metal rings on a stainless steel surface. A hand wearing a thick blue and white striped oven mitt is positioned on the right, about to lift one of the metal rings. The tarts are golden brown with a dark purple berry jam center topped with seeds.\n\n[Shot 1] [00:00-00:02] [Medium shot, high angle, static] The camera maintains a fixed position as the oven-mitted hand carefully grips the side of a metal ring. A metal spatula is partially visible behind the tart, assisting in the release process. The surrounding tarts remain undisturbed, while the focus stays on the tactile interaction between the glove and the industrial baking equipment. The ambiance is professional and diligent.\n\n[Shot 1] [00:02-00:04] [Medium shot, high angle, static] Continuing the same action, the hand lifts the metal ring upward, separating it from the baked tart. The spatula remains in place to stabilize the pastry as the ring is removed, revealing the textured edges of the golden crust. The movement is steady and rhythmic, typical of a high-volume kitchen. The lighting highlights the glistening jam centers and the metallic sheen of the baking rings.\n\n[Last frame] A medium shot at a high angle captures the tart now fully freed from its metal ring, which is being pulled away by the mitted hand toward the top of the frame. The tart's crumbly, golden-brown side is visible, sitting next to other ringed tarts on the tray. The dark jam topping remains centered and undisturbed under the bright, even kitchen illumination.",
+      "original_id": "Extreme Korean Food! video How to make Soft and Chewy Cookies -Korean street food⧸성수맛집 쿠키 -Scene-312-115556-116237_frames=204-332_sim=0",
+      "hand_objects": [
+        "metal ring"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/target.mp4",
+        "poster": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 4.367
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/frame-01.jpg",
+          "frame_index": 26,
+          "timestamp": 0.8666666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/frame-02.jpg",
+          "frame_index": 51,
+          "timestamp": 1.7
+        },
+        {
+          "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/frame-03.jpg",
+          "frame_index": 77,
+          "timestamp": 2.566666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/frame-04.jpg",
+          "frame_index": 102,
+          "timestamp": 3.4
+        },
+        {
+          "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/frame-05.jpg",
+          "frame_index": 128,
+          "timestamp": 4.266666666666667
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "metal ring",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.069,
+          "total_s": 0.069
+        }
+      }
+    },
+    {
+      "id": "s2v_0037d4ccc41488dde05daf68b3a62dba",
+      "task": "multi_imgs_to_v",
+      "dataset": "tobabe_gemmalabeled_filter",
+      "pipeline": "easy",
+      "prompt": "One main subject, a pair of hands in black gloves, appears in an indoor kitchen or food stall setting. The environment is clean and industrial with bright, even daytime lighting. The visual style is cinematic culinary, focusing on the rhythmic and satisfying process of making rolled ice cream.\n\n[First frame] A high-angle medium shot centers on a circular metal freezing plate embedded in a stainless steel counter. A pool of white liquid cream mixed with yellow and teal cereal spheres sits in the center, while two hands in black gloves hold metal spatulas poised over the mixture. A silver mesh microphone is visible at the bottom edge of the frame.\n\n[Shot 1] [00:00-00:03] [Medium shot, high angle, static] The overhead perspective remains fixed as the gloved hands begin a rhythmic chopping motion. The metal spatulas strike the freezing plate, slicing through the colorful cereal and blending them into the thickening white cream. This repetitive action creates a textured, marbled slurry as the liquid begins to solidify against the cold surface, evoking a sense of focused craftsmanship. The lighting is bright and clean, reflecting off the metallic surfaces. \n\n[Shot 1] [00:03-00:06] [Medium shot, high angle, static] Continuing the same culinary process, the hands shift from chopping to a spreading and scraping motion. The spatulas pull the mixture across the plate, flattening the cereal pieces and ensuring an even freeze throughout the mass. As the action unfolds, the mixture covers more of the circular plate's surface area, turning into a consistent, semi-solid paste. The methodical movement maintains a satisfying and productive tone as the ingredients are fully integrated into the base. SFX: Metallic scraping and rhythmic chopping sounds.\n\n[Last frame] A high-angle medium shot captures the freezing plate with the ice cream mixture now spread into a wider, flatter circular shape. The yellow and teal cereal fragments are evenly distributed throughout the pale cream base. The two metal spatulas are positioned near the center of the mixture, held by the same black-gloved hands, while the silver microphone remains at the bottom of the frame.",
+      "original_id": "119淘宝：宁s宁一元素材-Scene-002-538-34713_frames=2950-3134_sim=0",
+      "hand_objects": [
+        "spatula",
+        "spatula"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/target.mp4",
+        "poster": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 6.2
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/frame-01.jpg",
+          "frame_index": 37,
+          "timestamp": 1.2333333333333334
+        },
+        {
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/frame-02.jpg",
+          "frame_index": 73,
+          "timestamp": 2.433333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/frame-03.jpg",
+          "frame_index": 110,
+          "timestamp": 3.6666666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/frame-04.jpg",
+          "frame_index": 146,
+          "timestamp": 4.866666666666666
+        },
+        {
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/frame-05.jpg",
+          "frame_index": 183,
+          "timestamp": 6.1
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "spatula",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg"
+        },
+        {
+          "role": "object",
+          "name": "spatula",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-01.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-02.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-03.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-04.jpg",
+            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-source-frame.jpg",
+          "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
+          "raw": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.125,
+          "total_s": 0.125
+        }
+      }
+    },
+    {
+      "id": "s2v_e7b37bde170216528cce6ac6de589194",
+      "task": "multi_imgs_to_v",
+      "dataset": "tobabe_gemmalabeled_filter",
+      "pipeline": "easy",
+      "prompt": "One main subject appears: a male vendor in an outdoor daytime setting, likely a street-side stall. The weather is clear and bright under natural sunlight. The visual style is everyday lifestyle, captured with a realistic and documentary-like precision that emphasizes the manual process of food preparation.\n\n[First frame] A medium shot at a high angle captures the male vendor from the chest up, positioned on the right side of the frame. He wears a black t-shirt, black gloves, and a black face mask, looking down at a metal cold plate. On the silver surface, large chunks of bright red watermelon are scattered over a thin layer of white cream. The background features a fruit basket with a pineapple and melon, and a sunlit paved area.\n\n[Shot 1] [00:00-00:03] [Medium shot, high angle, static] The static frame maintains a high-angle perspective as the vendor, wearing black gloves and a mask, uses two metal spatulas to vigorously chop the watermelon chunks. He repeatedly strikes the fruit against the cold metal surface, breaking the large pieces into smaller fragments that begin to blend with the white cream. The rapid, rhythmic motion of his hands creates a dynamic focal point against the stationary background of the fruit stall and the sunlit street beyond. Bright natural light illuminates the vibrant red of the fruit and the reflective silver of the plate, establishing an energetic and industrious tone.\n\n[Shot 1] [00:03-00:06] [Medium shot, high angle, static] Continuing the same chopping motion from the previous beat, the vendor intensifies his speed as the watermelon pieces become significantly smaller and more uniform. The white cream has now turned into a light pink liquid, pooling around the finely chopped fruit as it incorporates the juice. The vendor's posture remains focused, with his head tilted down and his gloved hands moving in a blur of efficiency. The surrounding environment remains unchanged, with the fruit basket in the background providing a static contrast to the flurry of activity on the cold plate. The atmosphere settles into a rhythmic, satisfying display of culinary skill as the mixture reaches a pulpy consistency.\n\n[Last frame] A medium shot at a high angle shows the vendor still positioned on the right, his hands holding the spatulas deep within the mound of chopped fruit. The watermelon is now a pile of small, pulpy fragments mixed with pink cream in the center of the silver cold plate. The background, including the fruit basket and the bright outdoor pavement, remains in the same position as the start, though the fruit on the plate is now thoroughly processed.",
+      "original_id": "国外炒酸奶制作-淘宝宁宁一元素材 (230)-Scene-003-212-863_frames=20-164_sim=0",
+      "hand_objects": [
+        "spatula"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/target.mp4",
+        "poster": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 6.392
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/frame-01.jpg",
+          "frame_index": 29,
+          "timestamp": 1.2608695652173914
+        },
+        {
+          "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/frame-02.jpg",
+          "frame_index": 58,
+          "timestamp": 2.5217391304347827
+        },
+        {
+          "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/frame-03.jpg",
+          "frame_index": 86,
+          "timestamp": 3.739130434782609
+        },
+        {
+          "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/frame-04.jpg",
+          "frame_index": 115,
+          "timestamp": 5.0
+        },
+        {
+          "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/frame-05.jpg",
+          "frame_index": 144,
+          "timestamp": 6.260869565217392
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "spatula",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.072,
+          "total_s": 0.072
+        }
+      }
+    },
+    {
+      "id": "s2v_041f8dec85ead5e5a55808be665e2193",
+      "task": "multi_imgs_to_v",
+      "dataset": "human_portrait_annolabeled",
+      "pipeline": "easy",
+      "prompt": "One main subject appears: a blonde woman in an indoor closet space. The environment is cluttered with clothing and makeup products under soft, overhead indoor lighting. The visual style is everyday lifestyle, captured in a personal vlog format.\n\n[First frame] A medium shot at eye level captures a blonde woman centered in the frame, wearing a dark grey Nike sweatshirt. She is seated on the floor in front of a closet filled with hanging denim and garments. Various makeup items, including a palette, jars, and bottles, are arranged on the floor in the foreground.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The camera maintains a steady gaze on the woman as she looks down at the cosmetic products spread before her. She reaches out with her right hand to pick up a small, white square container from the floor while speaking directly to the camera. The cluttered closet background remains in soft focus, emphasizing her central presence in the narrow space. Soft indoor lighting illuminates her face and the assortment of beauty items, creating a casual, authentic atmosphere.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing the same interaction, the woman lifts the white container toward the lens to show the viewer before placing it back down. Her expression is communicative and engaged as she then reaches for a tall, white and orange tube. The camera stays fixed, capturing her upper body movements against the backdrop of hanging clothes and a colorful patterned bag to her left. The warm, domestic tones of the room highlight the lifestyle vlog aesthetic.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous beat, she holds the large tube up briefly and then sets it aside to grab a different, rounded beige bottle. Her hands move efficiently through the products while she continues her verbal explanation. The framing remains consistent, keeping the focus on her demonstration and the variety of textures and packaging of the makeup in the foreground. The tone is informative and personal, as if sharing a daily routine.\n\n[Last frame] A medium shot at eye level shows the woman centered, looking slightly downward with a neutral expression. She wears the same dark sweatshirt, and her blonde hair falls over her shoulders. The beige bottle she just handled is visible near the bottom right, and the floor is still covered with various cosmetic jars and palettes in front of the organized yet crowded closet.",
+      "original_id": "469929574546204_frames=110-294_sim=0",
+      "hand_objects": [
+        "palette"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/target.mp4",
+        "poster": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 6.625
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/frame-01.jpg",
+          "frame_index": 31,
+          "timestamp": 1.2916666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/frame-02.jpg",
+          "frame_index": 62,
+          "timestamp": 2.5833333333333335
+        },
+        {
+          "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/frame-03.jpg",
+          "frame_index": 94,
+          "timestamp": 3.9166666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/frame-04.jpg",
+          "frame_index": 125,
+          "timestamp": 5.208333333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/frame-05.jpg",
+          "frame_index": 156,
+          "timestamp": 6.5
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "palette",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.073,
+          "total_s": 0.073
+        }
+      }
+    },
+    {
+      "id": "s2v_c91e3d03ab2e0a59588950c86f889370",
+      "task": "multi_imgs_to_v",
+      "dataset": "human_portrait_annolabeled",
+      "pipeline": "easy",
+      "prompt": "One main subject appears: a young man presenting tech products in an indoor studio. The setting is a brightly lit room during the day with a soft, neutral curtain background. The visual style is an everyday lifestyle tech review, captured with clear, high-definition digital quality.\n\n[First frame] A medium shot at eye level captures a young man with short dark hair and a black hoodie, positioned in the center background. He holds an orange-cased smartphone in his right hand, angled toward the lens. In the foreground, two smartphones—one beige and one light blue—stand upright on a white textured surface, while a third black phone rests on a silver stand to the right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The static camera maintains a steady view of the presenter as he rotates the orange-cased smartphone in his right hand, showcasing its back and sides. The two foreground phones, labeled with the brand name \"fuffi,\" remain perfectly still on the white faux-fur surface. He looks directly at the camera with an engaged, informative expression while explaining the features. The lighting is bright and even, highlighting the matte textures of the devices and the soft folds of the tan curtains behind him.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing the presentation, the man lowers the orange phone toward his right side and reaches forward with his left hand to adjust the black smartphone mounted on the silver stand. The same professional and enthusiastic tone persists as he demonstrates the stand's functionality. His focus shifts slightly from the lens to the device in his hands, then back to the audience. The composition remains consistent, emphasizing the variety of colorful tech accessories arranged neatly across the table. SFX: Subtle shuffling of plastic and electronic clicking. Emotion: Professional, helpful.\n\n[Last frame] A medium shot at eye level shows the man holding a small black stylus or accessory in both hands, positioned over the black phone on the stand. His gaze is directed toward the small object in his fingers with an intent expression. The orange phone is now partially visible in his right periphery, while the beige and blue phones in the foreground remain in their original positions against the white textured backdrop.",
+      "original_id": "922733789684604_frames=340-452_sim=0",
+      "hand_objects": [
+        "orange-cased smartphone"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/target.mp4",
+        "poster": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 4.25
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/frame-01.jpg",
+          "frame_index": 20,
+          "timestamp": 0.8333333333333334
+        },
+        {
+          "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/frame-02.jpg",
+          "frame_index": 40,
+          "timestamp": 1.6666666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/frame-03.jpg",
+          "frame_index": 59,
+          "timestamp": 2.4583333333333335
+        },
+        {
+          "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/frame-04.jpg",
+          "frame_index": 79,
+          "timestamp": 3.2916666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/frame-05.jpg",
+          "frame_index": 99,
+          "timestamp": 4.125
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "orange-cased smartphone",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.058,
+          "total_s": 0.058
+        }
+      }
+    },
+    {
+      "id": "s2v_1be7ae541f0c1d8db185a51734c57da3",
+      "task": "multi_imgs_to_v",
+      "dataset": "datatang_human_woobject_gemmalabeled",
+      "pipeline": "easy",
+      "prompt": "The scene opens with a static medium shot, framing a male subject from the waist up, positioned centrally within a well-lit gym environment. The camera maintains a fixed perspective throughout the sequence, offering a clear, unobstructed view of the subject's actions. The background features a light-colored wooden wall on the right, adorned with various charts and equipment, including a black TRX suspension trainer hanging vertically, its yellow and black straps contrasting with the warm wood. To the left, a darker, industrial-style gym area is visible, equipped with weights, racks, and a black box with white lettering, suggesting a functional fitness space. The floor is a checkerboard pattern of light gray and dark gray interlocking foam mats, providing a soft, even surface. Overhead, bright, diffused artificial lighting illuminates the scene, casting minimal, soft shadows, ensuring all details are clearly visible without harsh contrasts. The subject, a man with short, dark hair and a neatly trimmed beard, is wearing a gray short-sleeved t-shirt with a dark graphic print on the chest, and olive green cargo pants. He is barefoot, his feet visible on the mat. He is positioned in a kneeling lunge, with his right knee on the mat and his left foot flat on the mat in front of him, creating a stable base. His posture is upright, and he holds the black handle of a TRX suspension trainer in his right hand, the strap extending upwards and out of frame. His left arm is initially bent at the elbow, with his hand resting on his left shoulder. As the sequence progresses, he articulates his left arm, moving his hand from his shoulder to his chest, then to his hip, and finally to his lower abdomen, demonstrating a series of controlled, deliberate movements. His facial expression is focused and instructional, with his mouth slightly open as if speaking or explaining. His gaze is directed straight into the camera, establishing a direct connection with the viewer. The movements are fluid and precise, emphasizing the instructional nature of the video. The overall composition is balanced, with the subject occupying the central foreground, and the gym equipment providing context in the mid-ground and background. No prominent text appears in the video frame.",
+      "original_id": "025883_talking_11_frames_0-160",
+      "hand_objects": [
+        "TRX handle"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/target.mp4",
+        "poster": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/poster.jpg",
+        "width": 2224,
+        "height": 1080,
+        "duration_sec": 5.417
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/frame-01.jpg",
+          "frame_index": 25,
+          "timestamp": 1.0416666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/frame-02.jpg",
+          "frame_index": 51,
+          "timestamp": 2.125
+        },
+        {
+          "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/frame-03.jpg",
+          "frame_index": 76,
+          "timestamp": 3.1666666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/frame-04.jpg",
+          "frame_index": 102,
+          "timestamp": 4.25
+        },
+        {
+          "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/frame-05.jpg",
+          "frame_index": 127,
+          "timestamp": 5.291666666666667
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "TRX handle",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.064,
+          "total_s": 0.064
+        }
+      }
+    },
+    {
+      "id": "s2v_d5245aa03410c1d14a71219e7fd6b732",
+      "task": "multi_imgs_to_v",
+      "dataset": "datatang_human_woobject_gemmalabeled",
+      "pipeline": "easy",
+      "prompt": "The video opens with a static medium shot, framed from a low angle, capturing a young girl centered in a brightly lit room. The camera maintains a fixed position throughout the 4-second clip, offering a stable, eye-level perspective of the subject's upper body and the immediate background. The girl, appearing to be between 8 and 10 years old, has dark, straight hair with bangs, and is wearing a light-colored, striped t-shirt with a graphic print and light-colored shorts. Her arms are raised above her head, holding a small, brown, plush toy dog directly over her crown. Her expression shifts subtly from a wide-eyed, open-mouthed look of surprise or excitement to a more neutral, slightly smiling countenance, then back to the initial animated expression, suggesting a playful or energetic mood. Her body sways gently from side to side, a rhythmic, almost dance-like movement, causing the plush toy to bob slightly. The background is a domestic setting, likely a child's bedroom or play area. The wall behind her is painted a muted gray, adorned with several framed photographs of people and various colorful, hand-drawn or printed artworks, including a vibrant green musical note and a butterfly-shaped cutout. To the left, a white, wall-mounted cabinet is partially visible, while to the right, a large, white wardrobe or cabinet stands prominently, decorated with cartoon-like stickers of blue and pink whales. A window with horizontal blinds, allowing diffused natural light to enter, is positioned behind the girl's head, creating a soft backlighting effect that outlines her silhouette. Below the window, a light-colored wooden shelving unit is filled with various objects, including what appears to be a small blue chair and other toys or decorative items. The overall lighting is bright and even, with no harsh shadows, indicating a well-lit indoor environment, possibly supplemented by artificial overhead lighting, though no specific fixtures are visible. The color palette is predominantly light and pastel, with pops of brighter colors from the wall decorations and toys. The depth of field is relatively shallow, keeping the girl in sharp focus while the background elements are slightly softer, though still discernible. There is no prominent text appearing in the video.",
+      "original_id": "041308_motion_1_frames_23-175",
+      "hand_objects": [
+        "plush toy dog"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/target.mp4",
+        "poster": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.167
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/frame-01.jpg",
+          "frame_index": 24,
+          "timestamp": 1.0
+        },
+        {
+          "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/frame-02.jpg",
+          "frame_index": 48,
+          "timestamp": 2.0
+        },
+        {
+          "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/frame-03.jpg",
+          "frame_index": 73,
+          "timestamp": 3.0416666666666665
+        },
+        {
+          "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/frame-04.jpg",
+          "frame_index": 97,
+          "timestamp": 4.041666666666667
+        },
+        {
+          "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/frame-05.jpg",
+          "frame_index": 121,
+          "timestamp": 5.041666666666667
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "plush toy dog",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.061,
+          "total_s": 0.061
+        }
+      }
+    },
+    {
+      "id": "s2v_a042a9b6ac47163382b15a14f2f2ac10",
+      "task": "multi_imgs_to_v",
+      "dataset": "human_portrait_gemmalabeled",
+      "pipeline": "easy",
+      "prompt": "One main subject appears: a young woman in an indoor bedroom setting. The environment is cluttered and brightly lit during the daytime, suggesting a casual home atmosphere. The visual style is everyday/lifestyle, presented as a personal vlog or beauty tutorial.\n\n[First frame] A medium close-up at eye level captures the young woman centered in the frame. She has a pink hair roller in her bangs and is holding a grey makeup puff to her right cheek. Behind her, a pink curtain, a white hanging lamp with a pink shade, and various shelves filled with items create a busy background.\n\n[Shot 1] [00:00-00:01] [Medium close-up, eye level, static] The static camera maintains a steady focus on the woman as she lightly dabs a grey makeup puff against her lower right cheek and jawline. Her expression is neutral and focused, with her eyes directed slightly off-camera. The bright, even indoor lighting emphasizes the pale, matte finish of her foundation, while the pink hair roller remains prominently fixed in her bangs.\n\n[Shot 1] [00:01-00:02] [Medium close-up, eye level, static] Continuing her routine, the woman shifts the makeup puff upward to her forehead and right eye area. She closes her eyes briefly as she presses the puff against her skin, smoothing her complexion. The background elements, including the pink hanging lamp shade and cluttered shelves, remain unchanged, providing a consistent sense of her personal space during the grooming process.\n\n[Shot 1] [00:02-00:03] [Medium close-up, eye level, static] Picking up from the previous motion, she brings the puff back down towards her right cheek with quick, rhythmic dabbing motions. Her eyes flutter open, looking toward her reflection as she ensures an even application of product. The mood remains calm and domestic, focused entirely on the repetitive and precise action of applying her base makeup.\n\n[Last frame] A medium close-up at eye level shows the woman with the grey makeup puff pressed against her right cheekbone. Her eyes are open and directed forward, and the pink hair roller is still positioned in her bangs. The cluttered shelves and pink fabric backdrop remain visible in the shallow-depth-of-field background.",
+      "original_id": "976490283053703_frames=178-266_sim=0",
+      "hand_objects": [
+        "makeup puff"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/target.mp4",
+        "poster": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 4.091
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/frame-01.jpg",
+          "frame_index": 17,
+          "timestamp": 0.7727272727272727
+        },
+        {
+          "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/frame-02.jpg",
+          "frame_index": 35,
+          "timestamp": 1.5909090909090908
+        },
+        {
+          "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/frame-03.jpg",
+          "frame_index": 52,
+          "timestamp": 2.3636363636363638
+        },
+        {
+          "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/frame-04.jpg",
+          "frame_index": 70,
+          "timestamp": 3.1818181818181817
+        },
+        {
+          "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/frame-05.jpg",
+          "frame_index": 87,
+          "timestamp": 3.9545454545454546
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "makeup puff",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.056,
+          "total_s": 0.056
         }
       }
     }
   ],
-  "sample_count": 3,
+  "sample_count": 16,
   "source": {
     "pipeline": "easy",
-    "run": "real-hoi-easy-gallery",
-    "note": "Gemma detects hand-interacted objects; bbox crops kept across keyframes. No SAM, no completion edit, no face.",
+    "run": "real-hoi-easy-internal-gallery",
+    "note": "Internal human_w_object only (~50w). Gemma HOI bbox crops across keyframes. No HOIGen/HuMo/GOKU. No SAM, no completion edit, no face.",
     "by_dataset": {
-      "HOIGen-1M": 3
-    }
+      "datatang_human_object_annolabeled": 4,
+      "abakatrain_gemmalabeled": 4,
+      "tobabe_gemmalabeled_filter": 3,
+      "human_portrait_annolabeled": 2,
+      "datatang_human_woobject_gemmalabeled": 2,
+      "human_portrait_gemmalabeled": 1
+    },
+    "corpus": "human_w_object_pairs.jsonl (~513k complete)"
   }
 }
