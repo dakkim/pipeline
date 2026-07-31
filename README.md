@@ -35,3 +35,19 @@ PYTHONPATH=../DataPipe/s2v_datapipeline/src \
 
 Requires access to `omni_v3`, `omni_aux_v1`, `archive_index_v2.sqlite`, and the
 underlying archives / loose files.
+
+## Real multi-reference cases
+
+`media/samples/multi_imgs_to_v_real/` comes from run `real-multiref-gallery`:
+
+1. candidate frames from video
+2. **SAM2** masks → multi-view crops
+3. **Qwen-Image-Edit** completes occluded/incomplete crops
+
+Each card shows raw crop, SAM mask crop, and Qwen-edited reference side by side.
+
+Refresh after a new run:
+
+```bash
+python scripts/sync_multiref_gallery.py
+```

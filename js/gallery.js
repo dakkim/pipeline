@@ -71,26 +71,49 @@ function renderSample(sample) {
   });
 
   const refs = sample.references || [];
+  const refTiles = [];
+  for (const [index, ref] of refs.entries()) {
+    const variants = [];
+    if (ref.raw) variants.push({ label: "raw crop", path: ref.raw });
+    if (ref.mask) variants.push({ label: "SAM mask", path: ref.mask });
+    if (ref.edited || (ref.path && sample.pipeline === "sam2_qwen_edit")) {
+      variants.push({ label: "Qwen edit", path: ref.edited || ref.path });
+    } else if (ref.path) {
+      variants.push({
+        label: ref.media_type === "video" ? "source" : "ref",
+        path: ref.media_type === "video" ? ref.poster || ref.path : ref.path,
+        media: ref,
+      });
+    }
+    for (const variant of variants) {
+      const media = variant.media || {
+        path: variant.path,
+        media_type: "image",
+        role: `${ref.role || "ref"}/${variant.label}`,
+      };
+      refTiles.push(
+        el(
+          "button",
+          {
+            type: "button",
+            title: `${ref.name || ref.role || "ref"} · ${variant.label}`,
+            onClick: () => openLightbox(media),
+          },
+          [
+            el("img", {
+              src: variant.path,
+              alt: `${ref.role || "reference"} ${index + 1} ${variant.label}`,
+            }),
+            el("span", { className: "ref-caption", text: variant.label }),
+          ]
+        )
+      );
+    }
+  }
   const refRow =
-    refs.length === 0
+    refTiles.length === 0
       ? null
-      : el(
-          "div",
-          { className: "ref-row", "aria-label": "Condition references" },
-          refs.map((ref, index) => {
-            const thumbSrc =
-              ref.media_type === "video" ? ref.poster || ref.path : ref.path;
-            return el(
-              "button",
-              {
-                type: "button",
-                title: `${ref.role || "ref"} ${index + 1}`,
-                onClick: () => openLightbox(ref),
-              },
-              [el("img", { src: thumbSrc, alt: `${ref.role || "reference"} ${index + 1}` })]
-            );
-          })
-        );
+      : el("div", { className: "ref-row", "aria-label": "Condition references" }, refTiles);
 
   return el("article", { className: "sample", "data-task": sample.task }, [
     el("div", { className: "media-stack" }, [
@@ -105,6 +128,9 @@ function renderSample(sample) {
       el("div", { className: "chips" }, [
         el("span", { className: "chip", text: sample.task }),
         el("span", { className: "chip", text: sample.dataset || "unknown" }),
+        sample.pipeline
+          ? el("span", { className: "chip", text: sample.pipeline })
+          : null,
         sample.target?.duration_sec
           ? el("span", {
               className: "chip",
