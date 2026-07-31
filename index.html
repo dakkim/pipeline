@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sampled previews from the prepared OmniWeaving / S2V training corpus."
+      content="HOI multi_imgs_to_v object-reference gallery from the S2V datapipeline."
     />
-    <title>Pipeline · Prepared Data Gallery</title>
+    <title>Pipeline · multi_imgs_to_v</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,31 +21,25 @@
 
     <header class="hero">
       <p class="brand">Pipeline</p>
-      <h1>Prepared training samples</h1>
+      <h1>multi_imgs_to_v</h1>
       <p class="lede">
-        HOI cards lead with the final edited object refs used for training;
-        selected cutouts, SAM masks, and other multi-view debug tiles follow.
-        Also stratified peeks from the compiled Omni task Arrow.
+        Hand-object references through one HOI pipeline. Primary tiles are edited
+        outputs for training; debug shows source frames, pre-edit cutouts, SAM
+        masks, and other candidate frames.
       </p>
       <div class="hero-meta" id="hero-meta"></div>
     </header>
 
-    <nav class="filters" aria-label="Task filters">
-      <button type="button" class="filter is-active" data-task="all">All</button>
-      <button type="button" class="filter" data-task="t2v">t2v</button>
-      <button type="button" class="filter" data-task="i2v">i2v</button>
-      <button type="button" class="filter" data-task="multi_imgs_to_v">multi_imgs_to_v</button>
-      <button type="button" class="filter" data-task="key_frames_to_v">key_frames_to_v</button>
-      <button type="button" class="filter" data-task="v2v">v2v</button>
-      <button type="button" class="filter" data-task="tiv2v">tiv2v</button>
+    <nav class="filters" aria-label="Dataset filters">
+      <button type="button" class="filter is-active" data-task="all">All sources</button>
     </nav>
 
     <main id="gallery" class="gallery" aria-live="polite"></main>
 
     <footer class="foot">
       <p>
-        Media clips are ~2.5s web previews. Source corpora stay on the training
-        machines; this site only ships sampled assets for review.
+        Only <code>multi_imgs_to_v</code> HOI object refs are published here.
+        Previews are ~2.5s clips; full corpora stay on the training machines.
       </p>
     </footer>
 

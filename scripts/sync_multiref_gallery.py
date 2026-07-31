@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Publish real SAM2 + Qwen-Edit multi-ref cases into the static gallery."""
+"""Publish HOI multi_imgs_to_v object-reference cases into the static gallery."""
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import shutil
@@ -16,15 +17,15 @@ _HUMAN_RE = re.compile(
     re.I,
 )
 
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_RUN = Path(
+    "/mnt/data04/144632/zachxu@videorebirth.com/projects/DataPipe/"
+    "s2v_datapipeline/runs/real-hoi-multisource-gallery"
+)
+
 
 def re_human(name: str) -> bool:
     return bool(_HUMAN_RE.search(name or ""))
-
-ROOT = Path(__file__).resolve().parents[1]
-RUN = Path(
-    "/mnt/data04/144632/zachxu@videorebirth.com/projects/DataPipe/s2v_datapipeline/runs/real-hoi-object-gallery"
-)
-MANIFEST = RUN / "stages" / "report" / "part-00000.jsonl"
 
 
 def _ffmpeg_preview(src: Path, mp4: Path, poster: Path) -> dict:
@@ -74,8 +75,18 @@ def _copy_image(src: Path, dst: Path, max_side: int = 720) -> None:
 
 
 def main() -> None:
-    if not MANIFEST.is_file():
-        raise SystemExit(f"missing manifest: {MANIFEST}")
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--run",
+        type=Path,
+        default=DEFAULT_RUN,
+        help="pipeline run directory containing stages/report/part-00000.jsonl",
+    )
+    args = parser.parse_args()
+    run = args.run.resolve()
+    manifest = run / "stages" / "report" / "part-00000.jsonl"
+    if not manifest.is_file():
+        raise SystemExit(f"missing manifest: {manifest}")
 
     media_root = ROOT / "media" / "samples" / "multi_imgs_to_v_real"
     if media_root.exists():
@@ -83,24 +94,8 @@ def main() -> None:
     media_root.mkdir(parents=True)
 
     catalog_path = ROOT / "data" / "catalog.json"
-    catalog = json.loads(catalog_path.read_text()) if catalog_path.exists() else {
-        "title": "S2V / Omni prepared data gallery",
-        "samples": [],
-        "source": {},
-    }
-
-    # Replace previous real multi-ref gallery entries; keep other Omni tasks.
-    kept = [
-        s
-        for s in catalog.get("samples", [])
-        if not (
-            s.get("task") == "multi_imgs_to_v"
-            and s.get("pipeline") in {"sam2_qwen_edit", "sam2_qwen_edit_hoi_object"}
-        )
-    ]
-
     new_samples = []
-    for line in MANIFEST.read_text().splitlines():
+    for line in manifest.read_text().splitlines():
         if not line.strip():
             continue
         row = json.loads(line)
@@ -109,7 +104,6 @@ def main() -> None:
         if status.get("state") == "rejected" or not refs_raw:
             print("skip", row.get("sample_id"), status.get("reason"))
             continue
-        # Prefer object-role references only.
         object_refs = [
             ref
             for ref in refs_raw
@@ -135,6 +129,22 @@ def main() -> None:
             raise FileNotFoundError(f"missing video for {sid}: {video}")
         meta = _ffmpeg_preview(video, out / "target.mp4", out / "poster.jpg")
 
+        # Candidate frames from the video (debug context).
+        frame_urls = []
+        for findex, frame in enumerate(row.get("candidate_frames") or []):
+            frame_path = Path(str(frame.get("path") or ""))
+            if not frame_path.is_file():
+                continue
+            name = f"frame-{findex:02d}.jpg"
+            _copy_image(frame_path, out / name, max_side=640)
+            frame_urls.append(
+                {
+                    "path": f"media/samples/{rel}/{name}",
+                    "frame_index": frame.get("frame_index"),
+                    "timestamp": frame.get("timestamp"),
+                }
+            )
+
         refs = []
         for idx, ref in enumerate(object_refs):
             cutouts = [
@@ -144,7 +154,8 @@ def main() -> None:
             ]
             if not cutouts:
                 primary = Path(
-                    ref.get("cutout")
+                    ref.get("selected_cutout")
+                    or ref.get("cutout")
                     or ref.get("raw_context_crop")
                     or ref.get("context_crop")
                     or ""
@@ -153,12 +164,18 @@ def main() -> None:
                     cutouts = [primary]
             edited = Path(ref.get("edited_reference") or "")
             mask = Path(ref.get("mask_crop") or "")
+            source_frame = Path(ref.get("source_frame") or "")
             entry = {
                 "role": "object",
                 "name": ref.get("name"),
                 "media_type": "image",
                 "views": [],
+                "source_frame_index": ref.get("source_frame_index"),
             }
+            if source_frame.is_file():
+                name = f"ref-{idx:02d}-source-frame.jpg"
+                _copy_image(source_frame, out / name, max_side=640)
+                entry["source_frame"] = f"media/samples/{rel}/{name}"
             for vidx, cutout in enumerate(cutouts):
                 if not cutout.is_file():
                     continue
@@ -169,6 +186,7 @@ def main() -> None:
                 if vidx == 0:
                     entry["raw"] = view_url
                     entry["cutout"] = view_url
+                    entry["pre_edit"] = view_url
             if mask.is_file():
                 name = f"ref-{idx:02d}-mask.jpg"
                 _copy_image(mask, out / name)
@@ -179,9 +197,9 @@ def main() -> None:
                 entry["path"] = f"media/samples/{rel}/{name}"
                 entry["edited"] = entry["path"]
             elif entry.get("raw"):
-                # Qwen skipped (incomplete / no hand fringe): photographic cutout is the ref.
                 entry["path"] = entry["raw"]
                 entry["qwen_skipped"] = ref.get("qwen_skipped")
+                entry["nano_banana_skipped"] = ref.get("nano_banana_skipped")
             refs.append(entry)
 
         text = row.get("text") or {}
@@ -194,13 +212,21 @@ def main() -> None:
             or ""
         )
         source = row.get("source") if isinstance(row.get("source"), dict) else {}
+        dataset = (
+            (source.get("name") if isinstance(source, dict) else None)
+            or row.get("dataset")
+            or "human_w_object"
+        )
         sample = {
             "id": sid,
             "task": "multi_imgs_to_v",
-            "dataset": source.get("name") or row.get("dataset") or "human_w_object",
+            "dataset": dataset,
             "pipeline": "sam2_qwen_edit_hoi_object",
             "prompt": prompt,
-            "original_id": source.get("record_id") or row.get("original_id"),
+            "original_id": (
+                (source.get("record_id") if isinstance(source, dict) else None)
+                or row.get("original_id")
+            ),
             "hand_objects": row.get("hand_objects")
             or [ref.get("name") for ref in object_refs if ref.get("name")],
             "target": {
@@ -208,8 +234,9 @@ def main() -> None:
                 "poster": f"media/samples/{rel}/poster.jpg",
                 **meta,
             },
+            "candidate_frames": frame_urls,
             "references": refs,
-            "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+            "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
             "gemma_scores": [
                 {
                     "name": ref.get("name"),
@@ -230,15 +257,27 @@ def main() -> None:
             ],
         }
         new_samples.append(sample)
-        print("ok", sid, "refs", len(refs))
+        print("ok", sid, dataset, "refs", len(refs), "frames", len(frame_urls))
 
-    catalog["samples"] = new_samples + kept
-    catalog["sample_count"] = len(catalog["samples"])
-    source = catalog.setdefault("source", {})
-    source["real_multiref_run"] = "real-multiref-gallery"
-    source["real_multiref_count"] = len(new_samples)
+    by_dataset: dict[str, int] = {}
+    for sample in new_samples:
+        key = str(sample.get("dataset") or "?")
+        by_dataset[key] = by_dataset.get(key, 0) + 1
+
+    catalog = {
+        "title": "HOI multi_imgs_to_v object-reference gallery",
+        "samples": new_samples,
+        "sample_count": len(new_samples),
+        "source": {
+            "real_multiref_run": run.name,
+            "real_multiref_count": len(new_samples),
+            "task": "multi_imgs_to_v",
+            "pipeline": "sam2_qwen_edit_hoi_object",
+            "by_dataset": by_dataset,
+        },
+    }
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({"added": len(new_samples), "total": catalog["sample_count"]}, indent=2))
+    print(json.dumps({"added": len(new_samples), "total": len(new_samples), "by_dataset": by_dataset, "run": run.name}, indent=2))
 
 
 if __name__ == "__main__":

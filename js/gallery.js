@@ -100,7 +100,8 @@ function collectReferenceTiles(sample) {
   for (const [index, ref] of refs.entries()) {
     const objectName = ref.name || ref.role || `object ${index + 1}`;
     const viewPaths = Array.isArray(ref.views) ? ref.views.filter(Boolean) : [];
-    const selectedCutout = viewPaths[0] || ref.cutout || ref.raw || null;
+    const selectedCutout =
+      ref.pre_edit || viewPaths[0] || ref.cutout || ref.raw || null;
     const edited =
       ref.edited ||
       (ref.path &&
@@ -135,7 +136,6 @@ function collectReferenceTiles(sample) {
         })
       );
     } else if (!edited && selectedCutout && isHoi) {
-      // Fallback when completion was skipped: photographic cutout is the used ref.
       primary.push(
         makeTile({
           label: tileLabel(objectName, "object ref", multiObject),
@@ -146,11 +146,24 @@ function collectReferenceTiles(sample) {
       );
     }
 
-    // Debug row: selected cutout, SAM mask, then remaining multi-view cutouts.
-    if (edited && selectedCutout) {
+    // Debug row per object: source frame → pre-edit → mask → other cutouts.
+    if (ref.source_frame) {
+      const frameLabel =
+        ref.source_frame_index != null
+          ? `source f${ref.source_frame_index}`
+          : "source frame";
       intermediates.push(
         makeTile({
-          label: tileLabel(objectName, "selected cutout", multiObject),
+          label: tileLabel(objectName, frameLabel, multiObject),
+          path: ref.source_frame,
+          objectName,
+        })
+      );
+    }
+    if (selectedCutout) {
+      intermediates.push(
+        makeTile({
+          label: tileLabel(objectName, "pre-edit", multiObject),
           path: selectedCutout,
           objectName,
         })
@@ -179,16 +192,28 @@ function collectReferenceTiles(sample) {
           })
         );
       });
-    } else if (ref.raw && ref.raw !== selectedCutout && ref.raw !== edited) {
-      intermediates.push(
-        makeTile({
-          label: tileLabel(objectName, "raw crop", multiObject),
-          path: ref.raw,
-          objectName,
-        })
-      );
     }
   }
+
+  // Shared video candidate frames after per-object debug tiles.
+  const frames = Array.isArray(sample.candidate_frames)
+    ? sample.candidate_frames
+    : [];
+  frames.forEach((frame, index) => {
+    const path = typeof frame === "string" ? frame : frame?.path;
+    if (!path) return;
+    const idx =
+      typeof frame === "object" && frame.frame_index != null
+        ? frame.frame_index
+        : index;
+    intermediates.push(
+      makeTile({
+        label: `cand f${idx}`,
+        path,
+        objectName: "video",
+      })
+    );
+  });
 
   return { primary, intermediates };
 }
@@ -235,7 +260,14 @@ function renderSample(sample) {
     );
   }
 
-  return el("article", { className: "sample", "data-task": sample.task }, [
+  return el(
+    "article",
+    {
+      className: "sample",
+      "data-task": sample.task,
+      "data-dataset": sample.dataset || "",
+    },
+    [
     el("div", { className: "media-stack" }, [
       el("div", { className: "video-shell" }, [
         video,
@@ -273,17 +305,46 @@ function renderSample(sample) {
         text: `${sample.id}${sample.original_id ? ` · ${sample.original_id}` : ""}`,
       }),
     ]),
-  ]);
+  ]
+  );
 }
 
-function applyFilter(task) {
+function applyFilter(dataset) {
   for (const button of document.querySelectorAll(".filter")) {
-    button.classList.toggle("is-active", button.dataset.task === task);
+    button.classList.toggle("is-active", button.dataset.task === dataset);
   }
   for (const card of document.querySelectorAll(".sample")) {
-    const show = task === "all" || card.dataset.task === task;
+    const show = dataset === "all" || card.dataset.dataset === dataset;
     card.classList.toggle("hidden", !show);
   }
+}
+
+function buildDatasetFilters(samples) {
+  const nav = document.querySelector(".filters");
+  if (!nav) return;
+  const datasets = [
+    ...new Set(
+      samples
+        .map((sample) => sample.dataset)
+        .filter((name) => typeof name === "string" && name)
+    ),
+  ].sort();
+  nav.replaceChildren(
+    el("button", {
+      type: "button",
+      className: "filter is-active",
+      "data-task": "all",
+      text: "All sources",
+    }),
+    ...datasets.map((name) =>
+      el("button", {
+        type: "button",
+        className: "filter",
+        "data-task": name,
+        text: name.replace(/_/g, " "),
+      })
+    )
+  );
 }
 
 async function main() {
@@ -291,28 +352,29 @@ async function main() {
   if (!res.ok) throw new Error(`catalog.json failed: ${res.status}`);
   const catalog = await res.json();
   const source = catalog.source || {};
+  const samples = (catalog.samples || []).filter(
+    (sample) => sample.task === "multi_imgs_to_v"
+  );
+  const byDataset = source.by_dataset || {};
 
   document.getElementById("hero-meta").replaceChildren(
     el("span", {}, [
-      el("strong", { text: fmt(catalog.sample_count) }),
-      " shown here",
+      el("strong", { text: fmt(samples.length) }),
+      " multi_imgs_to_v",
     ]),
     el("span", {}, [
-      el("strong", { text: fmt(source.records_omni || 0) }),
-      " omni_v3 rows",
+      el("strong", { text: fmt(Object.keys(byDataset).length || new Set(samples.map((s) => s.dataset)).size) }),
+      " sources",
     ]),
     el("span", {}, [
-      el("strong", { text: fmt(source.records_aux || 0) }),
-      " aux rows",
-    ]),
-    el("span", {}, [
-      el("strong", { text: fmt(source.rejected_zero_byte || 0) }),
-      " zero-byte rejects",
+      el("strong", { text: source.real_multiref_run || "—" }),
+      " run",
     ])
   );
 
+  buildDatasetFilters(samples);
   const gallery = document.getElementById("gallery");
-  gallery.replaceChildren(...(catalog.samples || []).map(renderSample));
+  gallery.replaceChildren(...samples.map(renderSample));
 
   document.querySelector(".filters").addEventListener("click", (event) => {
     const button = event.target.closest(".filter");

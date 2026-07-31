@@ -1,25 +1,5 @@
 {
-  "title": "S2V / Omni prepared data gallery",
-  "source": {
-    "omni_v3": "omni_v3",
-    "omni_aux_v1": "omni_aux_v1",
-    "records_omni": 4483787,
-    "records_aux": 64,
-    "tasks_omni": {
-      "multi_imgs_to_v": 670300,
-      "t2v": 1659532,
-      "tiv2v": 524712,
-      "v2v": 1629243
-    },
-    "tasks_aux": {
-      "i2v": 32,
-      "key_frames_to_v": 32
-    },
-    "rejected_zero_byte": 31083,
-    "real_multiref_run": "real-multiref-gallery",
-    "real_multiref_count": 7
-  },
-  "sample_count": 24,
+  "title": "HOI multi_imgs_to_v object-reference gallery",
   "samples": [
     {
       "id": "s2v_99e6641431434c95fcf687c94a73f197",
@@ -39,6 +19,33 @@
         "height": 1440,
         "duration_sec": 7.167
       },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-01.jpg",
+          "frame_index": 42,
+          "timestamp": 1.75
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-02.jpg",
+          "frame_index": 84,
+          "timestamp": 3.5
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-03.jpg",
+          "frame_index": 127,
+          "timestamp": 5.291666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-04.jpg",
+          "frame_index": 169,
+          "timestamp": 7.041666666666667
+        }
+      ],
       "references": [
         {
           "role": "object",
@@ -49,8 +56,11 @@
             "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-01.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-02.jpg"
           ],
+          "source_frame_index": 42,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-00-edited.jpg"
@@ -64,14 +74,17 @@
             "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-01.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-02.jpg"
           ],
+          "source_frame_index": 42,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
           "name": "glass jar",
@@ -114,6 +127,33 @@
         "height": 1440,
         "duration_sec": 7.25
       },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-01.jpg",
+          "frame_index": 43,
+          "timestamp": 1.7916666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-02.jpg",
+          "frame_index": 86,
+          "timestamp": 3.5833333333333335
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-03.jpg",
+          "frame_index": 128,
+          "timestamp": 5.333333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-04.jpg",
+          "frame_index": 171,
+          "timestamp": 7.125
+        }
+      ],
       "references": [
         {
           "role": "object",
@@ -125,14 +165,17 @@
             "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-02.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-03.jpg"
           ],
+          "source_frame_index": 43,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
           "name": "hair styling tool",
@@ -166,6 +209,33 @@
         "height": 1080,
         "duration_sec": 6.75
       },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-01.jpg",
+          "frame_index": 40,
+          "timestamp": 1.6666666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-02.jpg",
+          "frame_index": 80,
+          "timestamp": 3.3333333333333335
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-03.jpg",
+          "frame_index": 119,
+          "timestamp": 4.958333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-04.jpg",
+          "frame_index": 159,
+          "timestamp": 6.625
+        }
+      ],
       "references": [
         {
           "role": "object",
@@ -177,8 +247,11 @@
             "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-02.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-03.jpg"
           ],
+          "source_frame_index": 40,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-00-edited.jpg"
@@ -191,14 +264,17 @@
             "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-00.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-01.jpg"
           ],
+          "source_frame_index": 119,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
           "name": "chopsticks",
@@ -241,6 +317,33 @@
         "height": 1080,
         "duration_sec": 5.459
       },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-01.jpg",
+          "frame_index": 32,
+          "timestamp": 1.3333333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-02.jpg",
+          "frame_index": 64,
+          "timestamp": 2.6666666666666665
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-03.jpg",
+          "frame_index": 96,
+          "timestamp": 4.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-04.jpg",
+          "frame_index": 128,
+          "timestamp": 5.333333333333333
+        }
+      ],
       "references": [
         {
           "role": "object",
@@ -249,14 +352,17 @@
           "views": [
             "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-00.jpg"
           ],
+          "source_frame_index": 128,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
           "name": "small rectangular object",
@@ -289,6 +395,33 @@
         "height": 1440,
         "duration_sec": 5.75
       },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-01.jpg",
+          "frame_index": 34,
+          "timestamp": 1.4166666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-02.jpg",
+          "frame_index": 68,
+          "timestamp": 2.8333333333333335
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-03.jpg",
+          "frame_index": 101,
+          "timestamp": 4.208333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-04.jpg",
+          "frame_index": 135,
+          "timestamp": 5.625
+        }
+      ],
       "references": [
         {
           "role": "object",
@@ -299,14 +432,17 @@
             "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-01.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-02.jpg"
           ],
+          "source_frame_index": 68,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
           "name": "spray can",
@@ -339,6 +475,33 @@
         "height": 1440,
         "duration_sec": 6.084
       },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-01.jpg",
+          "frame_index": 36,
+          "timestamp": 1.5
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-02.jpg",
+          "frame_index": 72,
+          "timestamp": 3.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-03.jpg",
+          "frame_index": 107,
+          "timestamp": 4.458333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-04.jpg",
+          "frame_index": 143,
+          "timestamp": 5.958333333333333
+        }
+      ],
       "references": [
         {
           "role": "object",
@@ -349,14 +512,17 @@
             "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-01.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-02.jpg"
           ],
+          "source_frame_index": 72,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
           "name": "blender jar",
@@ -390,6 +556,33 @@
         "height": 1080,
         "duration_sec": 7.959
       },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-01.jpg",
+          "frame_index": 47,
+          "timestamp": 1.9583333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-02.jpg",
+          "frame_index": 94,
+          "timestamp": 3.9166666666666665
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-03.jpg",
+          "frame_index": 141,
+          "timestamp": 5.875
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-04.jpg",
+          "frame_index": 188,
+          "timestamp": 7.833333333333333
+        }
+      ],
       "references": [
         {
           "role": "object",
@@ -399,8 +592,11 @@
             "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-00.jpg",
             "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-01.jpg"
           ],
+          "source_frame_index": 141,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-00-edited.jpg"
@@ -412,14 +608,17 @@
           "views": [
             "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg"
           ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-source-frame.jpg",
           "raw": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
           "cutout": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-view-00.jpg",
           "mask": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-mask.jpg",
           "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-edited.jpg",
           "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 cutouts → Gemma-4(+caption) rank/reject → DINO → Nano Banana(source+cutout+caption) complete",
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
           "name": "white coiled cable",
@@ -444,398 +643,16 @@
         "nano_banana",
         "nano_banana"
       ]
-    },
-    {
-      "id": "omni_fcfa970385806077912cda9aa5312cd5",
-      "task": "t2v",
-      "dataset": "hoigen",
-      "prompt": "In the video, we see a lively scene at a restaurant. The main focus is on two men sitting at a table. The man on the left is dressed in a black t-shirt and a baseball cap, while the man on the right is wearing a white t-shirt adorned with a black and white panda design.  The man on the right is holding a glass of wine, which he is sipping from. He is also holding a bottle of hot sauce, suggesting he might be adding some spice to his meal. He is gesturing with his hand, possibly in the middle of a conversation or making a point.  The table is set with various items including a plate of food, a glass of water, and a bottle of hot sauce. The background of the image reveals a lush green garden, adding a touch of nature to the scene.  The overall atmosphere of the video suggests a casual and relaxed dining experience. The men seem to be enjoying their time together, engaged in conversation and enjoying their meal. The hot sauce and wine add a touch of spice and sophistication to the scene.",
-      "original_id": "zYlW81GZYug-0:03:01.890-0:03:05.602.mp4",
-      "archive_group": "videos_part_1.zip",
-      "target": {
-        "path": "media/samples/t2v/omni_fcfa970385806077912cda9aa5312cd5/target.mp4",
-        "poster": "media/samples/t2v/omni_fcfa970385806077912cda9aa5312cd5/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 3.838
-      },
-      "references": []
-    },
-    {
-      "id": "omni_f45e12c31b33a4269a7085a25e0ecc21",
-      "task": "t2v",
-      "dataset": "hoigen",
-      "prompt": "The video is a short, dynamic clip with a shallow depth of field, focusing on a person's hands holding a camera. The camera is mounted on a tripod, and the person appears to be adjusting the camera settings or preparing to take a shot. The background is blurred, with warm, golden hues suggesting either sunrise or sunset. The lighting is bright, with the sun's rays creating lens flares and highlights on the camera and the person's hands.  In the foreground, there is a text overlay that reads \"ONE MILLION\" in bold, capital letters. The text is superimposed on the image and is the only text present in the video. The font is white with a slight shadow effect, making it stand out against the bright background.  The style of the video suggests it could be a promotional or celebratory video, possibly related to a milestone or achievement, given the text overlay. The camera movement and the person's actions imply a sense of anticipation or preparation for capturing a significant moment. The overall composition of the video is designed to draw attention to the text and the camera, with the person's face and identity remaining out of focus.",
-      "original_id": "auahRt7V0Eg-0:04:18.766-0:04:23.500.mp4",
-      "archive_group": "videos_part_1.zip",
-      "target": {
-        "path": "media/samples/t2v/omni_f45e12c31b33a4269a7085a25e0ecc21/target.mp4",
-        "poster": "media/samples/t2v/omni_f45e12c31b33a4269a7085a25e0ecc21/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 4.8
-      },
-      "references": []
-    },
-    {
-      "id": "omni_8995fb39804e2e456366d2bae09eabd5",
-      "task": "t2v",
-      "dataset": "human_w_object",
-      "prompt": "One main subject appears: a young woman in an indoor studio or room. The environment is warmly lit with artificial light, suggesting evening or night. The visual style is everyday lifestyle with a clean, polished digital look.\n\n[First frame] A medium close-up at eye level captures a young woman with long dark hair, wearing a white sleeveless top, positioned slightly left of center. She holds a large black microphone close to her face with her right hand, her gaze directed slightly off-camera to the left. To her right, a white artichoke-style lamp and a vase of pink tulips are visible against dark grey curtains.\n\n[Shot 1] [00:00-00:02] [Medium close-up, eye level, static] The camera remains fixed on the young woman as she holds the microphone steady, her lips slightly parted as if preparing to speak or sing. Her long black hair cascades over her shoulders, and a subtle light blue earbud is visible in her left ear. The warm, soft lighting from the lamp in the background creates a gentle glow on the right side of her face and the folds of the background curtains, maintaining a serene and intimate mood.\n\n[Shot 1] [00:02-00:04] [Medium close-up, eye level, static] Continuing the same quiet posture, the woman begins to blink and slightly shifts her gaze further toward the left. As the moment progresses, she slowly lowers the black microphone away from her face, moving it toward the bottom left corner of the frame. This action reveals more of her white ribbed top and the delicate silver necklace around her neck. The background elements, including the glowing lamp and tulips, remain unchanged, preserving the calm and professional atmosphere of the scene.\n\n[Last frame] A medium close-up at eye level shows the young woman with her gaze fixed off-camera to the left, her mouth closed in a neutral expression. The black microphone is now positioned lower in the frame, partially out of view near the bottom left. The white artichoke lamp and pink tulips remain clearly visible in the background against the dark grey curtains, illuminated by the same warm, soft light.",
-      "original_id": "228114390260072_frames=320-416_sim=0",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/target.mp4",
-        "poster": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 4.455
-      },
-      "references": []
-    },
-    {
-      "id": "omni_bcfed1cd800c89a16ab9edee07e10035",
-      "task": "t2v",
-      "dataset": "human_w_object",
-      "prompt": "A single female subject appears in an indoor setting at night. The lighting is artificial and dim, featuring a lamp in the background. The visual style is everyday lifestyle, characterized by a handheld vertical mobile-phone aesthetic.\n\n[First frame] A close-up shot at eye level frames a young woman with long dark hair and bangs in the center. She wears a fuzzy white cardigan and a pearl necklace with a silver pendant. She holds a white plastic bottle with pink and black text in the lower right foreground, gazing toward the camera with a slight smile.\n\n[Shot 1] [00:00-00:03] [Close-up, eye level, static] The camera maintains a tight frame on the woman as she speaks to the audience. She holds the bottle steady initially, then begins to tilt and rotate it slightly while her facial expressions shift from a smile to a more focused, talking state. The dim indoor background with a glowing lampshade remains consistent as she articulates her words. Her dark eyes reflect the soft frontal light, emphasizing her doll-like makeup and features.\n\n[Shot 1] [00:03-00:07] [Close-up, eye level, slight handheld shake] Continuing her dialogue, she begins to move the bottle more actively in the foreground, shaking it gently to draw attention to the product. The camera follows her subtle head tilts as she glances briefly at the bottle before returning her gaze to the lens. Her expression becomes more animated with frequent blinking and lip movements, while the pearl necklace catches the low-light glints. The scene maintains a personal, vlog-like atmosphere through the end of the sequence.\n\n[Last frame] A close-up at eye level captures the woman in a near-identical composition to the start, but her mouth is closed in a soft pout. She is centered in the frame, with the white cardigan and pearl necklace clearly visible. The plastic bottle is positioned in the lower right corner, partially obscuring her shoulder, while the warm glow of the lamp persists in the dark background.",
-      "original_id": "963627904099023_frames=160-320_sim=0",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/target.mp4",
-        "poster": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 7.364
-      },
-      "references": []
-    },
-    {
-      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "task": "multi_imgs_to_v",
-      "dataset": "human_portrait_annolabeled",
-      "prompt": "[object1] is young woman. One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand",
-      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "archive_group": "0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.417
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-00.jpg"
-        },
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_e749494f09daa39c57c6c2a849f7a25b",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the person walking on the snowy path.",
-      "original_id": "000000004191_2125622_000000_000137_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/target.mp4",
-        "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00-poster.jpg",
-          "width": 1282,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_3f7306a0591f506cde63fc178e4b0580",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the large, orange Staten Island Ferry back to the pier.",
-      "original_id": "000000014515_3918091_000000_000289_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/target.mp4",
-        "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00-poster.jpg",
-          "width": 1282,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_a1ecce127343ecda5d135918ed4898a3",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the concrete stairs on the bottom left.",
-      "original_id": "000000011886_3704254_000300_000449_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/target.mp4",
-        "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/poster.jpg",
-        "width": 1372,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00-poster.jpg",
-          "width": 1372,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_229545867d37ac1a6881c4afe41b3f0d",
-      "task": "tiv2v",
-      "dataset": "goku",
-      "prompt": "Add a cluster of delicate, five-petaled white flowers, identified as apple blossoms, on a thin branch. They are located in the upper-left quadrant of the screen, being held and smelled by the woman. The object to add is shown in the reference image.",
-      "original_id": "00thptg24nmnb4il_clip_0000_meta_v0_refadd",
-      "archive_group": "reference_add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/target.mp4",
-        "poster": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/poster.jpg",
-        "width": 1360,
-        "height": 720,
-        "duration_sec": 8.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/ref-00.mp4",
-          "poster": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/ref-00-poster.jpg",
-          "width": 1360,
-          "height": 720,
-          "duration_sec": 8.08
-        },
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_006e6a3f1b03f888d251409f47fffedf",
-      "task": "tiv2v",
-      "dataset": "goku",
-      "prompt": "Add a long-sleeved sweater worn by the woman on the left. It has a pattern of horizontal stripes in shades of pink and purple. It is located on the woman standing on the left side of the frame. The object to add is shown in the reference image.",
-      "original_id": "03sbtj2hrvbtx80v_clip_0000_meta_v0_refadd",
-      "archive_group": "reference_add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/target.mp4",
-        "poster": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 8.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/ref-00.mp4",
-          "poster": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/ref-00-poster.jpg",
-          "width": 1280,
-          "height": 720,
-          "duration_sec": 8.08
-        },
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_1096cf61aab15f8ab50bb413f8dd2c9c",
-      "task": "tiv2v",
-      "dataset": "goku",
-      "prompt": "Add the background of the entire scene consists of a dense forest canopy with vibrant green leaves. Sunlight filters through from above, creating bright spots and a bokeh effect. The object to add is shown in the reference image.",
-      "original_id": "03x18k269j2tfujw_clip_0000_meta_v0_item2_refadd",
-      "archive_group": "reference_add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/target.mp4",
-        "poster": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 8.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/ref-00.mp4",
-          "poster": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/ref-00-poster.jpg",
-          "width": 1280,
-          "height": 720,
-          "duration_sec": 8.08
-        },
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "task": "i2v",
-      "dataset": "human_portrait_annolabeled",
-      "prompt": "One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand.",
-      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/i2v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
-        "poster": "media/samples/i2v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.417
-      },
-      "references": []
-    },
-    {
-      "id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "task": "i2v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "[object1] is main subject",
-      "original_id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/i2v/s2v_0d772056f9cc6685288b145a42d387a2/target.mp4",
-        "poster": "media/samples/i2v/s2v_0d772056f9cc6685288b145a42d387a2/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 5.084
-      },
-      "references": []
-    },
-    {
-      "id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "task": "i2v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "The scene opens with a medium shot, framing a fair-skinned woman with shoulder-length, platinum blonde hair and clear-framed eyeglasses. She is wearing a light pink t-shirt with white text, partially visible as \"in My.\" The camera is static, maintaining a consistent eye-level perspective. The background reveals a domestic kitchen setting, with light beige cabinetry on the left, and a stainless steel refrigerator on the right, adorned with a small, dark rectangular magnet and a red and green holiday-themed ornament. The lighting is soft and even, emanating from an unseen overhead source, casting minimal shadows and illuminating the subject's face and the immediate surroundings with a warm, inviting glow. The woman holds a small, clear glass spice jar with a red label and a white lid in her left hand, positioned slightly below her chin. Her gaze is directed towards the jar, and her lips are slightly parted, suggesting a contemplative or curious expression. As the shot progresses, she lifts the jar slightly, bringing it closer to the camera, revealing the text \"CHILE LIME\" on the red label. Her expression shifts to a more direct, engaging look, as if addressing an unseen audience. She then briefly touches her right temple with the jar, a subtle, almost playful gesture, before returning it to its original position. Her eyes maintain direct contact with the camera, and a slight, knowing smile plays on her lips. The camera remains fixed, capturing the nuances of her facial expressions and the subtle shifts in her posture. The final action involves her bringing a long, rectangular, reddish-pink object, possibly a piece of fruit or candy, into the lower foreground, obscuring the bottom portion of her t-shirt. The object is held horizontally, parallel to the bottom edge of the frame, and is slightly out of focus, drawing attention to the woman's face and the spice jar. The overall composition is balanced, with the subject centrally framed, and the background providing context without distracting from the main action. The color palette is dominated by the warm tones of the woman's hair and skin, the soft pink of her shirt, and the muted beige of the cabinetry, contrasted by the cool metallic sheen of the refrigerator and the vibrant red of the spice jar label.",
-      "original_id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/i2v/s2v_dd22de8858bfc1e272092d0a9d5248df/target.mp4",
-        "poster": "media/samples/i2v/s2v_dd22de8858bfc1e272092d0a9d5248df/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 6.549
-      },
-      "references": []
-    },
-    {
-      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "task": "key_frames_to_v",
-      "dataset": "human_portrait_annolabeled",
-      "prompt": "One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand.",
-      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.417
-      },
-      "references": [
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-00.jpg"
-        },
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "task": "key_frames_to_v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "[object1] is main subject",
-      "original_id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 5.084
-      },
-      "references": [
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-00.jpg"
-        },
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "task": "key_frames_to_v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "The scene opens with a medium shot, framing a fair-skinned woman with shoulder-length, platinum blonde hair and clear-framed eyeglasses. She is wearing a light pink t-shirt with white text, partially visible as \"in My.\" The camera is static, maintaining a consistent eye-level perspective. The background reveals a domestic kitchen setting, with light beige cabinetry on the left, and a stainless steel refrigerator on the right, adorned with a small, dark rectangular magnet and a red and green holiday-themed ornament. The lighting is soft and even, emanating from an unseen overhead source, casting minimal shadows and illuminating the subject's face and the immediate surroundings with a warm, inviting glow. The woman holds a small, clear glass spice jar with a red label and a white lid in her left hand, positioned slightly below her chin. Her gaze is directed towards the jar, and her lips are slightly parted, suggesting a contemplative or curious expression. As the shot progresses, she lifts the jar slightly, bringing it closer to the camera, revealing the text \"CHILE LIME\" on the red label. Her expression shifts to a more direct, engaging look, as if addressing an unseen audience. She then briefly touches her right temple with the jar, a subtle, almost playful gesture, before returning it to its original position. Her eyes maintain direct contact with the camera, and a slight, knowing smile plays on her lips. The camera remains fixed, capturing the nuances of her facial expressions and the subtle shifts in her posture. The final action involves her bringing a long, rectangular, reddish-pink object, possibly a piece of fruit or candy, into the lower foreground, obscuring the bottom portion of her t-shirt. The object is held horizontally, parallel to the bottom edge of the frame, and is slightly out of focus, drawing attention to the woman's face and the spice jar. The overall composition is balanced, with the subject centrally framed, and the background providing context without distracting from the main action. The color palette is dominated by the warm tones of the woman's hair and skin, the soft pink of her shirt, and the muted beige of the cabinetry, contrasted by the cool metallic sheen of the refrigerator and the vibrant red of the spice jar label.",
-      "original_id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 6.549
-      },
-      "references": [
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-00.jpg"
-        },
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-01.jpg"
-        }
-      ]
     }
   ],
-  "errors": []
+  "sample_count": 7,
+  "source": {
+    "real_multiref_run": "real-hoi-object-gallery",
+    "real_multiref_count": 7,
+    "task": "multi_imgs_to_v",
+    "pipeline": "sam2_qwen_edit_hoi_object",
+    "by_dataset": {
+      "datatang_human_object_annolabeled": 7
+    }
+  }
 }
