@@ -2,6 +2,260 @@
   "title": "HOI multi_imgs_to_v object-reference gallery",
   "samples": [
     {
+      "id": "s2v_04cfc3b45e814cefb29ecfc7923ff49d",
+      "task": "multi_imgs_to_v",
+      "dataset": "HOIGen-1M",
+      "pipeline": "sam2_qwen_edit_hoi_object",
+      "prompt": "The video shows two boys engaged in a science experiment at a table. The boy on the left, wearing a yellow shirt and goggles, is holding a piece of paper and talking. The boy on the right, wearing a striped shirt and goggles, is stirring a mixture in a measuring cup. They are both sitting in front of a red wall with various items on it, including a globe and a poster. The table in front of them has a blue surface and is covered with various items, including a measuring cup, a bottle of liquid, and a clear container. The boys appear to be enjoying themselves, laughing and talking as they work on their experiment. The video captures a moment of learning and fun, with the boys exploring the world of science together.",
+      "original_id": "RQnw937GpFk-0:01:23.760-0:01:41.760.mp4",
+      "hand_objects": [
+        "spoon",
+        "bag"
+      ],
+      "target": {
+        "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/poster.jpg",
+        "width": 1280,
+        "height": 720,
+        "duration_sec": 18.04
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-01.jpg",
+          "frame_index": 90,
+          "timestamp": 3.6
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-02.jpg",
+          "frame_index": 180,
+          "timestamp": 7.2
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-03.jpg",
+          "frame_index": 270,
+          "timestamp": 10.8
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-04.jpg",
+          "frame_index": 360,
+          "timestamp": 14.4
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-05.jpg",
+          "frame_index": 450,
+          "timestamp": 18.0
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "spoon",
+          "media_type": "image",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-edited.jpg"
+        }
+      ],
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
+      "gemma_scores": [
+        {
+          "name": "spoon",
+          "overall": 6.0,
+          "sharpness": 5.0,
+          "completeness": 8.0,
+          "cleanliness": 7.0,
+          "reject": false,
+          "reason": "Most recognizable as a spoon, though slightly blurry."
+        }
+      ],
+      "completion_backend": [
+        "nano_banana"
+      ]
+    },
+    {
+      "id": "s2v_a1c4858bccf4c5abc387e19f5a197889",
+      "task": "multi_imgs_to_v",
+      "dataset": "HOIGen-1M",
+      "pipeline": "sam2_qwen_edit_hoi_object",
+      "prompt": "The video is a short, informative segment featuring a man in a kitchen setting. The man appears to be of African descent and is wearing a dark vest over a light-colored shirt. He is holding a small plate with a spoonful of what looks like coffee beans. The man is speaking in a language that uses the Devanagari script, which is commonly used in several Indian languages.  The background of the image shows a kitchen counter with various items on it, including a coffee machine, a blender, and several bottles and jars that might contain coffee-related products. There is also a sign that reads \"TIBETAN MINT\" in English, suggesting that the location might be a cafe or a place that serves coffee.  The man is gesturing with his hands as he speaks, and his facial expression is serious. The lighting in the room is bright, and the overall atmosphere seems to be one of instruction or explanation. The text on the screen is in Korean, and it reads \"커피 빵 맛 좋아요\" which translates to \"Coffee is delicious\" in English.  The video appears to be a part of a larger series or program, as indicated by the text at the bottom of the screen. The style of the video is straightforward and educational, with a focus on the man presenting",
+      "original_id": "wfeO34bxEWc-0:09:28.367-0:09:37.710.mp4",
+      "hand_objects": [
+        "cup"
+      ],
+      "target": {
+        "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/poster.jpg",
+        "width": 1280,
+        "height": 720,
+        "duration_sec": 9.377
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-01.jpg",
+          "frame_index": 56,
+          "timestamp": 1.8685333333333334
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-02.jpg",
+          "frame_index": 112,
+          "timestamp": 3.7370666666666668
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-03.jpg",
+          "frame_index": 168,
+          "timestamp": 5.6056
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-04.jpg",
+          "frame_index": 224,
+          "timestamp": 7.4741333333333335
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-05.jpg",
+          "frame_index": 280,
+          "timestamp": 9.342666666666666
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "cup",
+          "media_type": "image",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-02.jpg"
+          ],
+          "source_frame_index": 168,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-edited.jpg"
+        }
+      ],
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
+      "gemma_scores": [
+        {
+          "name": "cup",
+          "overall": 8.0,
+          "sharpness": 6.0,
+          "completeness": 9.0,
+          "cleanliness": 8.0,
+          "reject": false,
+          "reason": "Most complete view of the cup with the least amount of transparency/missing pixels."
+        }
+      ],
+      "completion_backend": [
+        "nano_banana"
+      ]
+    },
+    {
+      "id": "s2v_a8356b8b490737fd1b822e389344c07a",
+      "task": "multi_imgs_to_v",
+      "dataset": "HOIGen-1M",
+      "pipeline": "sam2_qwen_edit_hoi_object",
+      "prompt": "In the video, a man is standing in front of a large screen displaying a webpage. He is holding a tablet in his right hand, which he is pointing towards the screen. The man appears to be explaining or demonstrating something on the screen, as he is looking directly at the camera while holding the tablet. The screen behind him shows a variety of content, including text and images, suggesting that it is a website or a presentation. The man is wearing a blue t-shirt, and the setting appears to be indoors, possibly in an office or a classroom. The lighting in the room is bright, and the man's facial expression suggests he is engaged in the presentation. The tablet he is holding is black, and the screen on it is turned on, displaying a different interface than the one on the large screen. The man's left hand is resting on his hip, and he is standing with his feet shoulder-width apart. The camera remains stationary throughout the video, focusing on the man and the screen behind him.",
+      "original_id": "2he74ag4eIo-0:11:27.653-0:11:29.855.mp4",
+      "hand_objects": [
+        "tablet"
+      ],
+      "target": {
+        "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/poster.jpg",
+        "width": 1280,
+        "height": 720,
+        "duration_sec": 2.269
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/frame-01.jpg",
+          "frame_index": 13,
+          "timestamp": 0.4337666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/frame-02.jpg",
+          "frame_index": 27,
+          "timestamp": 0.9009
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/frame-03.jpg",
+          "frame_index": 40,
+          "timestamp": 1.3346666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/frame-04.jpg",
+          "frame_index": 54,
+          "timestamp": 1.8018
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/frame-05.jpg",
+          "frame_index": 67,
+          "timestamp": 2.2355666666666667
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "tablet",
+          "media_type": "image",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-view-02.jpg"
+          ],
+          "source_frame_index": 13,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a8356b8b490737fd1b822e389344c07a/ref-00-edited.jpg"
+        }
+      ],
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
+      "gemma_scores": [
+        {
+          "name": "tablet",
+          "overall": 6.0,
+          "sharpness": 5.0,
+          "completeness": 8.0,
+          "cleanliness": 7.0,
+          "reject": false,
+          "reason": "Most complete view of the tablet, though still blurry."
+        }
+      ],
+      "completion_backend": [
+        "nano_banana"
+      ]
+    },
+    {
       "id": "s2v_0b57ed834675de6f5f4838c0c2fce1c4",
       "task": "multi_imgs_to_v",
       "dataset": "abakatrain_gemmalabeled",
@@ -366,6 +620,92 @@
       ]
     },
     {
+      "id": "s2v_a03a4e8a07b47523c336977d8819debc",
+      "task": "multi_imgs_to_v",
+      "dataset": "datatang_human_object_annolabeled",
+      "pipeline": "sam2_qwen_edit_hoi_object",
+      "prompt": "The scene opens with a static medium shot, framing a male subject from the waist up, positioned slightly right of center, in a modern kitchen setting. The camera maintains a fixed eye-level perspective, capturing the subject's upper torso and the expansive wooden countertop in the foreground. The lighting is predominantly overhead, emanating from a large, circular ceiling fixture, casting a soft, even illumination across the subject and the countertop, with subtle shadows delineating the objects. The background, a sleek, dark gray kitchen with integrated appliances, is softly diffused, maintaining focus on the foreground elements. The subject, a man with dark, curly hair and a neatly trimmed beard, is dressed in a dark green and black plaid shirt. His expression is one of focused concentration, his brow slightly furrowed as he meticulously unscrews the cap of a white plastic bottle, held firmly in his left hand. His right hand, with fingers splayed, supports the base of the bottle, demonstrating a precise, controlled gesture. On the polished wooden countertop, an array of culinary items is meticulously arranged: a vibrant pink mixing bowl, a white paper towel holder with a roll, a clear glass bottle of olive oil, a silver mixing bowl, a carton of eggs, and various spice jars of differing sizes and shapes, all contributing to the visual narrative of food preparation. To the right, a second, larger orange mixing bowl is visible, along with another white bottle and a yellow square object, possibly a cheese slice wrapper. The composition is balanced, with the subject's action serving as the focal point, surrounded by the tools of his task. The overall visual tone is clean and functional, emphasizing the domestic yet purposeful activity unfolding within the frame.",
+      "original_id": "008734_human-object-interaction_4_frames_145-295",
+      "hand_objects": [
+        "white plastic bottle"
+      ],
+      "target": {
+        "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/poster.jpg",
+        "width": 1920,
+        "height": 1080,
+        "duration_sec": 5.084
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-01.jpg",
+          "frame_index": 24,
+          "timestamp": 1.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-02.jpg",
+          "frame_index": 48,
+          "timestamp": 2.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-03.jpg",
+          "frame_index": 71,
+          "timestamp": 2.9583333333333335
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-04.jpg",
+          "frame_index": 95,
+          "timestamp": 3.9583333333333335
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-05.jpg",
+          "frame_index": 119,
+          "timestamp": 4.958333333333333
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "white plastic bottle",
+          "media_type": "image",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-02.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-03.jpg"
+          ],
+          "source_frame_index": 71,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-edited.jpg"
+        }
+      ],
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
+      "gemma_scores": [
+        {
+          "name": "white plastic bottle",
+          "overall": 8.0,
+          "sharpness": 6.0,
+          "completeness": 9.0,
+          "cleanliness": 9.0,
+          "reject": false,
+          "reason": "Most complete and cleanest cutout of the bottle."
+        }
+      ],
+      "completion_backend": [
+        "nano_banana"
+      ]
+    },
+    {
       "id": "s2v_e8f229e626a6f0f2ccc5a452c729a341",
       "task": "multi_imgs_to_v",
       "dataset": "datatang_human_object_annolabeled",
@@ -452,85 +792,83 @@
       ]
     },
     {
-      "id": "s2v_a03a4e8a07b47523c336977d8819debc",
+      "id": "s2v_9adf2e2a3a97fd16124562c0d8af7ac1",
       "task": "multi_imgs_to_v",
-      "dataset": "datatang_human_object_annolabeled",
+      "dataset": "datatang_human_woobject_gemmalabeled",
       "pipeline": "sam2_qwen_edit_hoi_object",
-      "prompt": "The scene opens with a static medium shot, framing a male subject from the waist up, positioned slightly right of center, in a modern kitchen setting. The camera maintains a fixed eye-level perspective, capturing the subject's upper torso and the expansive wooden countertop in the foreground. The lighting is predominantly overhead, emanating from a large, circular ceiling fixture, casting a soft, even illumination across the subject and the countertop, with subtle shadows delineating the objects. The background, a sleek, dark gray kitchen with integrated appliances, is softly diffused, maintaining focus on the foreground elements. The subject, a man with dark, curly hair and a neatly trimmed beard, is dressed in a dark green and black plaid shirt. His expression is one of focused concentration, his brow slightly furrowed as he meticulously unscrews the cap of a white plastic bottle, held firmly in his left hand. His right hand, with fingers splayed, supports the base of the bottle, demonstrating a precise, controlled gesture. On the polished wooden countertop, an array of culinary items is meticulously arranged: a vibrant pink mixing bowl, a white paper towel holder with a roll, a clear glass bottle of olive oil, a silver mixing bowl, a carton of eggs, and various spice jars of differing sizes and shapes, all contributing to the visual narrative of food preparation. To the right, a second, larger orange mixing bowl is visible, along with another white bottle and a yellow square object, possibly a cheese slice wrapper. The composition is balanced, with the subject's action serving as the focal point, surrounded by the tools of his task. The overall visual tone is clean and functional, emphasizing the domestic yet purposeful activity unfolding within the frame.",
-      "original_id": "008734_human-object-interaction_4_frames_145-295",
+      "prompt": "The scene opens with a static medium shot, framing a young woman from the chest up, centered within the frame. Her blonde hair, parted slightly off-center, falls just above her shoulders, catching the soft, diffused overhead light that illuminates her face evenly, minimizing harsh shadows. Her complexion appears natural, with no discernible makeup, and her expression is animated, characterized by slightly raised eyebrows and an open mouth as she speaks, conveying an engaging and conversational tone. She wears a simple black t-shirt, its dark fabric contrasting subtly with her fair skin. Her hands are active within the lower third of the frame, gesturing expressively as she talks, occasionally holding a small, light-colored cylindrical object, possibly a cosmetic product, which she manipulates with her fingers. The background reveals a bathroom setting, with a tiled wall directly behind her, featuring a horizontal band of dark gray tiles interspersed with white tiles, creating a geometric pattern. Above this, a wooden shelf holds an assortment of toiletries and bottles, reflected in a mirror that spans the length of the shelf, suggesting a vanity area. To the right, a wooden door with frosted glass panels is partially visible, leading to what appears to be another section of the bathroom, possibly containing a bathtub, hinted at by a white rim in the lower right corner. The overall lighting is bright and consistent, suggesting either natural light from an unseen window or well-distributed artificial lighting, creating a clean and functional aesthetic. The camera maintains a fixed position throughout the sequence, with no discernible panning, tilting, or zooming, keeping the focus squarely on the woman and her expressive delivery. Her gestures are fluid and natural, emphasizing her points as she speaks, her eyes maintaining direct contact with the camera, creating a sense of intimacy and direct address. No prominent text appears in the video.",
+      "original_id": "015041_talking_18_frames_1-324",
       "hand_objects": [
-        "white plastic bottle"
+        "cosmetic product"
       ],
       "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/poster.jpg",
+        "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/poster.jpg",
         "width": 1920,
         "height": 1080,
-        "duration_sec": 5.084
+        "duration_sec": 6.584
       },
       "candidate_frames": [
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-00.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-00.jpg",
           "frame_index": 0,
           "timestamp": 0.0
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-01.jpg",
-          "frame_index": 24,
-          "timestamp": 1.0
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-01.jpg",
+          "frame_index": 31,
+          "timestamp": 1.2916666666666667
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-02.jpg",
-          "frame_index": 48,
-          "timestamp": 2.0
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-02.jpg",
+          "frame_index": 62,
+          "timestamp": 2.5833333333333335
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-03.jpg",
-          "frame_index": 71,
-          "timestamp": 2.9583333333333335
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-03.jpg",
+          "frame_index": 93,
+          "timestamp": 3.875
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-04.jpg",
-          "frame_index": 95,
-          "timestamp": 3.9583333333333335
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-04.jpg",
+          "frame_index": 124,
+          "timestamp": 5.166666666666667
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/frame-05.jpg",
-          "frame_index": 119,
-          "timestamp": 4.958333333333333
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-05.jpg",
+          "frame_index": 155,
+          "timestamp": 6.458333333333333
         }
       ],
       "references": [
         {
           "role": "object",
-          "name": "white plastic bottle",
+          "name": "cosmetic product",
           "media_type": "image",
           "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-01.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-02.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-03.jpg"
+            "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-01.jpg"
           ],
-          "source_frame_index": 71,
-          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-source-frame.jpg",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
-          "cutout": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
-          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-view-00.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_a03a4e8a07b47523c336977d8819debc/ref-00-edited.jpg"
+          "source_frame_index": 0,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-edited.jpg"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
-          "name": "white plastic bottle",
-          "overall": 8.0,
-          "sharpness": 6.0,
-          "completeness": 9.0,
-          "cleanliness": 9.0,
+          "name": "cosmetic product",
+          "overall": 6.0,
+          "sharpness": 5.0,
+          "completeness": 7.0,
+          "cleanliness": 8.0,
           "reject": false,
-          "reason": "Most complete and cleanest cutout of the bottle."
+          "reason": "Most recognizable as a product, though blurry."
         }
       ],
       "completion_backend": [
@@ -623,83 +961,82 @@
       ]
     },
     {
-      "id": "s2v_9adf2e2a3a97fd16124562c0d8af7ac1",
+      "id": "s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99",
       "task": "multi_imgs_to_v",
-      "dataset": "datatang_human_woobject_gemmalabeled",
+      "dataset": "human_portrait_annolabeled",
       "pipeline": "sam2_qwen_edit_hoi_object",
-      "prompt": "The scene opens with a static medium shot, framing a young woman from the chest up, centered within the frame. Her blonde hair, parted slightly off-center, falls just above her shoulders, catching the soft, diffused overhead light that illuminates her face evenly, minimizing harsh shadows. Her complexion appears natural, with no discernible makeup, and her expression is animated, characterized by slightly raised eyebrows and an open mouth as she speaks, conveying an engaging and conversational tone. She wears a simple black t-shirt, its dark fabric contrasting subtly with her fair skin. Her hands are active within the lower third of the frame, gesturing expressively as she talks, occasionally holding a small, light-colored cylindrical object, possibly a cosmetic product, which she manipulates with her fingers. The background reveals a bathroom setting, with a tiled wall directly behind her, featuring a horizontal band of dark gray tiles interspersed with white tiles, creating a geometric pattern. Above this, a wooden shelf holds an assortment of toiletries and bottles, reflected in a mirror that spans the length of the shelf, suggesting a vanity area. To the right, a wooden door with frosted glass panels is partially visible, leading to what appears to be another section of the bathroom, possibly containing a bathtub, hinted at by a white rim in the lower right corner. The overall lighting is bright and consistent, suggesting either natural light from an unseen window or well-distributed artificial lighting, creating a clean and functional aesthetic. The camera maintains a fixed position throughout the sequence, with no discernible panning, tilting, or zooming, keeping the focus squarely on the woman and her expressive delivery. Her gestures are fluid and natural, emphasizing her points as she speaks, her eyes maintaining direct contact with the camera, creating a sense of intimacy and direct address. No prominent text appears in the video.",
-      "original_id": "015041_talking_18_frames_1-324",
+      "prompt": "One female subject appears in an indoor bathroom during the daytime. The visual style is everyday lifestyle, captured with a realistic smartphone-style aesthetic under soft, warm indoor lighting.\n\n[First frame] A medium shot at eye level captures a woman with a white towel wrapped around her head, sitting behind a bathroom counter. She is wearing a black long-sleeved shirt and is positioned in the center of the frame, looking down at a small makeup bottle in her hand. The background consists of a beige wall and a wooden door to the left.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The camera remains fixed on the woman as she looks down at the cosmetics in her hands while speaking to the viewer. She moves her right hand, holding a small tan tube, toward a makeup bag on the left side of the counter, then quickly pulls her hand back. Her expression is casual and conversational as she explains her routine. The soft overhead light creates gentle shadows on her face, maintaining a relaxed, domestic atmosphere.\n\n[Shot 1] [00:02-00:05] [Medium shot, eye level, static] Continuing her demonstration, the woman reaches back into the pink patterned makeup bag and pulls out a small concealer wand. She holds it up briefly before looking directly into the camera with an engaged, smiling expression. She continues to talk, gesturing with the small tube in her hands while her head tilts slightly. The cream-colored walls and the white shower curtain behind her provide a neutral, clean backdrop for her morning routine. Tone: Friendly, informative.\n\n[Shot 1] [00:05-00:07] [Medium shot, eye level, static] Picking up from the previous beat, she looks back down at the tube in her hands, carefully examining the product while continuing her narrative. Her hands move together in front of her chest as she discusses the makeup's features. The lighting remains consistent, highlighting the texture of the towel on her head and the simple interior of the bathroom. She then looks back up toward the camera, finishing her point with a focused gaze.\n\n[Last frame] A medium shot at eye level shows the woman looking directly at the camera while holding the small tan makeup tube in her right hand. Her left hand is partially visible near the bottom of the frame, and her expression is attentive as if listening or waiting. The white towel is still securely wrapped around her head, and the bathroom door and beige wall remain visible in the background.",
+      "original_id": "908564581643954_frames=790-974_sim=0",
       "hand_objects": [
-        "cosmetic product"
+        "makeup bottle"
       ],
       "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 6.584
+        "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/poster.jpg",
+        "width": 1080,
+        "height": 1920,
+        "duration_sec": 7.75
       },
       "candidate_frames": [
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-00.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-00.jpg",
           "frame_index": 0,
           "timestamp": 0.0
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-01.jpg",
-          "frame_index": 31,
-          "timestamp": 1.2916666666666667
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-01.jpg",
+          "frame_index": 37,
+          "timestamp": 1.5416666666666667
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-02.jpg",
-          "frame_index": 62,
-          "timestamp": 2.5833333333333335
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-02.jpg",
+          "frame_index": 73,
+          "timestamp": 3.0416666666666665
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-03.jpg",
-          "frame_index": 93,
-          "timestamp": 3.875
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-03.jpg",
+          "frame_index": 110,
+          "timestamp": 4.583333333333333
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-04.jpg",
-          "frame_index": 124,
-          "timestamp": 5.166666666666667
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-04.jpg",
+          "frame_index": 146,
+          "timestamp": 6.083333333333333
         },
         {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/frame-05.jpg",
-          "frame_index": 155,
-          "timestamp": 6.458333333333333
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-05.jpg",
+          "frame_index": 183,
+          "timestamp": 7.625
         }
       ],
       "references": [
         {
           "role": "object",
-          "name": "cosmetic product",
+          "name": "makeup bottle",
           "media_type": "image",
           "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-01.jpg"
+            "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg"
           ],
           "source_frame_index": 0,
-          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-source-frame.jpg",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
-          "cutout": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
-          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-view-00.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_9adf2e2a3a97fd16124562c0d8af7ac1/ref-00-edited.jpg"
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-edited.jpg"
         }
       ],
       "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
       "gemma_scores": [
         {
-          "name": "cosmetic product",
-          "overall": 6.0,
-          "sharpness": 5.0,
-          "completeness": 7.0,
-          "cleanliness": 8.0,
+          "name": "makeup bottle",
+          "overall": 8.0,
+          "sharpness": 7.0,
+          "completeness": 9.0,
+          "cleanliness": 9.0,
           "reject": false,
-          "reason": "Most recognizable as a product, though blurry."
+          "reason": "Sharpest and most complete view of the bottle."
         }
       ],
       "completion_backend": [
@@ -815,98 +1152,16 @@
         "nano_banana",
         "nano_banana"
       ]
-    },
-    {
-      "id": "s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99",
-      "task": "multi_imgs_to_v",
-      "dataset": "human_portrait_annolabeled",
-      "pipeline": "sam2_qwen_edit_hoi_object",
-      "prompt": "One female subject appears in an indoor bathroom during the daytime. The visual style is everyday lifestyle, captured with a realistic smartphone-style aesthetic under soft, warm indoor lighting.\n\n[First frame] A medium shot at eye level captures a woman with a white towel wrapped around her head, sitting behind a bathroom counter. She is wearing a black long-sleeved shirt and is positioned in the center of the frame, looking down at a small makeup bottle in her hand. The background consists of a beige wall and a wooden door to the left.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The camera remains fixed on the woman as she looks down at the cosmetics in her hands while speaking to the viewer. She moves her right hand, holding a small tan tube, toward a makeup bag on the left side of the counter, then quickly pulls her hand back. Her expression is casual and conversational as she explains her routine. The soft overhead light creates gentle shadows on her face, maintaining a relaxed, domestic atmosphere.\n\n[Shot 1] [00:02-00:05] [Medium shot, eye level, static] Continuing her demonstration, the woman reaches back into the pink patterned makeup bag and pulls out a small concealer wand. She holds it up briefly before looking directly into the camera with an engaged, smiling expression. She continues to talk, gesturing with the small tube in her hands while her head tilts slightly. The cream-colored walls and the white shower curtain behind her provide a neutral, clean backdrop for her morning routine. Tone: Friendly, informative.\n\n[Shot 1] [00:05-00:07] [Medium shot, eye level, static] Picking up from the previous beat, she looks back down at the tube in her hands, carefully examining the product while continuing her narrative. Her hands move together in front of her chest as she discusses the makeup's features. The lighting remains consistent, highlighting the texture of the towel on her head and the simple interior of the bathroom. She then looks back up toward the camera, finishing her point with a focused gaze.\n\n[Last frame] A medium shot at eye level shows the woman looking directly at the camera while holding the small tan makeup tube in her right hand. Her left hand is partially visible near the bottom of the frame, and her expression is attentive as if listening or waiting. The white towel is still securely wrapped around her head, and the bathroom door and beige wall remain visible in the background.",
-      "original_id": "908564581643954_frames=790-974_sim=0",
-      "hand_objects": [
-        "makeup bottle"
-      ],
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 7.75
-      },
-      "candidate_frames": [
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-00.jpg",
-          "frame_index": 0,
-          "timestamp": 0.0
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-01.jpg",
-          "frame_index": 37,
-          "timestamp": 1.5416666666666667
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-02.jpg",
-          "frame_index": 73,
-          "timestamp": 3.0416666666666665
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-03.jpg",
-          "frame_index": 110,
-          "timestamp": 4.583333333333333
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-04.jpg",
-          "frame_index": 146,
-          "timestamp": 6.083333333333333
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/frame-05.jpg",
-          "frame_index": 183,
-          "timestamp": 7.625
-        }
-      ],
-      "references": [
-        {
-          "role": "object",
-          "name": "makeup bottle",
-          "media_type": "image",
-          "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg"
-          ],
-          "source_frame_index": 0,
-          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-source-frame.jpg",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg",
-          "cutout": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg",
-          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-view-00.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_1cb5f50343cb68a4ad8de6c7fcc2ce99/ref-00-edited.jpg"
-        }
-      ],
-      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
-      "gemma_scores": [
-        {
-          "name": "makeup bottle",
-          "overall": 8.0,
-          "sharpness": 7.0,
-          "completeness": 9.0,
-          "cleanliness": 9.0,
-          "reject": false,
-          "reason": "Sharpest and most complete view of the bottle."
-        }
-      ],
-      "completion_backend": [
-        "nano_banana"
-      ]
     }
   ],
-  "sample_count": 10,
+  "sample_count": 13,
   "source": {
-    "real_multiref_run": "real-hoi-multisource-gallery",
-    "real_multiref_count": 10,
+    "real_multiref_run": "real-hoi-hoigen-gallery+real-hoi-multisource-gallery",
+    "real_multiref_count": 13,
     "task": "multi_imgs_to_v",
     "pipeline": "sam2_qwen_edit_hoi_object",
     "by_dataset": {
+      "HOIGen-1M": 3,
       "abakatrain_gemmalabeled": 3,
       "datatang_human_object_annolabeled": 3,
       "datatang_human_woobject_gemmalabeled": 2,
