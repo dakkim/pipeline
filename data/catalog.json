@@ -2127,6 +2127,7 @@
       "with_face": 17,
       "no_face": 3,
       "faces": 34
-    }
+    },
+    "face_detector_note": "yolov8-face keyframe crops; primary tiles include face refs"
   }
 }
