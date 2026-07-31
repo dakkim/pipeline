@@ -1,294 +1,6 @@
 {
-  "title": "Omni / S2V prepared sample gallery",
+  "title": "HOI multi_imgs_to_v object-reference gallery",
   "samples": [
-    {
-      "id": "s2v_d6f8de6a67e70773aa543b1e8ca5ac59",
-      "task": "multi_imgs_to_v",
-      "dataset": "abakatrain_gemmalabeled",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "Two main subjects appear: a mother and her toddler daughter in an outdoor garden setting. The scene is illuminated by bright, natural daytime sunlight under a clear sky. The visual style is a realistic family lifestyle video, capturing a candid moment of affection and play between parent and child.\n\n[First frame] A medium shot at eye level frames the mother on the left and her toddler on the right, positioned near the center of the frame. The mother, an Asian woman with black hair in a bun, wears a white floral blouse and light green pants, cradling her daughter in her arms. The child, wearing a pink and white dress, looks toward her mother with a neutral expression. A thick, textured tree trunk rises on the far right, with lush green foliage and yellow wildflowers filling the background.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The camera maintains a fixed position as the mother smiles warmly at her child, her face glowing in the soft sunlight. The toddler begins to react, her mouth opening into a wide, joyous smile while she raises her right hand playfully toward her mother's face. The surrounding garden remains still, with the vibrant yellow flowers in the lower left providing a soft pop of color against the deep greens of the sunlit trees. The atmosphere is one of pure, unhurried domestic bliss.\n\n[Shot 1] [00:02-00:05] [Medium shot, eye level, static] Continuing the same joyful interaction, the toddler starts waving her arm more vigorously, her laughter becoming evident through her wide-eyed, beaming expression. The mother responds by pulling the child slightly closer, her own laughter widening as she watches her daughter's energetic movements. The dappled light through the leaves above creates a shimmering effect on their clothes, while the rough bark of the tree on the right anchors the composition. The emotional beat reaches a peak of shared happiness as the child continues to flail her arms in excitement.\n\n[Last frame] A medium shot at eye level captures the mother and toddler in the same central position, both now laughing heartily. The mother's head is tilted toward her daughter, her eyes crinkled with joy, while the child's right arm is mid-wave, her fist slightly clenched in excitement. The green canopy and yellow wildflowers in the background are brightly lit, and the large tree trunk on the right remains a prominent framing element, perfectly preserving the lively, affectionate mood of the moment.",
-      "original_id": "18151034552_frames=0-160_sim=0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 5.4
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "mother and her toddler daughter",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "mother and her toddler daughter",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_d6f8de6a67e70773aa543b1e8ca5ac59/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
-    {
-      "id": "s2v_92cd546529c16931cfae42f8892eaece",
-      "task": "multi_imgs_to_v",
-      "dataset": "datatang_human_object_annolabeled",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "The shot opens with a medium close-up, framing a young woman from the chest up against a stark, unadorned white background, suggesting a controlled studio environment or a minimalist interior. The camera maintains a static, eye-level perspective, providing a direct and intimate view of her actions. Her complexion is a warm, medium tan, contrasting with the lighter, almost chalky white powder applied beneath her eyes and across her forehead, indicating a makeup application process. Her long, straight blonde hair, parted centrally, is pulled back from her face, secured by two white, flat hair clips positioned above each ear, ensuring no strands obstruct her work. Her eyes, a deep brown, are accentuated with a sharp, dark winged eyeliner and a warm, earthy eyeshadow, while her eyebrows are visibly lightened, almost bleached, creating a striking visual effect. She wears a beige hooded sweatshirt, its soft fabric texture subtly visible. In her left hand, she holds a highly ornate, silver-framed hand mirror, its reflective surface angled slightly away from the camera, catching ambient light and displaying intricate, embossed floral patterns. Her right hand, adorned with multiple gold rings on her index and middle fingers, holds a medium-sized, soft-bristled makeup brush with a silver handle. She is actively applying a light-colored powder to her right cheekbone, sweeping the brush in gentle, upward motions. Her lips are slightly parted, revealing a hint of her teeth, and her expression is one of focused concentration, occasionally shifting to a subtle, almost imperceptible smile as she speaks, though no audio is present. The lighting is soft and even, likely from a diffused source positioned slightly to her front-left, minimizing harsh shadows and illuminating her face uniformly, highlighting the textures of the makeup and her skin. The depth of field is shallow, keeping her in sharp focus while the background remains a clean, undifferentiated white, ensuring all attention is drawn to her and her meticulous makeup application. There is no prominent text or watermark visible within the frame.",
-      "original_id": "005754_human-object-interaction_13_frames_87-491",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 6.834
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "shot opens",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "shot opens",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_92cd546529c16931cfae42f8892eaece/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
-    {
-      "id": "s2v_777f7fd6ee3b84593189226568b4f807",
-      "task": "multi_imgs_to_v",
-      "dataset": "datatang_human_woobject_gemmalabeled",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "The video opens with a medium shot, framing a bald man with a neatly trimmed beard, seated on a light gray mat. He is wearing a pale yellow hooded sweatshirt and dark trousers. The camera maintains a static, eye-level perspective, capturing his upper torso and head, with a slight downward angle to emphasize his seated position. His left hand, adorned with a dark wrist tattoo, rests on his left knee, while his right hand holds a small, dark rectangular device, possibly a microphone or remote, near his chest. His expression is earnest and focused, with his brow slightly furrowed as he speaks, his gaze directed slightly off-camera to the right. The lighting is bright and even, emanating from an unseen overhead source, casting minimal, soft shadows, indicating a well-lit indoor environment. The background is dominated by a pristine white wall, which transitions into a white padded mat that extends across the floor and up the wall, creating a seamless, clean aesthetic. Centered on the white wall, above the man's head, is a prominent black logo with stylized red accents, featuring the text \"GUI GALVÃO\" in bold, sans-serif black letters, followed by \"BRAZILIAN JIU-JITSU\" in smaller, equally bold black text. The overall composition is balanced, with the man occupying the lower-center of the frame, his posture conveying a sense of calm authority. His gestures are subtle, primarily involving slight movements of his right hand as he articulates his points, reinforcing his communicative intent. The spatial interaction is direct, as if he is addressing an unseen audience, creating an intimate yet instructional atmosphere. The focus is sharp on the man, with a shallow depth of field that gently blurs the background elements, ensuring his prominence within the frame. The color palette is minimalist, dominated by the stark white of the studio, the pale yellow of his hoodie, and the dark accents of his clothing and the logo, contributing to a professional and uncluttered visual presentation.",
-      "original_id": "035744_talking_5_frames_357-619",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 8.834
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "video opens",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "video opens",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_777f7fd6ee3b84593189226568b4f807/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
-    {
-      "id": "s2v_152f6a61291fef66b733a29cfdaae6ba",
-      "task": "multi_imgs_to_v",
-      "dataset": "human_portrait_annolabeled",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "One main subject appears: a Black woman in an indoor kitchen environment. The setting is bright and well-lit during the daytime, showcasing a modern home aesthetic. The visual style is everyday lifestyle, captured with realistic clarity and a focused, tutorial-like presentation.\n\n[First frame] A medium shot at eye level frames the woman from the waist up, positioned in the center. She wears a grey long-sleeved shirt and has short black hair. In her left hand, she holds a small white cardboard box, while her right hand touches a clear plastic component of a portable coffee maker set on the table before her. The kitchen background features cream-colored cabinets and a black stand mixer to the right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The camera remains fixed as the woman speaks directly to the lens, her expression animated and engaging. She holds the small white box aloft in her left hand, gesturing toward the coffee equipment arranged on the counter. The arrangement includes a white cylindrical base, a black thermal cup, and various clear plastic filter pieces still partially boxed. Continuing her explanation, she moves her right hand away from the clear cup, occasionally pointing toward the components to emphasize her points while her gaze remains fixed on the viewer. The lighting is soft and even, highlighting her facial features and the matte textures of the product.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Picking up from the previous beat, the woman continues her review, now holding the white box more prominently in her left hand. She uses her right hand to gesture broadly, emphasizing the variety of parts included in the set. A large white box sits open on the table, overflowing with instruction manuals and packaging materials. The tone remains informative and enthusiastic as she talks through the features of the portable brewer, her hands moving in a rhythmic, explanatory fashion. The background remains consistent, with the neutral tones of the kitchen cabinetry providing a clean, non-distracting backdrop for the product demonstration.\n\n[Last frame] A medium shot at eye level captures the woman in the center, looking directly at the camera with a focused expression. She holds the small white box in her left hand, and her right hand is raised slightly, gesturing as she speaks. On the table, the coffee maker components are neatly grouped next to the open large box, which shows a green interior and printed instructions. The kitchen's soft daytime lighting illuminates the scene, with the black stand mixer visible in the blurred background to the right.",
-      "original_id": "756816221970793_frames=128-352_sim=0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 4.584
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "Black woman",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "Black woman",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_152f6a61291fef66b733a29cfdaae6ba/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
-    {
-      "id": "s2v_6bd2a033da665e07ce005cddcfbc8945",
-      "task": "multi_imgs_to_v",
-      "dataset": "human_portrait_annolabeled",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "One main subject appears: a young person with short brown hair in an indoor setting. The lighting is bright and even, characteristic of an indoor daytime environment. The visual style is an everyday lifestyle tutorial, focusing on personal grooming and makeup application.\n\n[First frame] A close-up at eye level captures the subject centered in the frame, wearing a dark grey shirt. They have dabs of light-colored concealer under both eyes and are holding a concealer wand with a red cap in their right hand, poised near their right cheek.\n\n[Shot 1] [00:00-00:02] [Close-up, eye level, static] The camera remains fixed on the subject's face as they begin to lower the concealer wand. Their gaze is focused slightly off-camera, likely into a mirror, while the dabs of product remain unblended under their eyes. The soft indoor light highlights the smooth texture of their skin and the brown eyeshadow already applied to their lids, maintaining a calm and instructional tone.\n\n[Shot 1] [00:02-00:04] [Close-up, eye level, slow pull out] Continuing the grooming routine, the subject lowers their hand completely out of the lower frame, and the camera pulls back slightly to reveal more of their shoulders. They begin to speak, their lips moving in a natural rhythm while their eyes maintain a steady gaze forward. The background remains a neutral, out-of-focus wall, keeping all attention on the subject's facial expressions and the ongoing makeup process.\n\n[Shot 1] [00:04-00:07] [Close-up, eye level, slow pan left] Picking up from the previous verbal explanation, the subject tilts their head slightly and points their index finger toward their jawline on the left side of the frame. The camera follows this movement with a subtle pan, emphasizing the area they are highlighting. Their expression is earnest and focused as they conclude their point, with the yellow-toned concealer still visible as two distinct marks under their lower lashes.\n\n[Last frame] A close-up at eye level shows the subject from a slight profile, looking toward the left side of the frame. Their right index finger is pointed at their jawline, and their mouth is slightly open as if finishing a sentence. The concealer marks under their eyes are still present, and the neutral background wall is visible behind their head and neck.",
-      "original_id": "148404081165177_frames=20-204_sim=0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 7.75
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "young person",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "young person",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_6bd2a033da665e07ce005cddcfbc8945/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
-    {
-      "id": "s2v_7ef7b7d1eb5c60deba5ad1708aefbc46",
-      "task": "multi_imgs_to_v",
-      "dataset": "human_portrait_gemmalabeled",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "One main subject appears: a young woman with long brown hair in an indoor bathroom setting. The scene is illuminated by warm indoor lighting during the daytime, creating a casual and everyday atmosphere. The visual style is realistic lifestyle footage, captured with a handheld mobile device.\n\n[First frame] A medium shot at eye level captures a young woman with a joyful expression, positioned slightly to the left of the frame. She has long, wet brown hair draped over her left shoulder and is wearing a black sleeveless top with pink trim. In her right hand, she holds a blue and silver hairbrush against the side of her head. Behind her, a white door stands partially open, revealing a glimpse of a hallway and a towel hanging on a rack.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she begins to vigorously brush her long, damp hair. She smiles directly at the camera, her eyes bright with energy, as the brush moves in rhythmic downward strokes from the top of her head toward the ends of her strands. The warm indoor lighting emphasizes the texture of her wet hair and the casual, home-based setting of the bathroom.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing the same energetic motion, the subject maintains eye contact with the lens while her brushing becomes more rapid. Her expression shifts into an enthusiastic, open-mouthed smile as she appears to be talking or singing along to something off-camera. The brush travels repeatedly through the same section of hair on the right side of her head, with the background elements like the hanging plant and the door frame remaining consistent in their placement.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] As the prior moment settles into a more conversational beat, the woman stops brushing and leans slightly closer to the camera, her expression turning more earnest as she speaks. She raises her left hand toward her temple briefly before gesturing with her right hand, which still holds the brush. The tone remains lighthearted and personal, concluding with her looking directly into the lens with a focused but friendly gaze. Emotion: Energetic, cheerful.\n\n[Last frame] A medium shot at eye level shows the woman centered in the frame with a focused expression, her mouth slightly open as if speaking. Her long brown hair is now brushed down smoothly over her left shoulder. She has her left hand raised near her ear, while her right arm is lowered out of view. The white door and the brown bathroom wall with the hanging plant remain visible behind her under the soft, warm indoor glow.",
-      "original_id": "923220535358532_frames=158-342_sim=0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.584
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "young woman",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "young woman",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_7ef7b7d1eb5c60deba5ad1708aefbc46/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
-    {
-      "id": "s2v_9538152ec6332193c49f0cf36203a9df",
-      "task": "multi_imgs_to_v",
-      "dataset": "human_portrait_gemmalabeled",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "A single female subject appears in an indoor setting, likely a home or studio, during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a realistic, vlog-like manner with a stationary camera. \n\n[First frame] A medium shot at eye level frames a woman with long black hair and a red knitted sweater, positioned centrally. Her right hand is raised, with her index finger pointing toward her left cheek, while her gaze is directed toward the camera. In the foreground, a closed white rectangular box sits on a wooden surface, partially obscuring the lower frame.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The camera remains fixed on the woman as she lowers her hand from her face and reaches toward the white box on the table. She begins to tilt the box upward towards the lens, her expression animated as she speaks directly into the camera. The background shows a simple white wall and a computer monitor to the right, maintaining a clean, domestic atmosphere. The lighting is bright and direct, highlighting the reflective texture of her skin and the vibrant red of her sweater. Tone: Informative, casual.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing the movement from the previous segment, the woman fully opens the lid of the box to reveal a skincare set containing two amber glass dropper bottles and a small green jar. She tilts the open kit further toward the camera, ensuring the products are clearly visible while she continues her spoken presentation. Her hands are steady as she holds the display, her gaze shifting between the products and the camera lens. Emotion: Enthusiastic, helpful.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Carrying forward the product reveal, she uses her right hand to point at and touch the small green jar in the center of the set. She gestures over the different components of the kit while maintaining eye contact with the viewer, her mouth moving as she explains the contents. The static framing keeps the focus entirely on the interaction between her and the skincare products, with the domestic background remaining unchanged. Tone: Persuasive, personal.\n\n[Last frame] A medium shot at eye level captures the woman holding the open white box, which displays two amber bottles and a green jar. Her right hand rests over the center of the kit, and her gaze is fixed on the camera with a neutral, attentive expression. The bright interior lighting reflects off her forehead and cheeks, while the computer monitor and white wall remain visible in the background.",
-      "original_id": "648095971471922_frames=8-136_sim=0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.5
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "single female subject appears",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "single female subject appears",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_9538152ec6332193c49f0cf36203a9df/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
-    {
-      "id": "s2v_4ae25167f04f298d52aab4ef38b2f420",
-      "task": "multi_imgs_to_v",
-      "dataset": "tobabe_gemmalabeled_filter",
-      "pipeline": "sam2_qwen_edit",
-      "prompt": "One main subject appears: a person slicing and holding a loaf of dark rye bread. The indoor kitchen setting is warmly lit by natural daytime light, creating an everyday lifestyle aesthetic. The visual style is cinematic with a shallow depth of field, emphasizing the texture of the homemade bread.\n\n[First frame] A medium close-up at a high angle captures a person's hands positioned over a rustic loaf of dark rye bread on a wooden cutting board. The right hand firmly holds a knife mid-slice, while the left hand stabilizes the flour-dusted crust. A green bag of flour stands in the upper-left background, set against a dark, textured wall.\n\n[Shot 1] [00:00-00:01] [Medium close-up, high angle, static] The camera maintains a fixed position as the person completes the downward sawing motion with the knife, severing a thick slice from the end of the rectangular loaf. The sharp blade moves rhythmically through the dense crumb, while the hands remain steady against the weathered wood of the cutting board. The atmosphere is domestic and purposeful, highlighted by the soft focus on the patterned fabric of the person's sleeve in the background.\n\n[Shot 1] [00:01-00:02] [Medium close-up, high angle, static] Picking up from the previous beat, the person sets the knife down and reaches for the newly cut slice with their right hand. The fingers gently grasp the edge of the bread, lifting it away from the main loaf to reveal the porous, dark interior. This motion shifts the focus slightly toward the individual slice as it is tilted upward, showcasing its texture against the warm wood and scattered crumbs.\n\n[Shot 1] [00:02-00:03] [Medium close-up, high angle, slow push in] Continuing the same forward exploration, the camera inches closer as the person presents the bread slice directly toward the lens. The hand rotates the slice to a vertical orientation, filling more of the frame and allowing the shallow depth of field to blur the background flour bag and remaining loaf. The lighting catches the irregular grain and fiber of the rye, heightening the tactile, artisanal tone of the scene.\n\n[Last frame] A close-up at a high angle focuses on a single slice of dark rye bread held vertically by a person's hand. The porous texture of the crumb is sharp and detailed in the foreground, while the remaining loaf on the cutting board and the green flour bag in the upper-left background are softly blurred. The warm sunlight illuminates the grain of the bread and the textured wooden surface below.",
-      "original_id": "（面包-甜品-料理类）淘宝-宁x宁一元素材 (139)-Scene-005-854-984_frames=20-124_sim=0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/poster.jpg",
-        "width": 720,
-        "height": 1280,
-        "duration_sec": 3.567
-      },
-      "references": [
-        {
-          "role": "subject",
-          "name": "loaf of dark rye bread",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-00-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-00-edited.jpg"
-        },
-        {
-          "role": "subject",
-          "name": "loaf of dark rye bread",
-          "media_type": "image",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-01-raw.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_4ae25167f04f298d52aab4ef38b2f420/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion"
-    },
     {
       "id": "s2v_04cfc3b45e814cefb29ecfc7923ff49d",
       "task": "multi_imgs_to_v",
@@ -540,286 +252,6 @@
         }
       ],
       "completion_backend": [
-        "nano_banana"
-      ]
-    },
-    {
-      "id": "s2v_0b57ed834675de6f5f4838c0c2fce1c4",
-      "task": "multi_imgs_to_v",
-      "dataset": "abakatrain_gemmalabeled",
-      "pipeline": "sam2_qwen_edit_hoi_object",
-      "prompt": "Two people appear: a professional manicurist and a client in an indoor nail salon setting. The lighting is bright and focused under daytime indoor conditions, emphasizing the workspace. The visual style is everyday lifestyle, featuring realistic details of a professional beauty service.\n\n[First frame] A close-up at eye level captures the manicurist's hands in pink nitrile gloves positioned on the left, holding a small silver polish bottle and a brush. The client's hand rests in the center, supported by the manicurist's fingers. A white desk surface serves as the background, with a white UV nail lamp partially visible in the blurred upper right background.\n\n[Shot 1] [00:00-00:02] [Close-up, eye level, static] The professional camera angle maintains a sharp focus on the central action as the manicurist, wearing pink gloves, carefully dips the brush into the silver bottle. The client's hand is held steady in the midground, with the index finger positioned for the application. Soft, even salon lighting illuminates the peach-toned base of the nails, creating a clean and professional ambiance. She begins to apply a thin layer of clear topcoat to the nail surface with precise, short strokes. \n\n[Shot 1] [00:02-00:05] [Close-up, eye level, static] Continuing the meticulous application, the manicurist moves the brush from the cuticle area toward the tip of the same nail. The surrounding environment remains consistent, with the white UV lamp waiting in the background. As the brush glides, the nail surface takes on a high-gloss finish, reflecting the overhead lights. The atmosphere is calm and concentrated, focusing on the careful hand-eye coordination required for the beauty treatment.\n\n[Last frame] A close-up at eye level shows the manicurist's pink-gloved hands holding the client's finger near the center of the frame. The silver polish brush is in contact with the tip of the nail, finishing a stroke. The white desk and the partially visible UV lamp in the background remain unchanged from the initial state, while the nail now exhibits a fresh, glossy sheen under the direct light.",
-      "original_id": "10765504391_frames=16-176_sim=0",
-      "hand_objects": [
-        "polish bottle"
-      ],
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 5.4
-      },
-      "candidate_frames": [
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-00.jpg",
-          "frame_index": 0,
-          "timestamp": 0.0
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-01.jpg",
-          "frame_index": 32,
-          "timestamp": 1.0666666666666667
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-02.jpg",
-          "frame_index": 64,
-          "timestamp": 2.1333333333333333
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-03.jpg",
-          "frame_index": 95,
-          "timestamp": 3.1666666666666665
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-04.jpg",
-          "frame_index": 127,
-          "timestamp": 4.233333333333333
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-05.jpg",
-          "frame_index": 159,
-          "timestamp": 5.3
-        }
-      ],
-      "references": [
-        {
-          "role": "object",
-          "name": "polish bottle",
-          "media_type": "image",
-          "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-01.jpg"
-          ],
-          "source_frame_index": 0,
-          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-source-frame.jpg",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
-          "cutout": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
-          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-edited.jpg"
-        }
-      ],
-      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
-      "gemma_scores": [
-        {
-          "name": "polish bottle",
-          "overall": 6.0,
-          "sharpness": 5.0,
-          "completeness": 8.0,
-          "cleanliness": 7.0,
-          "reject": false,
-          "reason": "Correct object, slightly sharper and cleaner than view 2."
-        }
-      ],
-      "completion_backend": [
-        "nano_banana"
-      ]
-    },
-    {
-      "id": "s2v_663d090fbe589313f9cdb488ee6ed43b",
-      "task": "multi_imgs_to_v",
-      "dataset": "abakatrain_gemmalabeled",
-      "pipeline": "sam2_qwen_edit_hoi_object",
-      "prompt": "One main subject appears: a pair of female hands decorating a cupcake in an indoor kitchen setting during the daytime. The visual style is cinematic lifestyle, focusing on culinary detail and soft textures. The environment is filled with baking ingredients and tools, creating a warm, artisanal atmosphere.\n\n[First frame] A close-up at a slightly high angle frames a white-frosted cupcake in a dark brown pleated tulip liner, positioned centrally. A pair of female hands with pale yellow nail polish is visible at the top, holding a single blueberry just above the swirl of buttercream. To the right, a clear glass contains more blueberries, while metal piping tips and a brown egg rest on the left.\n\n[Shot 1] [00:00-00:02] [Close-up, high angle, static] The camera remains fixed on the delicate task as the woman's fingers carefully press the first blueberry into the peak of the ivory buttercream swirl. The shallow depth of field keeps the focus sharp on the cupcake while the background glass of berries and a jar of amber-colored jam soften. A calm, methodical tone is established as the fruit is nestled into the frosting.\n\n[Shot 1] [00:02-00:04] [Close-up, high angle, static] Continuing the same steady action, the subject reaches her right hand toward the glass on the right to select another blueberry. The same light yellow nails contrast with the deep blue of the fruit as she plucks one from the cluster. Her movements are graceful and precise, maintaining the serene, artisanal mood of the baking process.\n\n[Shot 1] [00:04-00:05] [Close-up, high angle, static] Picking up from the previous beat, she brings the second blueberry over to the cupcake and places it beside the first one on the buttercream. As the berries are arranged, the scene captures the final touch of the decoration, with the soft overhead lighting highlighting the texture of the frosting and the matte skin of the fruit. The composition stays tight on the dessert as the hands finish their work.\n\n[Last frame] A close-up at a slightly high angle holds the decorated cupcake in the center, now topped with two blueberries side-by-side in the frosting. The subject's hands are partially visible as they move away toward the right side of the frame. In the background, the glass of blueberries, the jar of jam, and some green foliage remain in soft focus on the white tabletop.",
-      "original_id": "17155677435_frames=16-176_sim=0",
-      "hand_objects": [
-        "blueberry"
-      ],
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 5.4
-      },
-      "candidate_frames": [
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-00.jpg",
-          "frame_index": 0,
-          "timestamp": 0.0
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-01.jpg",
-          "frame_index": 32,
-          "timestamp": 1.0666666666666667
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-02.jpg",
-          "frame_index": 64,
-          "timestamp": 2.1333333333333333
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-03.jpg",
-          "frame_index": 95,
-          "timestamp": 3.1666666666666665
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-04.jpg",
-          "frame_index": 127,
-          "timestamp": 4.233333333333333
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-05.jpg",
-          "frame_index": 159,
-          "timestamp": 5.3
-        }
-      ],
-      "references": [
-        {
-          "role": "object",
-          "name": "blueberry",
-          "media_type": "image",
-          "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg"
-          ],
-          "source_frame_index": 95,
-          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-source-frame.jpg",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg",
-          "cutout": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg",
-          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-edited.jpg"
-        }
-      ],
-      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
-      "gemma_scores": [
-        {
-          "name": "blueberry",
-          "overall": 8.0,
-          "sharpness": 7.0,
-          "completeness": 10.0,
-          "cleanliness": 10.0,
-          "reject": false,
-          "reason": "Complete blueberry, clean mask, acceptable sharpness."
-        }
-      ],
-      "completion_backend": [
-        "nano_banana"
-      ]
-    },
-    {
-      "id": "s2v_671364170f15d4208eac8fc755defade",
-      "task": "multi_imgs_to_v",
-      "dataset": "abakatrain_gemmalabeled",
-      "pipeline": "sam2_qwen_edit_hoi_object",
-      "prompt": "A single person is the focus of this indoor scene, set within a well-lit workshop or kitchen area. The lighting is bright and even, characteristic of an everyday lifestyle visual style, emphasizing the clear colors and materials of the craft materials being used. The overall atmosphere is focused and creative.\n\n[First frame] A medium shot at eye level captures a person from the chest down, positioned centrally in the frame. They are wearing a grey t-shirt and clear plastic disposable gloves on both hands. Their hands are the primary focal point, with the right hand holding a wooden craft stick and stirring a bright green liquid inside a small, clear plastic cup. The left hand rests on the table, which is covered with a white protective sheet. A bright green plastic bottle is visible on the far left.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The eye-level framing remains static as the person continues to stir the bright green mixture with the wooden stick. The transparent gloves crinkle with every movement of their fingers, catching the overhead light. Inside the small plastic cup, swirls of lighter and darker green liquid merge as the stick moves in a steady, circular motion. The white surface of the table provides a clean, neutral background that makes the vibrant green of the mixture and the bottle on the left stand out prominently.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] The same focused action carries forward as the stirring motion becomes more vigorous, causing the green liquid to rise slightly along the inner walls of the plastic cup. The person's left hand remains resting near the base of the cup for stability, its gloved texture highly visible against the white table cover. The bright green bottle on the left remains a consistent visual anchor, while the background stays out of focus, keeping the viewer's attention entirely on the manual process of mixing the craft materials.\n\n[Shot 1] [00:04-00:05] [Medium shot, eye level, static] Picking up from the previous motion, the wooden stick continues to whip through the mixture, which has now reached a uniform lime-green color. A small white plastic cap sits near the person's left hand, newly prominent in the lower right foreground. The overall mood remains serene and industrious, with the constant rustle of the plastic gloves providing a subtle rhythmic element to the visual task. The composition holds steady as the mixing process nears its conclusion, with no change in the bright, naturalistic lighting.\n\n[Last frame] A medium shot at eye level shows the person still in the center, their gloved hands maintaining their positions on the white-covered table. The right hand holds the wooden stick deep in the bright green mixture within the clear cup, while the left hand rests nearby. A small white cap is visible on the table to the right of the cup, and the large green bottle stays on the far left edge. The scene remains brightly lit and the grey t-shirt of the individual is visible in the background.",
-      "original_id": "24325702760_frames=8-176_sim=0",
-      "hand_objects": [
-        "wooden craft stick",
-        "plastic cup"
-      ],
-      "target": {
-        "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 5.667
-      },
-      "candidate_frames": [
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-00.jpg",
-          "frame_index": 0,
-          "timestamp": 0.0
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-01.jpg",
-          "frame_index": 33,
-          "timestamp": 1.1
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-02.jpg",
-          "frame_index": 67,
-          "timestamp": 2.2333333333333334
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-03.jpg",
-          "frame_index": 100,
-          "timestamp": 3.3333333333333335
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-04.jpg",
-          "frame_index": 134,
-          "timestamp": 4.466666666666667
-        },
-        {
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-05.jpg",
-          "frame_index": 167,
-          "timestamp": 5.566666666666666
-        }
-      ],
-      "references": [
-        {
-          "role": "object",
-          "name": "wooden craft stick",
-          "media_type": "image",
-          "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg"
-          ],
-          "source_frame_index": 100,
-          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-source-frame.jpg",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg",
-          "cutout": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg",
-          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-edited.jpg"
-        },
-        {
-          "role": "object",
-          "name": "plastic cup",
-          "media_type": "image",
-          "views": [
-            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-01.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-02.jpg",
-            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-03.jpg"
-          ],
-          "source_frame_index": 67,
-          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-source-frame.jpg",
-          "raw": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
-          "cutout": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
-          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
-          "mask": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-mask.jpg",
-          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-edited.jpg",
-          "edited": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-edited.jpg"
-        }
-      ],
-      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
-      "gemma_scores": [
-        {
-          "name": "wooden craft stick",
-          "overall": 7.0,
-          "sharpness": 6.0,
-          "completeness": 6.0,
-          "cleanliness": 10.0,
-          "reject": false,
-          "reason": "Most clean cutout of the stick itself, although the top is cropped/missing."
-        },
-        {
-          "name": "plastic cup",
-          "overall": 8.0,
-          "sharpness": 7.0,
-          "completeness": 8.0,
-          "cleanliness": 8.0,
-          "reject": false,
-          "reason": "Most complete and cleanest cutout, though a small piece is missing on the left."
-        }
-      ],
-      "completion_backend": [
-        "nano_banana",
         "nano_banana"
       ]
     },
@@ -1866,494 +1298,299 @@
       ]
     },
     {
-      "id": "omni_07f7d8bd154230ddafc59a73fad4528e",
+      "id": "s2v_0b57ed834675de6f5f4838c0c2fce1c4",
       "task": "multi_imgs_to_v",
-      "dataset": "humoset",
-      "prompt": "The scene takes place indoors, likely in an office or a similar professional setting. A large, abstract painting with warm colors hangs on the wall behind the main character. The man with dark, curly hair and glasses is dressed in a dark gray suit jacket over a dark green button - down shirt. He stands facing someone off - screen to his left, maintaining an upright posture. His body remains relatively still throughout the short clip. There are no visible hand gestures. His head is also mostly still, though he makes slight adjustments as he speaks. His facial expression is serious and engaged in the conversation. Only the back of the person with long, dark hair's head is visible. Their posture cannot be fully determined, but they appear to be standing or sitting and facing the man with dark, curly hair and glasses. No discernible motion or expressions can be observed from the limited view of this individual.",
-      "original_id": "09714a56400ae02abe533e50ab61322f",
-      "archive_group": "video_part_01.tar",
+      "dataset": "abakatrain_gemmalabeled",
+      "pipeline": "sam2_qwen_edit_hoi_object",
+      "prompt": "Two people appear: a professional manicurist and a client in an indoor nail salon setting. The lighting is bright and focused under daytime indoor conditions, emphasizing the workspace. The visual style is everyday lifestyle, featuring realistic details of a professional beauty service.\n\n[First frame] A close-up at eye level captures the manicurist's hands in pink nitrile gloves positioned on the left, holding a small silver polish bottle and a brush. The client's hand rests in the center, supported by the manicurist's fingers. A white desk surface serves as the background, with a white UV nail lamp partially visible in the blurred upper right background.\n\n[Shot 1] [00:00-00:02] [Close-up, eye level, static] The professional camera angle maintains a sharp focus on the central action as the manicurist, wearing pink gloves, carefully dips the brush into the silver bottle. The client's hand is held steady in the midground, with the index finger positioned for the application. Soft, even salon lighting illuminates the peach-toned base of the nails, creating a clean and professional ambiance. She begins to apply a thin layer of clear topcoat to the nail surface with precise, short strokes. \n\n[Shot 1] [00:02-00:05] [Close-up, eye level, static] Continuing the meticulous application, the manicurist moves the brush from the cuticle area toward the tip of the same nail. The surrounding environment remains consistent, with the white UV lamp waiting in the background. As the brush glides, the nail surface takes on a high-gloss finish, reflecting the overhead lights. The atmosphere is calm and concentrated, focusing on the careful hand-eye coordination required for the beauty treatment.\n\n[Last frame] A close-up at eye level shows the manicurist's pink-gloved hands holding the client's finger near the center of the frame. The silver polish brush is in contact with the tip of the nail, finishing a stroke. The white desk and the partially visible UV lamp in the background remain unchanged from the initial state, while the nail now exhibits a fresh, glossy sheen under the direct light.",
+      "original_id": "10765504391_frames=16-176_sim=0",
+      "hand_objects": [
+        "polish bottle"
+      ],
       "target": {
-        "path": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 6.196
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/omni_07f7d8bd154230ddafc59a73fad4528e/ref-00.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_2066d3672b74117f0f89be48a0b948bc",
-      "task": "multi_imgs_to_v",
-      "dataset": "humoset",
-      "prompt": "The scene is set in a dimly - lit room with dark wood paneling on the walls. In the background, two decorative vases are visible, one placed on a table or shelf to the left and the other on a similar surface to the right. The man with short black hair and a goatee is wearing a dark blue military - style uniform with gold accents on the collar and cuffs. He also has brown leather straps across his chest. He sits upright, facing forward, with his hands resting on a table or desk that is not visible in the frame. Throughout the clip, the man remains relatively still. His head is straight, and he maintains direct eye contact with someone off - screen. His facial expression is serious and focused, with a slight frown. There's a subtle movement of his mouth as if he's speaking or about to speak.",
-      "original_id": "0559e68651fbcc4090cc6a509468c0ed",
-      "archive_group": "video_part_01.tar",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 8.984
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/omni_2066d3672b74117f0f89be48a0b948bc/ref-00.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_e3646fa2b9602608c22d675845a1f34d",
-      "task": "multi_imgs_to_v",
-      "dataset": "humoset",
-      "prompt": "The scene takes place indoors, likely in a home setting. A piece of artwork or calligraphy hangs on the wall behind the characters. The man with short, dark hair and light skin is wearing a light - colored, vertically striped shirt with dark suspenders. He stands facing the woman with dark hair styled in a neat updo, his body slightly angled towards her. Throughout the clip, the man's body remains relatively still. His hands are not visible. His head is also mostly still, though he makes slight movements as he speaks. His facial expression conveys concern and seriousness, with his eyebrows slightly furrowed and his mouth moving as he talks. He appears to be engaged in a serious conversation.\n\nThe woman with dark hair styled in a neat updo has light skin and is wearing what appears to be a light - colored garment. She stands facing the man, her body slightly angled towards him. The woman's body remains still throughout the clip. Her hands are not visible. Her head is also mostly still, though she makes subtle movements as she listens. Her facial expression is difficult to fully discern due to the angle of the shot, but she seems attentive and possibly concerned, mirroring the man's emotional tone.",
-      "original_id": "0ac51fe084e4dc14cc41882f88949cd5",
-      "archive_group": "video_part_01.tar",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 6.224
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/omni_e3646fa2b9602608c22d675845a1f34d/ref-00.jpg"
-        }
-      ]
-    },
-    {
-      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "task": "multi_imgs_to_v",
-      "dataset": "human_portrait_annolabeled",
-      "prompt": "[object1] is young woman. One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand",
-      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "archive_group": "0",
-      "target": {
-        "path": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
-        "poster": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.417
-      },
-      "references": [
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-00.jpg"
-        },
-        {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/multi_imgs_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_f45e12c31b33a4269a7085a25e0ecc21",
-      "task": "t2v",
-      "dataset": "hoigen",
-      "prompt": "The video is a short, dynamic clip with a shallow depth of field, focusing on a person's hands holding a camera. The camera is mounted on a tripod, and the person appears to be adjusting the camera settings or preparing to take a shot. The background is blurred, with warm, golden hues suggesting either sunrise or sunset. The lighting is bright, with the sun's rays creating lens flares and highlights on the camera and the person's hands.  In the foreground, there is a text overlay that reads \"ONE MILLION\" in bold, capital letters. The text is superimposed on the image and is the only text present in the video. The font is white with a slight shadow effect, making it stand out against the bright background.  The style of the video suggests it could be a promotional or celebratory video, possibly related to a milestone or achievement, given the text overlay. The camera movement and the person's actions imply a sense of anticipation or preparation for capturing a significant moment. The overall composition of the video is designed to draw attention to the text and the camera, with the person's face and identity remaining out of focus.",
-      "original_id": "auahRt7V0Eg-0:04:18.766-0:04:23.500.mp4",
-      "archive_group": "videos_part_1.zip",
-      "target": {
-        "path": "media/samples/t2v/omni_f45e12c31b33a4269a7085a25e0ecc21/target.mp4",
-        "poster": "media/samples/t2v/omni_f45e12c31b33a4269a7085a25e0ecc21/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 4.8
-      },
-      "references": []
-    },
-    {
-      "id": "omni_fcfa970385806077912cda9aa5312cd5",
-      "task": "t2v",
-      "dataset": "hoigen",
-      "prompt": "In the video, we see a lively scene at a restaurant. The main focus is on two men sitting at a table. The man on the left is dressed in a black t-shirt and a baseball cap, while the man on the right is wearing a white t-shirt adorned with a black and white panda design.  The man on the right is holding a glass of wine, which he is sipping from. He is also holding a bottle of hot sauce, suggesting he might be adding some spice to his meal. He is gesturing with his hand, possibly in the middle of a conversation or making a point.  The table is set with various items including a plate of food, a glass of water, and a bottle of hot sauce. The background of the image reveals a lush green garden, adding a touch of nature to the scene.  The overall atmosphere of the video suggests a casual and relaxed dining experience. The men seem to be enjoying their time together, engaged in conversation and enjoying their meal. The hot sauce and wine add a touch of spice and sophistication to the scene.",
-      "original_id": "zYlW81GZYug-0:03:01.890-0:03:05.602.mp4",
-      "archive_group": "videos_part_1.zip",
-      "target": {
-        "path": "media/samples/t2v/omni_fcfa970385806077912cda9aa5312cd5/target.mp4",
-        "poster": "media/samples/t2v/omni_fcfa970385806077912cda9aa5312cd5/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 3.838
-      },
-      "references": []
-    },
-    {
-      "id": "omni_8995fb39804e2e456366d2bae09eabd5",
-      "task": "t2v",
-      "dataset": "human_w_object",
-      "prompt": "One main subject appears: a young woman in an indoor studio or room. The environment is warmly lit with artificial light, suggesting evening or night. The visual style is everyday lifestyle with a clean, polished digital look.\n\n[First frame] A medium close-up at eye level captures a young woman with long dark hair, wearing a white sleeveless top, positioned slightly left of center. She holds a large black microphone close to her face with her right hand, her gaze directed slightly off-camera to the left. To her right, a white artichoke-style lamp and a vase of pink tulips are visible against dark grey curtains.\n\n[Shot 1] [00:00-00:02] [Medium close-up, eye level, static] The camera remains fixed on the young woman as she holds the microphone steady, her lips slightly parted as if preparing to speak or sing. Her long black hair cascades over her shoulders, and a subtle light blue earbud is visible in her left ear. The warm, soft lighting from the lamp in the background creates a gentle glow on the right side of her face and the folds of the background curtains, maintaining a serene and intimate mood.\n\n[Shot 1] [00:02-00:04] [Medium close-up, eye level, static] Continuing the same quiet posture, the woman begins to blink and slightly shifts her gaze further toward the left. As the moment progresses, she slowly lowers the black microphone away from her face, moving it toward the bottom left corner of the frame. This action reveals more of her white ribbed top and the delicate silver necklace around her neck. The background elements, including the glowing lamp and tulips, remain unchanged, preserving the calm and professional atmosphere of the scene.\n\n[Last frame] A medium close-up at eye level shows the young woman with her gaze fixed off-camera to the left, her mouth closed in a neutral expression. The black microphone is now positioned lower in the frame, partially out of view near the bottom left. The white artichoke lamp and pink tulips remain clearly visible in the background against the dark grey curtains, illuminated by the same warm, soft light.",
-      "original_id": "228114390260072_frames=320-416_sim=0",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/target.mp4",
-        "poster": "media/samples/t2v/omni_8995fb39804e2e456366d2bae09eabd5/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 4.455
-      },
-      "references": []
-    },
-    {
-      "id": "omni_bcfed1cd800c89a16ab9edee07e10035",
-      "task": "t2v",
-      "dataset": "human_w_object",
-      "prompt": "A single female subject appears in an indoor setting at night. The lighting is artificial and dim, featuring a lamp in the background. The visual style is everyday lifestyle, characterized by a handheld vertical mobile-phone aesthetic.\n\n[First frame] A close-up shot at eye level frames a young woman with long dark hair and bangs in the center. She wears a fuzzy white cardigan and a pearl necklace with a silver pendant. She holds a white plastic bottle with pink and black text in the lower right foreground, gazing toward the camera with a slight smile.\n\n[Shot 1] [00:00-00:03] [Close-up, eye level, static] The camera maintains a tight frame on the woman as she speaks to the audience. She holds the bottle steady initially, then begins to tilt and rotate it slightly while her facial expressions shift from a smile to a more focused, talking state. The dim indoor background with a glowing lampshade remains consistent as she articulates her words. Her dark eyes reflect the soft frontal light, emphasizing her doll-like makeup and features.\n\n[Shot 1] [00:03-00:07] [Close-up, eye level, slight handheld shake] Continuing her dialogue, she begins to move the bottle more actively in the foreground, shaking it gently to draw attention to the product. The camera follows her subtle head tilts as she glances briefly at the bottle before returning her gaze to the lens. Her expression becomes more animated with frequent blinking and lip movements, while the pearl necklace catches the low-light glints. The scene maintains a personal, vlog-like atmosphere through the end of the sequence.\n\n[Last frame] A close-up at eye level captures the woman in a near-identical composition to the start, but her mouth is closed in a soft pout. She is centered in the frame, with the white cardigan and pearl necklace clearly visible. The plastic bottle is positioned in the lower right corner, partially obscuring her shoulder, while the warm glow of the lamp persists in the dark background.",
-      "original_id": "963627904099023_frames=160-320_sim=0",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/target.mp4",
-        "poster": "media/samples/t2v/omni_bcfed1cd800c89a16ab9edee07e10035/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 7.364
-      },
-      "references": []
-    },
-    {
-      "id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "task": "i2v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "[object1] is main subject",
-      "original_id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/i2v/s2v_0d772056f9cc6685288b145a42d387a2/target.mp4",
-        "poster": "media/samples/i2v/s2v_0d772056f9cc6685288b145a42d387a2/poster.jpg",
+        "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/poster.jpg",
         "width": 1920,
         "height": 1080,
-        "duration_sec": 5.084
+        "duration_sec": 5.4
       },
-      "references": []
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-01.jpg",
+          "frame_index": 32,
+          "timestamp": 1.0666666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-02.jpg",
+          "frame_index": 64,
+          "timestamp": 2.1333333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-03.jpg",
+          "frame_index": 95,
+          "timestamp": 3.1666666666666665
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-04.jpg",
+          "frame_index": 127,
+          "timestamp": 4.233333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/frame-05.jpg",
+          "frame_index": 159,
+          "timestamp": 5.3
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "polish bottle",
+          "media_type": "image",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-01.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_0b57ed834675de6f5f4838c0c2fce1c4/ref-00-edited.jpg"
+        }
+      ],
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
+      "gemma_scores": [
+        {
+          "name": "polish bottle",
+          "overall": 6.0,
+          "sharpness": 5.0,
+          "completeness": 8.0,
+          "cleanliness": 7.0,
+          "reject": false,
+          "reason": "Correct object, slightly sharper and cleaner than view 2."
+        }
+      ],
+      "completion_backend": [
+        "nano_banana"
+      ]
     },
     {
-      "id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "task": "i2v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "The scene opens with a medium shot, framing a fair-skinned woman with shoulder-length, platinum blonde hair and clear-framed eyeglasses. She is wearing a light pink t-shirt with white text, partially visible as \"in My.\" The camera is static, maintaining a consistent eye-level perspective. The background reveals a domestic kitchen setting, with light beige cabinetry on the left, and a stainless steel refrigerator on the right, adorned with a small, dark rectangular magnet and a red and green holiday-themed ornament. The lighting is soft and even, emanating from an unseen overhead source, casting minimal shadows and illuminating the subject's face and the immediate surroundings with a warm, inviting glow. The woman holds a small, clear glass spice jar with a red label and a white lid in her left hand, positioned slightly below her chin. Her gaze is directed towards the jar, and her lips are slightly parted, suggesting a contemplative or curious expression. As the shot progresses, she lifts the jar slightly, bringing it closer to the camera, revealing the text \"CHILE LIME\" on the red label. Her expression shifts to a more direct, engaging look, as if addressing an unseen audience. She then briefly touches her right temple with the jar, a subtle, almost playful gesture, before returning it to its original position. Her eyes maintain direct contact with the camera, and a slight, knowing smile plays on her lips. The camera remains fixed, capturing the nuances of her facial expressions and the subtle shifts in her posture. The final action involves her bringing a long, rectangular, reddish-pink object, possibly a piece of fruit or candy, into the lower foreground, obscuring the bottom portion of her t-shirt. The object is held horizontally, parallel to the bottom edge of the frame, and is slightly out of focus, drawing attention to the woman's face and the spice jar. The overall composition is balanced, with the subject centrally framed, and the background providing context without distracting from the main action. The color palette is dominated by the warm tones of the woman's hair and skin, the soft pink of her shirt, and the muted beige of the cabinetry, contrasted by the cool metallic sheen of the refrigerator and the vibrant red of the spice jar label.",
-      "original_id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "archive_group": "loose_files",
+      "id": "s2v_663d090fbe589313f9cdb488ee6ed43b",
+      "task": "multi_imgs_to_v",
+      "dataset": "abakatrain_gemmalabeled",
+      "pipeline": "sam2_qwen_edit_hoi_object",
+      "prompt": "One main subject appears: a pair of female hands decorating a cupcake in an indoor kitchen setting during the daytime. The visual style is cinematic lifestyle, focusing on culinary detail and soft textures. The environment is filled with baking ingredients and tools, creating a warm, artisanal atmosphere.\n\n[First frame] A close-up at a slightly high angle frames a white-frosted cupcake in a dark brown pleated tulip liner, positioned centrally. A pair of female hands with pale yellow nail polish is visible at the top, holding a single blueberry just above the swirl of buttercream. To the right, a clear glass contains more blueberries, while metal piping tips and a brown egg rest on the left.\n\n[Shot 1] [00:00-00:02] [Close-up, high angle, static] The camera remains fixed on the delicate task as the woman's fingers carefully press the first blueberry into the peak of the ivory buttercream swirl. The shallow depth of field keeps the focus sharp on the cupcake while the background glass of berries and a jar of amber-colored jam soften. A calm, methodical tone is established as the fruit is nestled into the frosting.\n\n[Shot 1] [00:02-00:04] [Close-up, high angle, static] Continuing the same steady action, the subject reaches her right hand toward the glass on the right to select another blueberry. The same light yellow nails contrast with the deep blue of the fruit as she plucks one from the cluster. Her movements are graceful and precise, maintaining the serene, artisanal mood of the baking process.\n\n[Shot 1] [00:04-00:05] [Close-up, high angle, static] Picking up from the previous beat, she brings the second blueberry over to the cupcake and places it beside the first one on the buttercream. As the berries are arranged, the scene captures the final touch of the decoration, with the soft overhead lighting highlighting the texture of the frosting and the matte skin of the fruit. The composition stays tight on the dessert as the hands finish their work.\n\n[Last frame] A close-up at a slightly high angle holds the decorated cupcake in the center, now topped with two blueberries side-by-side in the frosting. The subject's hands are partially visible as they move away toward the right side of the frame. In the background, the glass of blueberries, the jar of jam, and some green foliage remain in soft focus on the white tabletop.",
+      "original_id": "17155677435_frames=16-176_sim=0",
+      "hand_objects": [
+        "blueberry"
+      ],
       "target": {
-        "path": "media/samples/i2v/s2v_dd22de8858bfc1e272092d0a9d5248df/target.mp4",
-        "poster": "media/samples/i2v/s2v_dd22de8858bfc1e272092d0a9d5248df/poster.jpg",
+        "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/poster.jpg",
         "width": 1920,
         "height": 1080,
-        "duration_sec": 6.549
+        "duration_sec": 5.4
       },
-      "references": []
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-01.jpg",
+          "frame_index": 32,
+          "timestamp": 1.0666666666666667
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-02.jpg",
+          "frame_index": 64,
+          "timestamp": 2.1333333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-03.jpg",
+          "frame_index": 95,
+          "timestamp": 3.1666666666666665
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-04.jpg",
+          "frame_index": 127,
+          "timestamp": 4.233333333333333
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/frame-05.jpg",
+          "frame_index": 159,
+          "timestamp": 5.3
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "blueberry",
+          "media_type": "image",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg"
+          ],
+          "source_frame_index": 95,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_663d090fbe589313f9cdb488ee6ed43b/ref-00-edited.jpg"
+        }
+      ],
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
+      "gemma_scores": [
+        {
+          "name": "blueberry",
+          "overall": 8.0,
+          "sharpness": 7.0,
+          "completeness": 10.0,
+          "cleanliness": 10.0,
+          "reject": false,
+          "reason": "Complete blueberry, clean mask, acceptable sharpness."
+        }
+      ],
+      "completion_backend": [
+        "nano_banana"
+      ]
     },
     {
-      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba__i2v",
-      "task": "i2v",
-      "dataset": "human_portrait_annolabeled",
-      "prompt": "One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand.",
-      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "archive_group": "loose_files",
+      "id": "s2v_671364170f15d4208eac8fc755defade",
+      "task": "multi_imgs_to_v",
+      "dataset": "abakatrain_gemmalabeled",
+      "pipeline": "sam2_qwen_edit_hoi_object",
+      "prompt": "A single person is the focus of this indoor scene, set within a well-lit workshop or kitchen area. The lighting is bright and even, characteristic of an everyday lifestyle visual style, emphasizing the clear colors and materials of the craft materials being used. The overall atmosphere is focused and creative.\n\n[First frame] A medium shot at eye level captures a person from the chest down, positioned centrally in the frame. They are wearing a grey t-shirt and clear plastic disposable gloves on both hands. Their hands are the primary focal point, with the right hand holding a wooden craft stick and stirring a bright green liquid inside a small, clear plastic cup. The left hand rests on the table, which is covered with a white protective sheet. A bright green plastic bottle is visible on the far left.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The eye-level framing remains static as the person continues to stir the bright green mixture with the wooden stick. The transparent gloves crinkle with every movement of their fingers, catching the overhead light. Inside the small plastic cup, swirls of lighter and darker green liquid merge as the stick moves in a steady, circular motion. The white surface of the table provides a clean, neutral background that makes the vibrant green of the mixture and the bottle on the left stand out prominently.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] The same focused action carries forward as the stirring motion becomes more vigorous, causing the green liquid to rise slightly along the inner walls of the plastic cup. The person's left hand remains resting near the base of the cup for stability, its gloved texture highly visible against the white table cover. The bright green bottle on the left remains a consistent visual anchor, while the background stays out of focus, keeping the viewer's attention entirely on the manual process of mixing the craft materials.\n\n[Shot 1] [00:04-00:05] [Medium shot, eye level, static] Picking up from the previous motion, the wooden stick continues to whip through the mixture, which has now reached a uniform lime-green color. A small white plastic cap sits near the person's left hand, newly prominent in the lower right foreground. The overall mood remains serene and industrious, with the constant rustle of the plastic gloves providing a subtle rhythmic element to the visual task. The composition holds steady as the mixing process nears its conclusion, with no change in the bright, naturalistic lighting.\n\n[Last frame] A medium shot at eye level shows the person still in the center, their gloved hands maintaining their positions on the white-covered table. The right hand holds the wooden stick deep in the bright green mixture within the clear cup, while the left hand rests nearby. A small white cap is visible on the table to the right of the cup, and the large green bottle stays on the far left edge. The scene remains brightly lit and the grey t-shirt of the individual is visible in the background.",
+      "original_id": "24325702760_frames=8-176_sim=0",
+      "hand_objects": [
+        "wooden craft stick",
+        "plastic cup"
+      ],
       "target": {
-        "path": "media/samples/i2v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
-        "poster": "media/samples/i2v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.417
-      },
-      "references": []
-    },
-    {
-      "id": "s2v_0d772056f9cc6685288b145a42d387a2__key_frames_to_v",
-      "task": "key_frames_to_v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "[object1] is main subject",
-      "original_id": "s2v_0d772056f9cc6685288b145a42d387a2",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/poster.jpg",
+        "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/target.mp4",
+        "poster": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/poster.jpg",
         "width": 1920,
         "height": 1080,
-        "duration_sec": 5.084
+        "duration_sec": 5.667
       },
-      "references": [
+      "candidate_frames": [
         {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-00.jpg"
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
         },
         {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_0d772056f9cc6685288b145a42d387a2/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "s2v_dd22de8858bfc1e272092d0a9d5248df__key_frames_to_v",
-      "task": "key_frames_to_v",
-      "dataset": "datatang_human_object_annolabeled",
-      "prompt": "The scene opens with a medium shot, framing a fair-skinned woman with shoulder-length, platinum blonde hair and clear-framed eyeglasses. She is wearing a light pink t-shirt with white text, partially visible as \"in My.\" The camera is static, maintaining a consistent eye-level perspective. The background reveals a domestic kitchen setting, with light beige cabinetry on the left, and a stainless steel refrigerator on the right, adorned with a small, dark rectangular magnet and a red and green holiday-themed ornament. The lighting is soft and even, emanating from an unseen overhead source, casting minimal shadows and illuminating the subject's face and the immediate surroundings with a warm, inviting glow. The woman holds a small, clear glass spice jar with a red label and a white lid in her left hand, positioned slightly below her chin. Her gaze is directed towards the jar, and her lips are slightly parted, suggesting a contemplative or curious expression. As the shot progresses, she lifts the jar slightly, bringing it closer to the camera, revealing the text \"CHILE LIME\" on the red label. Her expression shifts to a more direct, engaging look, as if addressing an unseen audience. She then briefly touches her right temple with the jar, a subtle, almost playful gesture, before returning it to its original position. Her eyes maintain direct contact with the camera, and a slight, knowing smile plays on her lips. The camera remains fixed, capturing the nuances of her facial expressions and the subtle shifts in her posture. The final action involves her bringing a long, rectangular, reddish-pink object, possibly a piece of fruit or candy, into the lower foreground, obscuring the bottom portion of her t-shirt. The object is held horizontally, parallel to the bottom edge of the frame, and is slightly out of focus, drawing attention to the woman's face and the spice jar. The overall composition is balanced, with the subject centrally framed, and the background providing context without distracting from the main action. The color palette is dominated by the warm tones of the woman's hair and skin, the soft pink of her shirt, and the muted beige of the cabinetry, contrasted by the cool metallic sheen of the refrigerator and the vibrant red of the spice jar label.",
-      "original_id": "s2v_dd22de8858bfc1e272092d0a9d5248df",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/poster.jpg",
-        "width": 1920,
-        "height": 1080,
-        "duration_sec": 6.549
-      },
-      "references": [
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-00.jpg"
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-01.jpg",
+          "frame_index": 33,
+          "timestamp": 1.1
         },
         {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_dd22de8858bfc1e272092d0a9d5248df/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba__key_frames_to_v",
-      "task": "key_frames_to_v",
-      "dataset": "human_portrait_annolabeled",
-      "prompt": "One main subject appears: a young woman in an indoor bathroom. The scene is set during the daytime with bright, even interior lighting. The visual style is everyday lifestyle, captured in a handheld, vlog-like cinematic manner.\n\n[First frame] A medium shot at eye level frames a young woman with her reddish-blonde hair tied in a bun, positioned in the center of the frame. She is wearing a pink and white tie-dye sweatshirt with white lettering. The background consists of a white subway-tiled wall and a clear plastic shower curtain to her right.\n\n[Shot 1] [00:00-00:02] [Medium shot, eye level, static] The handheld camera maintains a steady focus on the woman as she speaks directly to the viewer. She holds a large makeup brush in her right hand and a small round container in her left, gesturing slightly with the brush as she articulates her words. The white-tiled bathroom wall remains static behind her, and the bright lighting highlights her animated facial expressions. The tone is casual and informative.\n\n[Shot 1] [00:02-00:04] [Medium shot, eye level, static] Continuing her demonstration, the woman looks slightly off-camera while tapping the makeup brush against the edge of the powder container. She holds the open container steadily in her left hand, her movements fluid and practiced. The camera captures her natural expressions as she continues to talk, maintaining the intimate, vlog-style ambiance of the tutorial.\n\n[Shot 1] [00:04-00:06] [Medium shot, eye level, static] Picking up from the previous motion, she brings the large brush up to her neck and jawline, applying the powder in sweeping, downward strokes. She keeps her gaze directed toward the camera or a mirror just off-lens, her mouth open as she continues her explanation. The neutral palette of the bathroom tiles provides a clean backdrop for her focused grooming routine, concluding the sequence with an air of everyday authenticity.\n\n[Last frame] A medium shot at eye level captures the woman in the final stage of her makeup application, with the brush held against her neck. Her head is tilted slightly back and her eyes are partially closed as she blends the product. The pink and white tie-dye sweatshirt and the white-tiled background remain consistent, while the makeup container is visible in her lower-left hand.",
-      "original_id": "s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba",
-      "archive_group": "loose_files",
-      "target": {
-        "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/target.mp4",
-        "poster": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/poster.jpg",
-        "width": 1080,
-        "height": 1920,
-        "duration_sec": 6.417
-      },
-      "references": [
-        {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-00.jpg"
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-02.jpg",
+          "frame_index": 67,
+          "timestamp": 2.2333333333333334
         },
         {
-          "role": "key_frame",
-          "media_type": "image",
-          "path": "media/samples/key_frames_to_v/s2v_ef1280b2cbd0dc268c9afd2ee7e0fdba/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_3f7306a0591f506cde63fc178e4b0580",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the large, orange Staten Island Ferry back to the pier.",
-      "original_id": "000000014515_3918091_000000_000289_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/target.mp4",
-        "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_3f7306a0591f506cde63fc178e4b0580/ref-00-poster.jpg",
-          "width": 1282,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_a1ecce127343ecda5d135918ed4898a3",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the concrete stairs on the bottom left.",
-      "original_id": "000000011886_3704254_000300_000449_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/target.mp4",
-        "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/poster.jpg",
-        "width": 1372,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_a1ecce127343ecda5d135918ed4898a3/ref-00-poster.jpg",
-          "width": 1372,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_e749494f09daa39c57c6c2a849f7a25b",
-      "task": "v2v",
-      "dataset": "goku",
-      "prompt": "Add the person walking on the snowy path.",
-      "original_id": "000000004191_2125622_000000_000137_add",
-      "archive_group": "add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/target.mp4",
-        "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/poster.jpg",
-        "width": 1282,
-        "height": 720,
-        "duration_sec": 5.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00.mp4",
-          "poster": "media/samples/v2v/omni_e749494f09daa39c57c6c2a849f7a25b/ref-00-poster.jpg",
-          "width": 1282,
-          "height": 720,
-          "duration_sec": 5.08
-        }
-      ]
-    },
-    {
-      "id": "omni_006e6a3f1b03f888d251409f47fffedf",
-      "task": "tiv2v",
-      "dataset": "goku",
-      "prompt": "Add a long-sleeved sweater worn by the woman on the left. It has a pattern of horizontal stripes in shades of pink and purple. It is located on the woman standing on the left side of the frame. The object to add is shown in the reference image.",
-      "original_id": "03sbtj2hrvbtx80v_clip_0000_meta_v0_refadd",
-      "archive_group": "reference_add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/target.mp4",
-        "poster": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 8.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/ref-00.mp4",
-          "poster": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/ref-00-poster.jpg",
-          "width": 1280,
-          "height": 720,
-          "duration_sec": 8.08
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-03.jpg",
+          "frame_index": 100,
+          "timestamp": 3.3333333333333335
         },
         {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/tiv2v/omni_006e6a3f1b03f888d251409f47fffedf/ref-01.jpg"
-        }
-      ]
-    },
-    {
-      "id": "omni_1096cf61aab15f8ab50bb413f8dd2c9c",
-      "task": "tiv2v",
-      "dataset": "goku",
-      "prompt": "Add the background of the entire scene consists of a dense forest canopy with vibrant green leaves. Sunlight filters through from above, creating bright spots and a bokeh effect. The object to add is shown in the reference image.",
-      "original_id": "03x18k269j2tfujw_clip_0000_meta_v0_item2_refadd",
-      "archive_group": "reference_add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/target.mp4",
-        "poster": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/poster.jpg",
-        "width": 1280,
-        "height": 720,
-        "duration_sec": 8.08
-      },
-      "references": [
-        {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/ref-00.mp4",
-          "poster": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/ref-00-poster.jpg",
-          "width": 1280,
-          "height": 720,
-          "duration_sec": 8.08
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-04.jpg",
+          "frame_index": 134,
+          "timestamp": 4.466666666666667
         },
         {
-          "role": "reference",
-          "media_type": "image",
-          "path": "media/samples/tiv2v/omni_1096cf61aab15f8ab50bb413f8dd2c9c/ref-01.jpg"
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/frame-05.jpg",
+          "frame_index": 167,
+          "timestamp": 5.566666666666666
         }
-      ]
-    },
-    {
-      "id": "omni_229545867d37ac1a6881c4afe41b3f0d",
-      "task": "tiv2v",
-      "dataset": "goku",
-      "prompt": "Add a cluster of delicate, five-petaled white flowers, identified as apple blossoms, on a thin branch. They are located in the upper-left quadrant of the screen, being held and smelled by the woman. The object to add is shown in the reference image.",
-      "original_id": "00thptg24nmnb4il_clip_0000_meta_v0_refadd",
-      "archive_group": "reference_add.videos.part01.tar",
-      "target": {
-        "path": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/target.mp4",
-        "poster": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/poster.jpg",
-        "width": 1360,
-        "height": 720,
-        "duration_sec": 8.08
-      },
+      ],
       "references": [
         {
-          "role": "source",
-          "media_type": "video",
-          "path": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/ref-00.mp4",
-          "poster": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/ref-00-poster.jpg",
-          "width": 1360,
-          "height": 720,
-          "duration_sec": 8.08
+          "role": "object",
+          "name": "wooden craft stick",
+          "media_type": "image",
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg"
+          ],
+          "source_frame_index": 100,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-00-edited.jpg"
         },
         {
-          "role": "reference",
+          "role": "object",
+          "name": "plastic cup",
           "media_type": "image",
-          "path": "media/samples/tiv2v/omni_229545867d37ac1a6881c4afe41b3f0d/ref-01.jpg"
+          "views": [
+            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-01.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-02.jpg",
+            "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-03.jpg"
+          ],
+          "source_frame_index": 67,
+          "source_frame": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-source-frame.jpg",
+          "raw": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
+          "cutout": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
+          "pre_edit": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-view-00.jpg",
+          "mask": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-mask.jpg",
+          "path": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-edited.jpg",
+          "edited": "media/samples/multi_imgs_to_v_real/s2v_671364170f15d4208eac8fc755defade/ref-01-edited.jpg"
         }
+      ],
+      "notes": "Primary: edited output. Debug: source frame, pre-edit cutout, SAM mask, other views/frames.",
+      "gemma_scores": [
+        {
+          "name": "wooden craft stick",
+          "overall": 7.0,
+          "sharpness": 6.0,
+          "completeness": 6.0,
+          "cleanliness": 10.0,
+          "reject": false,
+          "reason": "Most clean cutout of the stick itself, although the top is cropped/missing."
+        },
+        {
+          "name": "plastic cup",
+          "overall": 8.0,
+          "sharpness": 7.0,
+          "completeness": 8.0,
+          "cleanliness": 8.0,
+          "reject": false,
+          "reason": "Most complete and cleanest cutout, though a small piece is missing on the left."
+        }
+      ],
+      "completion_backend": [
+        "nano_banana",
+        "nano_banana"
       ]
     }
   ],
-  "sample_count": 48,
+  "sample_count": 20,
   "source": {
-    "real_multiref_run": "all-tasks+mi2v-first",
-    "real_multiref_count": 32,
-    "task": "mixed",
-    "pipeline": "omni+person_multiref+hoi_object",
+    "real_multiref_run": "hoi-object-pipeline-only",
+    "real_multiref_count": 20,
+    "task": "multi_imgs_to_v",
+    "pipeline": "sam2_qwen_edit_hoi_object",
     "by_dataset": {
-      "abakatrain_gemmalabeled": 4,
-      "datatang_human_object_annolabeled": 15,
-      "datatang_human_woobject_gemmalabeled": 3,
-      "human_portrait_annolabeled": 7,
-      "human_portrait_gemmalabeled": 2,
-      "tobabe_gemmalabeled_filter": 1,
       "HOIGen-1M": 3,
-      "humoset": 3,
-      "hoigen": 2,
-      "human_w_object": 2,
-      "goku": 6
+      "datatang_human_object_annolabeled": 10,
+      "datatang_human_woobject_gemmalabeled": 2,
+      "human_portrait_annolabeled": 2,
+      "abakatrain_gemmalabeled": 3
     },
-    "by_task": {
-      "multi_imgs_to_v": 32,
-      "t2v": 4,
-      "i2v": 3,
-      "key_frames_to_v": 3,
-      "v2v": 3,
-      "tiv2v": 3
-    },
-    "mi2v_pipelines": {
-      "sam2_qwen_edit": 8,
-      "sam2_qwen_edit_hoi_object": 20,
-      "None": 4
-    }
+    "note": "Only hand-object HOI pipeline cases: detect → SAM2 segment → complete object ref. Excludes raw omni peeks and person multi-ref previews."
   }
 }

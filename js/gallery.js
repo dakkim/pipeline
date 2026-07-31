@@ -313,32 +313,42 @@ function renderSample(sample) {
   );
 }
 
-function applyFilter(task) {
+function applyFilter(dataset) {
   for (const button of document.querySelectorAll(".filter")) {
-    button.classList.toggle("is-active", button.dataset.task === task);
+    button.classList.toggle("is-active", button.dataset.task === dataset);
   }
   for (const card of document.querySelectorAll(".sample")) {
-    const show = task === "all" || card.dataset.task === task;
+    const show = dataset === "all" || card.dataset.dataset === dataset;
     card.classList.toggle("hidden", !show);
   }
 }
 
-function buildTaskFilters(samples) {
+function buildDatasetFilters(samples) {
   const nav = document.querySelector(".filters");
   if (!nav) return;
-  // Keep static nav buttons from index.html when present; only ensure labels.
-  const present = new Set(
-    samples.map((sample) => sample.task).filter((name) => typeof name === "string")
+  const datasets = [
+    ...new Set(
+      samples
+        .map((sample) => sample.dataset)
+        .filter((name) => typeof name === "string" && name)
+    ),
+  ].sort();
+  nav.replaceChildren(
+    el("button", {
+      type: "button",
+      className: "filter is-active",
+      "data-task": "all",
+      text: "All sources",
+    }),
+    ...datasets.map((name) =>
+      el("button", {
+        type: "button",
+        className: "filter",
+        "data-task": name,
+        text: `${name.replace(/_/g, " ")} (${samples.filter((s) => s.dataset === name).length})`,
+      })
+    )
   );
-  const buttons = [...nav.querySelectorAll(".filter")];
-  if (!buttons.length) return;
-  for (const button of buttons) {
-    const task = button.dataset.task;
-    if (task === "all") continue;
-    const count = samples.filter((sample) => sample.task === task).length;
-    button.textContent = `${TASK_LABELS[task] || task}${count ? ` (${count})` : ""}`;
-    button.hidden = task !== "all" && !present.has(task);
-  }
 }
 
 async function main() {
@@ -346,30 +356,29 @@ async function main() {
   if (!res.ok) throw new Error(`catalog.json failed: ${res.status}`);
   const catalog = await res.json();
   const source = catalog.source || {};
-  const samples = catalog.samples || [];
-  const multiCount = samples.filter((s) => s.task === "multi_imgs_to_v").length;
+  // Only publish HOI object-pipeline multi_imgs_to_v cases.
+  const samples = (catalog.samples || []).filter(
+    (sample) =>
+      sample.task === "multi_imgs_to_v" &&
+      sample.pipeline === "sam2_qwen_edit_hoi_object"
+  );
 
-  const taskCount = new Set(samples.map((s) => s.task)).size;
   document.getElementById("hero-meta").replaceChildren(
     el("span", {}, [
       el("strong", { text: fmt(samples.length) }),
-      " samples",
-    ]),
-    el("span", {}, [
-      el("strong", { text: fmt(taskCount) }),
-      " tasks",
-    ]),
-    el("span", {}, [
-      el("strong", { text: fmt(multiCount) }),
-      " multi-image → video",
+      " HOI object cases",
     ]),
     el("span", {}, [
       el("strong", { text: fmt(new Set(samples.map((s) => s.dataset)).size) }),
       " sources",
+    ]),
+    el("span", {}, [
+      el("strong", { text: source.real_multiref_run || "hoi-object-pipeline" }),
+      " run",
     ])
   );
 
-  buildTaskFilters(samples);
+  buildDatasetFilters(samples);
   const gallery = document.getElementById("gallery");
   gallery.replaceChildren(...samples.map(renderSample));
 

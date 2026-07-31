@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sampled previews from the prepared OmniWeaving / S2V training corpus, including multi-reference HOI cases."
+      content="HOI multi_imgs_to_v object-reference gallery: hand-object detect, SAM2 segment, complete object refs."
     />
-    <title>Pipeline · Prepared Data Gallery</title>
+    <title>Pipeline · HOI object references</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,31 +21,25 @@
 
     <header class="hero">
       <p class="brand">Pipeline</p>
-      <h1>Prepared training samples</h1>
+      <h1>HOI object → multi-image refs</h1>
       <p class="lede">
-        All task categories from the original gallery, plus later multi-image
-        reference runs (person multi-ref and HOI object refs). Multi-image →
-        video is listed first.
+        Only cases from the hand-object pipeline: detect interacted objects,
+        SAM2 segment, then complete a clean object reference. Primary tiles are
+        the completed refs; debug shows extract frame, pre-edit cutout, and mask.
       </p>
       <div class="hero-meta" id="hero-meta"></div>
     </header>
 
-    <nav class="filters" aria-label="Task filters">
-      <button type="button" class="filter is-active" data-task="all">All</button>
-      <button type="button" class="filter" data-task="multi_imgs_to_v">multi_imgs_to_v</button>
-      <button type="button" class="filter" data-task="t2v">t2v</button>
-      <button type="button" class="filter" data-task="i2v">i2v</button>
-      <button type="button" class="filter" data-task="key_frames_to_v">key_frames_to_v</button>
-      <button type="button" class="filter" data-task="v2v">v2v</button>
-      <button type="button" class="filter" data-task="tiv2v">tiv2v</button>
+    <nav class="filters" aria-label="Dataset filters">
+      <button type="button" class="filter is-active" data-task="all">All sources</button>
     </nav>
 
     <main id="gallery" class="gallery" aria-live="polite"></main>
 
     <footer class="foot">
       <p>
-        Media clips are ~2.5s web previews. Source corpora stay on the training
-        machines; this site only ships sampled assets for review.
+        Raw Omni peeks and person multi-ref previews are excluded. Previews are
+        ~2.5s clips; full corpora stay on the training machines.
       </p>
     </footer>
 
@@ -56,6 +50,6 @@
       <div class="lightbox-body" id="lightbox-body"></div>
     </dialog>
 
-    <script src="./js/gallery.js?v=20260731-alltasks" type="module"></script>
+    <script src="./js/gallery.js?v=20260731-hoi-only" type="module"></script>
   </body>
 </html>
