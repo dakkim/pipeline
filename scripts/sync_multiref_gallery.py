@@ -207,7 +207,7 @@ def main() -> None:
                 **meta,
             },
             "references": refs,
-            "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit",
+            "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit",
         }
         new_samples.append(sample)
         print("ok", sid, "refs", len(refs))

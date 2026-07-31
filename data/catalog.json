@@ -68,7 +68,7 @@
           "edited": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
+      "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558",
@@ -104,7 +104,7 @@
           "edited": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
+      "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_3c690f6c970663deab321e48fb858c80",
@@ -155,7 +155,7 @@
           "edited": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
+      "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_b2fe07048d12ba188a45b854d20ebc97",
@@ -191,7 +191,7 @@
           "edited": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
+      "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_baaf21a0e1c6f5cfebe84f64723da49e",
@@ -227,7 +227,7 @@
           "edited": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
+      "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_46ff73e5cf9345773eb183649843bcce",
@@ -264,7 +264,7 @@
           "edited": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/ref-00-edited.jpg"
         }
       ],
-      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
+      "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit"
     },
     {
       "id": "s2v_42d820c6f6554f4f9fa56f615222dcb0",
@@ -316,7 +316,7 @@
           "edited": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/ref-01-edited.jpg"
         }
       ],
-      "notes": "SAM2 mask cutouts → MASt3R same-object multi-view → Qwen-Image-Edit"
+      "notes": "SAM2 mask cutouts → MASt3R same-object filter → pick most complete view → Qwen-Image-Edit"
     },
     {
       "id": "omni_fcfa970385806077912cda9aa5312cd5",
