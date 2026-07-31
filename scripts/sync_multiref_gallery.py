@@ -4,15 +4,25 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 from pathlib import Path
 
 from PIL import Image
 
+_HUMAN_RE = re.compile(
+    r"\b(person|people|human|man|woman|boy|girl|child|face|hand|hands|subject)\b",
+    re.I,
+)
+
+
+def re_human(name: str) -> bool:
+    return bool(_HUMAN_RE.search(name or ""))
+
 ROOT = Path(__file__).resolve().parents[1]
 RUN = Path(
-    "/mnt/data04/144632/zachxu@videorebirth.com/projects/DataPipe/s2v_datapipeline/runs/real-multiref-gallery"
+    "/mnt/data04/144632/zachxu@videorebirth.com/projects/DataPipe/s2v_datapipeline/runs/real-hoi-object-gallery"
 )
 MANIFEST = RUN / "stages" / "report" / "part-00000.jsonl"
 
@@ -79,17 +89,13 @@ def main() -> None:
         "source": {},
     }
 
-    # Drop previous real multi-ref gallery entries and weak single-ref HuMo demos
-    # for the multi-ref filter clarity; keep other tasks.
+    # Replace previous real multi-ref gallery entries; keep other Omni tasks.
     kept = [
         s
         for s in catalog.get("samples", [])
         if not (
             s.get("task") == "multi_imgs_to_v"
-            and (
-                s.get("pipeline") == "sam2_qwen_edit"
-                or s.get("dataset") == "humoset"
-            )
+            and s.get("pipeline") in {"sam2_qwen_edit", "sam2_qwen_edit_hoi_object"}
         )
     ]
 
@@ -98,11 +104,21 @@ def main() -> None:
         if not line.strip():
             continue
         row = json.loads(line)
-        if row.get("status", {}).get("state") not in {None, "accepted"} and not row.get(
-            "quality", {}
-        ).get("accepted", True):
-            # still include accepted-ish records; smoke writes accepted
-            pass
+        status = row.get("status") if isinstance(row.get("status"), dict) else {}
+        refs_raw = row.get("references") or []
+        if status.get("state") == "rejected" or not refs_raw:
+            print("skip", row.get("sample_id"), status.get("reason"))
+            continue
+        # Prefer object-role references only.
+        object_refs = [
+            ref
+            for ref in refs_raw
+            if str(ref.get("role") or "object") == "object"
+            and not re_human(str(ref.get("name") or ""))
+        ]
+        if not object_refs:
+            print("skip-no-object-ref", row.get("sample_id"))
+            continue
         sid = row["sample_id"]
         rel = f"multi_imgs_to_v_real/{sid}"
         out = media_root / sid
@@ -120,12 +136,12 @@ def main() -> None:
         meta = _ffmpeg_preview(video, out / "target.mp4", out / "poster.jpg")
 
         refs = []
-        for idx, ref in enumerate(row.get("references") or []):
+        for idx, ref in enumerate(object_refs):
             raw = Path(ref.get("raw_context_crop") or ref.get("context_crop") or "")
             edited = Path(ref.get("edited_reference") or "")
             mask = Path(ref.get("mask_crop") or "")
             entry = {
-                "role": ref.get("role"),
+                "role": "object",
                 "name": ref.get("name"),
                 "media_type": "image",
             }
@@ -160,16 +176,18 @@ def main() -> None:
             "id": sid,
             "task": "multi_imgs_to_v",
             "dataset": source.get("name") or row.get("dataset") or "human_w_object",
-            "pipeline": "sam2_qwen_edit",
+            "pipeline": "sam2_qwen_edit_hoi_object",
             "prompt": prompt,
             "original_id": source.get("record_id") or row.get("original_id"),
+            "hand_objects": row.get("hand_objects")
+            or [ref.get("name") for ref in object_refs if ref.get("name")],
             "target": {
                 "path": f"media/samples/{rel}/target.mp4",
                 "poster": f"media/samples/{rel}/poster.jpg",
                 **meta,
             },
             "references": refs,
-            "notes": "SAM2 multi-view crops + Qwen-Image-Edit completion",
+            "notes": "SAM2 hand-object crops + Qwen-Image-Edit object completion",
         }
         new_samples.append(sample)
         print("ok", sid, "refs", len(refs))

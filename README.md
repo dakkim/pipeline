@@ -38,13 +38,13 @@ underlying archives / loose files.
 
 ## Real multi-reference cases
 
-`media/samples/multi_imgs_to_v_real/` comes from run `real-multiref-gallery`:
+`media/samples/multi_imgs_to_v_real/` comes from run `real-hoi-object-gallery`:
 
-1. candidate frames from video
-2. **SAM2** masks → multi-view crops
-3. **Qwen-Image-Edit** completes occluded/incomplete crops
+1. Gemma discovers **hand-interacted objects** (never the person)
+2. **SAM2** segments those objects across views
+3. **Qwen-Image-Edit** completes occluded/incomplete **object** crops
 
-Each card shows raw crop, SAM mask crop, and Qwen-edited reference side by side.
+Each card shows raw object crop, SAM mask, and Qwen-completed object reference.
 
 Refresh after a new run:
 

@@ -131,6 +131,12 @@ function renderSample(sample) {
         sample.pipeline
           ? el("span", { className: "chip", text: sample.pipeline })
           : null,
+        Array.isArray(sample.hand_objects) && sample.hand_objects.length
+          ? el("span", {
+              className: "chip",
+              text: sample.hand_objects.join(", "),
+            })
+          : null,
         sample.target?.duration_sec
           ? el("span", {
               className: "chip",
