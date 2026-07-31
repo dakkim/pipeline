@@ -1,0 +1,266 @@
+{
+  "title": "Easy HOI → multi-view bbox crops",
+  "samples": [
+    {
+      "id": "s2v_417bd76cb0bcad43d5bbc37dcf5dc969",
+      "task": "multi_imgs_to_v",
+      "dataset": "HOIGen-1M",
+      "pipeline": "easy",
+      "prompt": "The video captures a scene inside a barber shop. A man is seated in a chair, facing away from the camera, while another man, presumably the barber, is standing behind him. The barber is wearing glasses and a patterned shirt, and he is focused on grooming the seated man's hair. The barber uses a clipper to trim the hair, and the sound of the clipper can be heard in the background. The setting includes a brick wall and a counter with various barbering tools. The camera remains stationary, providing a clear view of the interaction between the two men. The lighting is warm, creating a cozy atmosphere. The video ends with the barber finishing the grooming process and the two men engaging in conversation.",
+      "original_id": "Ql8vxawdRtg-0:01:26.961-0:01:30.048.mp4",
+      "hand_objects": [
+        "clipper"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/target.mp4",
+        "poster": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/poster.jpg",
+        "width": 1280,
+        "height": 720,
+        "duration_sec": 3.254
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-01.jpg",
+          "frame_index": 15,
+          "timestamp": 0.625625
+        },
+        {
+          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-02.jpg",
+          "frame_index": 31,
+          "timestamp": 1.2929583333333332
+        },
+        {
+          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-03.jpg",
+          "frame_index": 46,
+          "timestamp": 1.9185833333333333
+        },
+        {
+          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-04.jpg",
+          "frame_index": 62,
+          "timestamp": 2.5859166666666664
+        },
+        {
+          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/frame-05.jpg",
+          "frame_index": 77,
+          "timestamp": 3.2115416666666663
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "clipper",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_417bd76cb0bcad43d5bbc37dcf5dc969/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.516,
+          "total_s": 0.516
+        }
+      }
+    },
+    {
+      "id": "s2v_a1c4858bccf4c5abc387e19f5a197889",
+      "task": "multi_imgs_to_v",
+      "dataset": "HOIGen-1M",
+      "pipeline": "easy",
+      "prompt": "The video is a short, informative segment featuring a man in a kitchen setting. The man appears to be of African descent and is wearing a dark vest over a light-colored shirt. He is holding a small plate with a spoonful of what looks like coffee beans. The man is speaking in a language that uses the Devanagari script, which is commonly used in several Indian languages.  The background of the image shows a kitchen counter with various items on it, including a coffee machine, a blender, and several bottles and jars that might contain coffee-related products. There is also a sign that reads \"TIBETAN MINT\" in English, suggesting that the location might be a cafe or a place that serves coffee.  The man is gesturing with his hands as he speaks, and his facial expression is serious. The lighting in the room is bright, and the overall atmosphere seems to be one of instruction or explanation. The text on the screen is in Korean, and it reads \"커피 빵 맛 좋아요\" which translates to \"Coffee is delicious\" in English.  The video appears to be a part of a larger series or program, as indicated by the text at the bottom of the screen. The style of the video is straightforward and educational, with a focus on the man presenting",
+      "original_id": "wfeO34bxEWc-0:09:28.367-0:09:37.710.mp4",
+      "hand_objects": [
+        "cup"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/target.mp4",
+        "poster": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/poster.jpg",
+        "width": 1280,
+        "height": 720,
+        "duration_sec": 9.377
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-01.jpg",
+          "frame_index": 56,
+          "timestamp": 1.8685333333333334
+        },
+        {
+          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-02.jpg",
+          "frame_index": 112,
+          "timestamp": 3.7370666666666668
+        },
+        {
+          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-03.jpg",
+          "frame_index": 168,
+          "timestamp": 5.6056
+        },
+        {
+          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-04.jpg",
+          "frame_index": 224,
+          "timestamp": 7.4741333333333335
+        },
+        {
+          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/frame-05.jpg",
+          "frame_index": 280,
+          "timestamp": 9.342666666666666
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "cup",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_a1c4858bccf4c5abc387e19f5a197889/ref-00-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.117,
+          "total_s": 0.117
+        }
+      }
+    },
+    {
+      "id": "s2v_04cfc3b45e814cefb29ecfc7923ff49d",
+      "task": "multi_imgs_to_v",
+      "dataset": "HOIGen-1M",
+      "pipeline": "easy",
+      "prompt": "The video shows two boys engaged in a science experiment at a table. The boy on the left, wearing a yellow shirt and goggles, is holding a piece of paper and talking. The boy on the right, wearing a striped shirt and goggles, is stirring a mixture in a measuring cup. They are both sitting in front of a red wall with various items on it, including a globe and a poster. The table in front of them has a blue surface and is covered with various items, including a measuring cup, a bottle of liquid, and a clear container. The boys appear to be enjoying themselves, laughing and talking as they work on their experiment. The video captures a moment of learning and fun, with the boys exploring the world of science together.",
+      "original_id": "RQnw937GpFk-0:01:23.760-0:01:41.760.mp4",
+      "hand_objects": [
+        "spoon",
+        "bag"
+      ],
+      "target": {
+        "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/target.mp4",
+        "poster": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/poster.jpg",
+        "width": 1280,
+        "height": 720,
+        "duration_sec": 18.04
+      },
+      "candidate_frames": [
+        {
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": 0.0
+        },
+        {
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-01.jpg",
+          "frame_index": 90,
+          "timestamp": 3.6
+        },
+        {
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-02.jpg",
+          "frame_index": 180,
+          "timestamp": 7.2
+        },
+        {
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-03.jpg",
+          "frame_index": 270,
+          "timestamp": 10.8
+        },
+        {
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-04.jpg",
+          "frame_index": 360,
+          "timestamp": 14.4
+        },
+        {
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/frame-05.jpg",
+          "frame_index": 450,
+          "timestamp": 18.0
+        }
+      ],
+      "references": [
+        {
+          "role": "object",
+          "name": "spoon",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-01.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-02.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-03.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-04.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-05.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-source-frame.jpg",
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
+          "raw": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-00-view-00.jpg"
+        },
+        {
+          "role": "object",
+          "name": "bag",
+          "media_type": "image",
+          "reference_kind": "bbox_crop",
+          "views": [
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-01.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-02.jpg",
+            "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-03.jpg"
+          ],
+          "source_frame_index": 0,
+          "source_frame": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-source-frame.jpg",
+          "path": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg",
+          "raw": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg",
+          "cutout": "media/samples/easy/s2v_04cfc3b45e814cefb29ecfc7923ff49d/ref-01-view-00.jpg"
+        }
+      ],
+      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "timing": {
+        "easy_references": {
+          "crop_s": 0.13,
+          "total_s": 0.13
+        }
+      }
+    }
+  ],
+  "sample_count": 3,
+  "source": {
+    "pipeline": "easy",
+    "run": "real-hoi-easy-gallery",
+    "note": "Gemma detects hand-interacted objects; bbox crops kept across keyframes. No SAM, no completion edit, no face.",
+    "by_dataset": {
+      "HOIGen-1M": 3
+    }
+  }
+}

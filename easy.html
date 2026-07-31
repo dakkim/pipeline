@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="HOI multi_imgs_to_v object-reference gallery: hand-object detect, SAM2 segment, complete object refs."
+      content="Easy HOI gallery: Gemma detects interacted objects and keeps multi-view bbox crops. No SAM, no face."
     />
-    <title>Pipeline · HOI object references</title>
+    <title>Pipeline · Easy HOI bbox crops</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,23 +16,20 @@
     />
     <link rel="stylesheet" href="./css/site.css" />
   </head>
-  <body
-    data-catalog="./data/catalog.json"
-    data-pipeline="sam2_qwen_edit_hoi_object"
-  >
+  <body data-catalog="./data/catalog_easy.json" data-pipeline="easy">
     <div class="atmosphere" aria-hidden="true"></div>
 
     <header class="hero">
       <p class="brand">Pipeline</p>
       <nav class="site-nav" aria-label="Pipeline views">
-        <a class="site-nav-link is-active" href="./index.html">Full HOI</a>
-        <a class="site-nav-link" href="./easy.html">Easy</a>
+        <a class="site-nav-link" href="./index.html">Full HOI</a>
+        <a class="site-nav-link is-active" href="./easy.html">Easy</a>
       </nav>
-      <h1>HOI object → multi-image refs</h1>
+      <h1>Easy HOI → multi-view bbox crops</h1>
       <p class="lede">
-        Hand-object pipeline cases: detect interacted objects, SAM2 segment,
-        complete object refs, plus YOLOv8-face crops from selected keyframes as
-        extra face references.
+        Minimal chain: sample keyframes → Gemma finds hand-interacted objects →
+        keep bbox crops across views. No SAM, no completion edit, no face
+        detection. Selected keyframes are shown with each sample.
       </p>
       <div class="hero-meta" id="hero-meta"></div>
     </header>
@@ -45,8 +42,8 @@
 
     <footer class="foot">
       <p>
-        Raw Omni peeks and person multi-ref previews are excluded. Previews are
-        ~2.5s clips; full corpora stay on the training machines.
+        Easy profile for fast multi-view object references. Full HOI (SAM +
+        complete + face) lives on the Full HOI page.
       </p>
     </footer>
 

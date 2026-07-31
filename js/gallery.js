@@ -90,12 +90,14 @@ function makeTile({ label, path, media, primary = false, objectName = "" }) {
 function collectReferenceTiles(sample) {
   const refs = sample.references || [];
   const multiObject = refs.length > 1;
+  const isEasy = sample.pipeline === "easy";
   const isHoi =
     sample.pipeline === "sam2_qwen_edit" ||
     sample.pipeline === "sam2_qwen_edit_hoi_object";
 
   const primary = [];
   const intermediates = [];
+  const keyframes = [];
 
   for (const [index, ref] of refs.entries()) {
     const isFace = ref.role === "face";
@@ -111,6 +113,42 @@ function collectReferenceTiles(sample) {
       isHoi
         ? ref.path
         : null);
+
+    if (isEasy) {
+      // Easy: every Gemma bbox crop is a primary multi-view object ref.
+      const crops = viewPaths.length
+        ? viewPaths
+        : [selectedCutout || ref.path].filter(Boolean);
+      crops.forEach((path, viewIndex) => {
+        primary.push(
+          makeTile({
+            label: tileLabel(
+              objectName,
+              `bbox view ${viewIndex + 1}`,
+              multiObject || crops.length > 1
+            ),
+            path,
+            primary: true,
+            objectName,
+          })
+        );
+      });
+      if (ref.source_frame) {
+        const frameLabel =
+          ref.source_frame_index != null
+            ? `bbox source f${ref.source_frame_index}`
+            : "bbox source";
+        intermediates.push(
+          makeTile({
+            label: tileLabel(objectName, frameLabel, multiObject),
+            path: ref.source_frame,
+            objectName,
+          })
+        );
+        intermediates[intermediates.length - 1].classList.add("is-extract-frame");
+      }
+      continue;
+    }
 
     // Front row: final training assets only (edited / object ref / face crop).
     if (isFace && (edited || ref.path || selectedCutout)) {
@@ -209,7 +247,7 @@ function collectReferenceTiles(sample) {
     }
   }
 
-  // Shared video candidate frames after per-object debug tiles.
+  // Shared video candidate / keyframes (prominent for easy page).
   const frames = Array.isArray(sample.candidate_frames)
     ? sample.candidate_frames
     : [];
@@ -220,16 +258,17 @@ function collectReferenceTiles(sample) {
       typeof frame === "object" && frame.frame_index != null
         ? frame.frame_index
         : index;
-    intermediates.push(
-      makeTile({
-        label: `cand f${idx}`,
-        path,
-        objectName: "video",
-      })
-    );
+    const tile = makeTile({
+      label: `keyframe f${idx}`,
+      path,
+      objectName: "video",
+      primary: isEasy,
+    });
+    if (isEasy) keyframes.push(tile);
+    else intermediates.push(tile);
   });
 
-  return { primary, intermediates };
+  return { primary, intermediates, keyframes };
 }
 
 function renderSample(sample) {
@@ -250,14 +289,35 @@ function renderSample(sample) {
   });
 
   const refs = sample.references || [];
-  const { primary, intermediates } = collectReferenceTiles(sample);
+  const { primary, intermediates, keyframes } = collectReferenceTiles(sample);
   const refBlocks = [];
   if (primary.length) {
     refBlocks.push(
       el(
         "div",
-        { className: "ref-row ref-row-primary", "aria-label": "Final edited object references" },
+        {
+          className: "ref-row ref-row-primary",
+          "aria-label":
+            sample.pipeline === "easy"
+              ? "Multi-view object bbox crops"
+              : "Final edited object references",
+        },
         primary
+      )
+    );
+  }
+  if (keyframes && keyframes.length) {
+    refBlocks.push(
+      el(
+        "div",
+        {
+          className: "ref-row ref-row-keyframes",
+          "aria-label": "Selected keyframes",
+        },
+        [
+          el("p", { className: "ref-row-label", text: "Selected keyframes" }),
+          ...keyframes,
+        ]
       )
     );
   }
@@ -362,28 +422,40 @@ function buildDatasetFilters(samples) {
 }
 
 async function main() {
-  const res = await fetch("./data/catalog.json");
-  if (!res.ok) throw new Error(`catalog.json failed: ${res.status}`);
+  const body = document.body;
+  const catalogUrl = body.dataset.catalog || "./data/catalog.json";
+  const pipelineFilter = body.dataset.pipeline || "sam2_qwen_edit_hoi_object";
+  const res = await fetch(catalogUrl);
+  if (!res.ok) throw new Error(`${catalogUrl} failed: ${res.status}`);
   const catalog = await res.json();
   const source = catalog.source || {};
-  // Only publish HOI object-pipeline multi_imgs_to_v cases.
-  const samples = (catalog.samples || []).filter(
-    (sample) =>
-      sample.task === "multi_imgs_to_v" &&
-      sample.pipeline === "sam2_qwen_edit_hoi_object"
-  );
+  const samples = (catalog.samples || []).filter((sample) => {
+    if (sample.task !== "multi_imgs_to_v") return false;
+    if (pipelineFilter === "all") return true;
+    return sample.pipeline === pipelineFilter;
+  });
 
+  const caseLabel =
+    pipelineFilter === "easy" ? " easy bbox-crop cases" : " HOI object cases";
   document.getElementById("hero-meta").replaceChildren(
     el("span", {}, [
       el("strong", { text: fmt(samples.length) }),
-      " HOI object cases",
+      caseLabel,
     ]),
     el("span", {}, [
       el("strong", { text: fmt(new Set(samples.map((s) => s.dataset)).size) }),
       " sources",
     ]),
     el("span", {}, [
-      el("strong", { text: source.real_multiref_run || "hoi-object-pipeline" }),
+      el(
+        "strong",
+        {
+          text:
+            source.run ||
+            source.real_multiref_run ||
+            (pipelineFilter === "easy" ? "easy" : "hoi-object-pipeline"),
+        }
+      ),
       " run",
     ])
   );

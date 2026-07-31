@@ -58,3 +58,15 @@ Refresh after a new run:
 python scripts/sync_multiref_gallery.py
 ```
 
+## Easy HOI page
+
+[`easy.html`](https://dakkim.github.io/pipeline/easy.html) — Gemma HOI bbox
+crops across keyframes only (no SAM / edit / face). Header switches between
+**Full HOI** and **Easy**.
+
+```bash
+python scripts/sync_easy_gallery.py \
+  --run ../DataPipe/s2v_datapipeline/runs/real-hoi-easy-gallery
+# writes data/catalog_easy.json + media/samples/easy/
+```
+
