@@ -66,17 +66,27 @@ function tileLabel(objectName, kind, multiObject) {
   return kind;
 }
 
-function makeTile({ label, path, media, primary = false, objectName = "" }) {
+function makeTile({
+  label,
+  path,
+  media,
+  primary = false,
+  selected = false,
+  objectName = "",
+}) {
   const payload = media || {
     path,
     media_type: "image",
     role: label,
   };
+  const classes = ["ref-tile"];
+  if (primary) classes.push("is-primary");
+  if (selected) classes.push("is-selected");
   return el(
     "button",
     {
       type: "button",
-      className: primary ? "ref-tile is-primary" : "ref-tile",
+      className: classes.join(" "),
       title: objectName ? `${objectName} · ${label}` : label,
       onClick: () => openLightbox(payload),
     },
@@ -102,9 +112,18 @@ function collectReferenceTiles(sample) {
   for (const [index, ref] of refs.entries()) {
     const isFace = ref.role === "face";
     const objectName = ref.name || ref.role || `object ${index + 1}`;
-    const viewPaths = Array.isArray(ref.views) ? ref.views.filter(Boolean) : [];
+    const viewPaths = Array.isArray(ref.views)
+      ? ref.views
+          .map((view) => (typeof view === "string" ? view : view?.path))
+          .filter(Boolean)
+      : [];
     const selectedCutout =
-      ref.pre_edit || viewPaths[0] || ref.cutout || ref.raw || null;
+      ref.pre_edit ||
+      ref.selected_cutout ||
+      viewPaths[0] ||
+      ref.cutout ||
+      ref.raw ||
+      null;
     const edited =
       ref.edited ||
       (ref.path &&
@@ -115,21 +134,45 @@ function collectReferenceTiles(sample) {
         : null);
 
     if (isEasy) {
-      // Easy: every Gemma bbox crop is a primary multi-view object ref.
-      const crops = viewPaths.length
-        ? viewPaths
-        : [selectedCutout || ref.path].filter(Boolean);
-      crops.forEach((path, viewIndex) => {
+      // Easy: multi-view bbox crops; highest-scoring view marked selected.
+      const viewObjs = Array.isArray(ref.views) ? ref.views : [];
+      const crops = viewObjs.length
+        ? viewObjs
+            .map((view) =>
+              typeof view === "string"
+                ? { path: view, selected: false }
+                : {
+                    path: view?.path,
+                    selected: Boolean(view?.selected),
+                    score: view?.select_score?.total,
+                  }
+            )
+            .filter((view) => view.path)
+        : [selectedCutout || ref.path]
+            .filter(Boolean)
+            .map((path) => ({ path, selected: true }));
+      if (crops.length && !crops.some((view) => view.selected)) {
+        crops[0].selected = true;
+      }
+      crops.forEach((view, viewIndex) => {
+        const kind = view.selected
+          ? "selected"
+          : `bbox view ${viewIndex + 1}`;
+        const scoreHint =
+          view.selected && view.score != null
+            ? ` · score ${Number(view.score).toFixed(2)}`
+            : "";
         primary.push(
           makeTile({
             label: tileLabel(
               objectName,
-              `bbox view ${viewIndex + 1}`,
+              kind,
               multiObject || crops.length > 1
             ),
-            path,
+            path: view.path,
             primary: true,
-            objectName,
+            selected: Boolean(view.selected),
+            objectName: objectName + scoreHint,
           })
         );
       });

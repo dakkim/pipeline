@@ -1,5 +1,5 @@
 {
-  "title": "Easy HOI → internal multi-view bbox crops",
+  "title": "Easy HOI → multi-view bbox crops",
   "samples": [
     {
       "id": "s2v_976f55a120ef50e77a1e32ead9ec4eee",
@@ -58,18 +58,113 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0044,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 219.8,
+                "sharpness_norm": 0.69,
+                "total": 3.545
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.104,
+                "area_sweetspot": 0.822,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 55.46,
+                "sharpness_norm": 0.516,
+                "total": 3.38
+              },
+              "source_frame_index": 108
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0032,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 132.63,
+                "sharpness_norm": 0.626,
+                "total": 2.613
+              },
+              "source_frame_index": 81
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0053,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 133.11,
+                "sharpness_norm": 0.626,
+                "total": 2.613
+              },
+              "source_frame_index": 135
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0029,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 78.48,
+                "sharpness_norm": 0.559,
+                "total": 2.58
+              },
+              "source_frame_index": 27
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0035,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 61.52,
+                "sharpness_norm": 0.529,
+                "total": 2.564
+              },
+              "source_frame_index": 54
+            }
           ],
+          "select_score": {
+            "area_frac": 0.0044,
+            "area_sweetspot": 0.0,
+            "confidence": 0.9,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 219.8,
+            "sharpness_norm": 0.69,
+            "total": 3.545
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-00-view-00.jpg"
         },
         {
           "role": "object",
@@ -77,25 +172,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-01.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-02.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-03.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-04.jpg",
-            "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0145,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 11.68,
+                "sharpness_norm": 0.325,
+                "total": 3.362
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0195,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 18.06,
+                "sharpness_norm": 0.377,
+                "total": 2.488
+              },
+              "source_frame_index": 81
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0156,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 8.99,
+                "sharpness_norm": 0.294,
+                "total": 2.447
+              },
+              "source_frame_index": 27
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0181,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 8.1,
+                "sharpness_norm": 0.282,
+                "total": 2.441
+              },
+              "source_frame_index": 54
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0028,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 75.18,
+                "sharpness_norm": 0.554,
+                "total": 0.577
+              },
+              "source_frame_index": 135
+            },
+            {
+              "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0074,
+                "area_sweetspot": 0.0,
+                "confidence": 0.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 32.16,
+                "sharpness_norm": 0.447,
+                "total": 0.524
+              },
+              "source_frame_index": 108
+            }
           ],
+          "select_score": {
+            "area_frac": 0.0145,
+            "area_sweetspot": 0.0,
+            "confidence": 0.9,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 11.68,
+            "sharpness_norm": 0.325,
+            "total": 3.362
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-source-frame.jpg",
           "path": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
           "raw": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_976f55a120ef50e77a1e32ead9ec4eee/ref-01-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.356,
-          "total_s": 0.356
+          "crop_s": 0.403,
+          "total_s": 0.403
         }
       }
     },
@@ -155,25 +345,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.1225,
+                "area_sweetspot": 0.993,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 11.98,
+                "sharpness_norm": 0.328,
+                "total": 4.456
+              },
+              "source_frame_index": 31
+            },
+            {
+              "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0907,
+                "area_sweetspot": 0.675,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 14.06,
+                "sharpness_norm": 0.347,
+                "total": 4.148
+              },
+              "source_frame_index": 62
+            },
+            {
+              "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.075,
+                "area_sweetspot": 0.5,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 28.47,
+                "sharpness_norm": 0.432,
+                "total": 4.016
+              },
+              "source_frame_index": 125
+            },
+            {
+              "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0667,
+                "area_sweetspot": 0.408,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 21.17,
+                "sharpness_norm": 0.396,
+                "total": 3.906
+              },
+              "source_frame_index": 94
+            },
+            {
+              "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0752,
+                "area_sweetspot": 0.503,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 15.81,
+                "sharpness_norm": 0.361,
+                "total": 1.983
+              },
+              "source_frame_index": 156
+            },
+            {
+              "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0674,
+                "area_sweetspot": 0.416,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 17.78,
+                "sharpness_norm": 0.375,
+                "total": 1.903
+              },
+              "source_frame_index": 0
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.1225,
+            "area_sweetspot": 0.993,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 11.98,
+            "sharpness_norm": 0.328,
+            "total": 4.456
+          },
+          "source_frame_index": 31,
           "source_frame": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_b7e392b8c1eef56661cbcc32476250cf/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.068,
-          "total_s": 0.068
+          "crop_s": 0.129,
+          "total_s": 0.129
         }
       }
     },
@@ -233,24 +518,105 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-04.jpg"
+            {
+              "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0974,
+                "area_sweetspot": 0.749,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 11.45,
+                "sharpness_norm": 0.322,
+                "total": 4.21
+              },
+              "source_frame_index": 150
+            },
+            {
+              "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.3596,
+                "area_sweetspot": 0.274,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 10.58,
+                "sharpness_norm": 0.313,
+                "total": 3.73
+              },
+              "source_frame_index": 75
+            },
+            {
+              "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0336,
+                "area_sweetspot": 0.04,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 25.39,
+                "sharpness_norm": 0.418,
+                "total": 1.549
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.6904,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 15.45,
+                "sharpness_norm": 0.358,
+                "total": 1.479
+              },
+              "source_frame_index": 112
+            },
+            {
+              "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0215,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 36.28,
+                "sharpness_norm": 0.462,
+                "total": 1.431
+              },
+              "source_frame_index": 37
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.0974,
+            "area_sweetspot": 0.749,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 11.45,
+            "sharpness_norm": 0.322,
+            "total": 4.21
+          },
+          "source_frame_index": 150,
           "source_frame": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_0b0524fd2ed67507ac9e2fc34242e43d/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.066,
-          "total_s": 0.066
+          "crop_s": 0.142,
+          "total_s": 0.142
         }
       }
     },
@@ -310,25 +676,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.4086,
+                "area_sweetspot": 0.126,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 12.03,
+                "sharpness_norm": 0.328,
+                "total": 1.59
+              },
+              "source_frame_index": 25
+            },
+            {
+              "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.625,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 14.31,
+                "sharpness_norm": 0.349,
+                "total": 1.474
+              },
+              "source_frame_index": 51
+            },
+            {
+              "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.5318,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 32.73,
+                "sharpness_norm": 0.45,
+                "total": 1.425
+              },
+              "source_frame_index": 102
+            },
+            {
+              "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.6976,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 22.32,
+                "sharpness_norm": 0.402,
+                "total": 1.401
+              },
+              "source_frame_index": 76
+            },
+            {
+              "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.5557,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 20.35,
+                "sharpness_norm": 0.391,
+                "total": 1.396
+              },
+              "source_frame_index": 127
+            },
+            {
+              "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0078,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 2.34,
+                "sharpness_norm": 0.154,
+                "total": 1.177
+              },
+              "source_frame_index": 0
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.4086,
+            "area_sweetspot": 0.126,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 0.0,
+            "sharpness": 12.03,
+            "sharpness_norm": 0.328,
+            "total": 1.59
+          },
+          "source_frame_index": 25,
           "source_frame": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_bd3d8f9e79735007784b168e08a04f71/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.159,
-          "total_s": 0.159
+          "crop_s": 0.296,
+          "total_s": 0.296
         }
       }
     },
@@ -388,25 +849,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0076,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 175.59,
+                "sharpness_norm": 0.661,
+                "total": 3.631
+              },
+              "source_frame_index": 95
+            },
+            {
+              "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0065,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 170.27,
+                "sharpness_norm": 0.657,
+                "total": 3.629
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0093,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 89.06,
+                "sharpness_norm": 0.575,
+                "total": 3.588
+              },
+              "source_frame_index": 127
+            },
+            {
+              "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0245,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 57.74,
+                "sharpness_norm": 0.521,
+                "total": 3.56
+              },
+              "source_frame_index": 159
+            },
+            {
+              "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0132,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 42.31,
+                "sharpness_norm": 0.482,
+                "total": 3.541
+              },
+              "source_frame_index": 64
+            },
+            {
+              "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0067,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 6.09,
+                "sharpness_norm": 0.25,
+                "total": 3.325
+              },
+              "source_frame_index": 32
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.0076,
+            "area_sweetspot": 0.0,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 175.59,
+            "sharpness_norm": 0.661,
+            "total": 3.631
+          },
+          "source_frame_index": 95,
           "source_frame": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_7644c937b0e598297727fb525a2b807a/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.058,
-          "total_s": 0.058
+          "crop_s": 0.071,
+          "total_s": 0.071
         }
       }
     },
@@ -466,25 +1022,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.323,
+                "area_sweetspot": 0.385,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 33.86,
+                "sharpness_norm": 0.454,
+                "total": 3.912
+              },
+              "source_frame_index": 127
+            },
+            {
+              "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.4289,
+                "area_sweetspot": 0.064,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 26.12,
+                "sharpness_norm": 0.422,
+                "total": 3.575
+              },
+              "source_frame_index": 159
+            },
+            {
+              "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.2273,
+                "area_sweetspot": 0.675,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 46.04,
+                "sharpness_norm": 0.492,
+                "total": 2.221
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.2853,
+                "area_sweetspot": 0.499,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 17.55,
+                "sharpness_norm": 0.373,
+                "total": 1.986
+              },
+              "source_frame_index": 32
+            },
+            {
+              "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.3209,
+                "area_sweetspot": 0.391,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 27.78,
+                "sharpness_norm": 0.429,
+                "total": 1.906
+              },
+              "source_frame_index": 95
+            },
+            {
+              "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.4097,
+                "area_sweetspot": 0.122,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 17.11,
+                "sharpness_norm": 0.37,
+                "total": 1.607
+              },
+              "source_frame_index": 64
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.323,
+            "area_sweetspot": 0.385,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 33.86,
+            "sharpness_norm": 0.454,
+            "total": 3.912
+          },
+          "source_frame_index": 127,
           "source_frame": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_9520323534f213aa6c3b9b2a666a520a/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.083,
-          "total_s": 0.083
+          "crop_s": 0.171,
+          "total_s": 0.171
         }
       }
     },
@@ -544,25 +1195,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.1031,
+                "area_sweetspot": 0.812,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 36.09,
+                "sharpness_norm": 0.462,
+                "total": 2.343
+              },
+              "source_frame_index": 100
+            },
+            {
+              "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.1096,
+                "area_sweetspot": 0.884,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 11.29,
+                "sharpness_norm": 0.321,
+                "total": 2.244
+              },
+              "source_frame_index": 167
+            },
+            {
+              "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.174,
+                "area_sweetspot": 0.836,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 6.97,
+                "sharpness_norm": 0.265,
+                "total": 2.169
+              },
+              "source_frame_index": 134
+            },
+            {
+              "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0716,
+                "area_sweetspot": 0.463,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 66.44,
+                "sharpness_norm": 0.538,
+                "total": 2.032
+              },
+              "source_frame_index": 33
+            },
+            {
+              "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0589,
+                "area_sweetspot": 0.321,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 83.78,
+                "sharpness_norm": 0.567,
+                "total": 1.905
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0586,
+                "area_sweetspot": 0.318,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 88.29,
+                "sharpness_norm": 0.574,
+                "total": 1.905
+              },
+              "source_frame_index": 67
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.1031,
+            "area_sweetspot": 0.812,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 0.0,
+            "sharpness": 36.09,
+            "sharpness_norm": 0.462,
+            "total": 2.343
+          },
+          "source_frame_index": 100,
           "source_frame": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_76297d95ff41bca37a01319a22995086/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.065,
-          "total_s": 0.065
+          "crop_s": 0.093,
+          "total_s": 0.093
         }
       }
     },
@@ -622,24 +1368,105 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-04.jpg"
+            {
+              "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.1302,
+                "area_sweetspot": 0.969,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 4.46,
+                "sharpness_norm": 0.217,
+                "total": 4.378
+              },
+              "source_frame_index": 64
+            },
+            {
+              "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.1754,
+                "area_sweetspot": 0.832,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 23.89,
+                "sharpness_norm": 0.411,
+                "total": 4.338
+              },
+              "source_frame_index": 95
+            },
+            {
+              "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0742,
+                "area_sweetspot": 0.491,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 5.81,
+                "sharpness_norm": 0.245,
+                "total": 3.914
+              },
+              "source_frame_index": 127
+            },
+            {
+              "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.06,
+                "area_sweetspot": 0.333,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 11.94,
+                "sharpness_norm": 0.327,
+                "total": 3.796
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0154,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 6.71,
+                "sharpness_norm": 0.261,
+                "total": 3.431
+              },
+              "source_frame_index": 159
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.1302,
+            "area_sweetspot": 0.969,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 4.46,
+            "sharpness_norm": 0.217,
+            "total": 4.378
+          },
+          "source_frame_index": 64,
           "source_frame": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_726c67219222d47abfb17cf9db1eb86d/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.056,
-          "total_s": 0.056
+          "crop_s": 0.068,
+          "total_s": 0.068
         }
       }
     },
@@ -699,25 +1526,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.1308,
+                "area_sweetspot": 0.967,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 185.91,
+                "sharpness_norm": 0.668,
+                "total": 4.602
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.1511,
+                "area_sweetspot": 0.906,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 168.86,
+                "sharpness_norm": 0.656,
+                "total": 4.434
+              },
+              "source_frame_index": 102
+            },
+            {
+              "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.1105,
+                "area_sweetspot": 0.895,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 156.46,
+                "sharpness_norm": 0.647,
+                "total": 4.418
+              },
+              "source_frame_index": 26
+            },
+            {
+              "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.1023,
+                "area_sweetspot": 0.804,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 220.23,
+                "sharpness_norm": 0.69,
+                "total": 4.349
+              },
+              "source_frame_index": 51
+            },
+            {
+              "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.1351,
+                "area_sweetspot": 0.954,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 13.91,
+                "sharpness_norm": 0.345,
+                "total": 4.327
+              },
+              "source_frame_index": 128
+            },
+            {
+              "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.1401,
+                "area_sweetspot": 0.939,
+                "confidence": 0.9,
+                "in_hand": 0.0,
+                "not_clipped": 1.0,
+                "sharpness": 181.09,
+                "sharpness_norm": 0.665,
+                "total": 4.172
+              },
+              "source_frame_index": 77
+            }
           ],
+          "select_score": {
+            "area_frac": 0.1308,
+            "area_sweetspot": 0.967,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 185.91,
+            "sharpness_norm": 0.668,
+            "total": 4.602
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_b1bf9ae3c841b4773b219494377c7d5d/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.069,
-          "total_s": 0.069
+          "crop_s": 0.095,
+          "total_s": 0.095
         }
       }
     },
@@ -778,18 +1700,113 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.076,
+                "area_sweetspot": 0.511,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 88.39,
+                "sharpness_norm": 0.574,
+                "total": 3.998
+              },
+              "source_frame_index": 146
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0208,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 77.46,
+                "sharpness_norm": 0.558,
+                "total": 3.579
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0382,
+                "area_sweetspot": 0.091,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 45.75,
+                "sharpness_norm": 0.491,
+                "total": 3.537
+              },
+              "source_frame_index": 73
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0177,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 71.56,
+                "sharpness_norm": 0.548,
+                "total": 3.474
+              },
+              "source_frame_index": 37
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.019,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 31.45,
+                "sharpness_norm": 0.445,
+                "total": 3.422
+              },
+              "source_frame_index": 183
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0249,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 79.56,
+                "sharpness_norm": 0.561,
+                "total": 1.48
+              },
+              "source_frame_index": 110
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.076,
+            "area_sweetspot": 0.511,
+            "confidence": 0.9,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 88.39,
+            "sharpness_norm": 0.574,
+            "total": 3.998
+          },
+          "source_frame_index": 146,
           "source_frame": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-00-view-00.jpg"
         },
         {
           "role": "object",
@@ -797,25 +1814,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-01.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-02.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-03.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-04.jpg",
-            "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.065,
+                "area_sweetspot": 0.389,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 39.0,
+                "sharpness_norm": 0.471,
+                "total": 3.824
+              },
+              "source_frame_index": 183
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0577,
+                "area_sweetspot": 0.307,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 97.95,
+                "sharpness_norm": 0.587,
+                "total": 3.801
+              },
+              "source_frame_index": 146
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0294,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 73.12,
+                "sharpness_norm": 0.55,
+                "total": 3.575
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0179,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 89.85,
+                "sharpness_norm": 0.576,
+                "total": 3.488
+              },
+              "source_frame_index": 37
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.031,
+                "area_sweetspot": 0.012,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 45.84,
+                "sharpness_norm": 0.492,
+                "total": 3.457
+              },
+              "source_frame_index": 73
+            },
+            {
+              "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0249,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 0.0,
+                "sharpness": 79.56,
+                "sharpness_norm": 0.561,
+                "total": 1.48
+              },
+              "source_frame_index": 110
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.065,
+            "area_sweetspot": 0.389,
+            "confidence": 0.9,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 39.0,
+            "sharpness_norm": 0.471,
+            "total": 3.824
+          },
+          "source_frame_index": 183,
           "source_frame": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-source-frame.jpg",
           "path": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
           "raw": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_0037d4ccc41488dde05daf68b3a62dba/ref-01-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.125,
-          "total_s": 0.125
+          "crop_s": 0.144,
+          "total_s": 0.144
         }
       }
     },
@@ -875,25 +1987,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0064,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 564.71,
+                "sharpness_norm": 0.81,
+                "total": 3.705
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0199,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 229.9,
+                "sharpness_norm": 0.696,
+                "total": 3.648
+              },
+              "source_frame_index": 86
+            },
+            {
+              "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0348,
+                "area_sweetspot": 0.053,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 339.55,
+                "sharpness_norm": 0.745,
+                "total": 3.625
+              },
+              "source_frame_index": 115
+            },
+            {
+              "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0259,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 501.88,
+                "sharpness_norm": 0.795,
+                "total": 3.597
+              },
+              "source_frame_index": 144
+            },
+            {
+              "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0152,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 329.94,
+                "sharpness_norm": 0.742,
+                "total": 3.571
+              },
+              "source_frame_index": 29
+            },
+            {
+              "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0215,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 251.71,
+                "sharpness_norm": 0.707,
+                "total": 3.554
+              },
+              "source_frame_index": 58
+            }
           ],
+          "select_score": {
+            "area_frac": 0.0064,
+            "area_sweetspot": 0.0,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 564.71,
+            "sharpness_norm": 0.81,
+            "total": 3.705
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_e7b37bde170216528cce6ac6de589194/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.072,
-          "total_s": 0.072
+          "crop_s": 0.073,
+          "total_s": 0.073
         }
       }
     },
@@ -953,25 +2160,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0325,
+                "area_sweetspot": 0.027,
+                "confidence": 0.8,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 43.27,
+                "sharpness_norm": 0.484,
+                "total": 3.37
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0176,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 0.0,
+                "not_clipped": 1.0,
+                "sharpness": 134.12,
+                "sharpness_norm": 0.627,
+                "total": 3.214
+              },
+              "source_frame_index": 156
+            },
+            {
+              "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0189,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 0.0,
+                "not_clipped": 1.0,
+                "sharpness": 111.73,
+                "sharpness_norm": 0.604,
+                "total": 3.202
+              },
+              "source_frame_index": 62
+            },
+            {
+              "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0184,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 0.0,
+                "not_clipped": 1.0,
+                "sharpness": 153.83,
+                "sharpness_norm": 0.644,
+                "total": 3.122
+              },
+              "source_frame_index": 125
+            },
+            {
+              "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0165,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 0.0,
+                "not_clipped": 1.0,
+                "sharpness": 140.9,
+                "sharpness_norm": 0.633,
+                "total": 3.117
+              },
+              "source_frame_index": 94
+            },
+            {
+              "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0175,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 0.0,
+                "not_clipped": 1.0,
+                "sharpness": 119.81,
+                "sharpness_norm": 0.613,
+                "total": 3.106
+              },
+              "source_frame_index": 31
+            }
           ],
+          "select_score": {
+            "area_frac": 0.0325,
+            "area_sweetspot": 0.027,
+            "confidence": 0.8,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 43.27,
+            "sharpness_norm": 0.484,
+            "total": 3.37
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_041f8dec85ead5e5a55808be665e2193/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.073,
-          "total_s": 0.073
+          "crop_s": 0.07,
+          "total_s": 0.07
         }
       }
     },
@@ -1031,25 +2333,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0463,
+                "area_sweetspot": 0.181,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 136.1,
+                "sharpness_norm": 0.629,
+                "total": 3.796
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0209,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 61.1,
+                "sharpness_norm": 0.528,
+                "total": 3.564
+              },
+              "source_frame_index": 20
+            },
+            {
+              "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0128,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 251.35,
+                "sharpness_norm": 0.707,
+                "total": 3.453
+              },
+              "source_frame_index": 79
+            },
+            {
+              "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0055,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 181.38,
+                "sharpness_norm": 0.665,
+                "total": 3.433
+              },
+              "source_frame_index": 59
+            },
+            {
+              "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0012,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 123.87,
+                "sharpness_norm": 0.617,
+                "total": 3.408
+              },
+              "source_frame_index": 99
+            },
+            {
+              "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0175,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 9.06,
+                "sharpness_norm": 0.295,
+                "total": 3.348
+              },
+              "source_frame_index": 40
+            }
           ],
+          "select_score": {
+            "area_frac": 0.0463,
+            "area_sweetspot": 0.181,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 136.1,
+            "sharpness_norm": 0.629,
+            "total": 3.796
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_c91e3d03ab2e0a59588950c86f889370/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.058,
-          "total_s": 0.058
+          "crop_s": 0.066,
+          "total_s": 0.066
         }
       }
     },
@@ -1109,25 +2506,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0063,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 891.9,
+                "sharpness_norm": 0.868,
+                "total": 3.734
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0079,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 524.63,
+                "sharpness_norm": 0.801,
+                "total": 3.7
+              },
+              "source_frame_index": 102
+            },
+            {
+              "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0058,
+                "area_sweetspot": 0.0,
+                "confidence": 0.95,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 741.72,
+                "sharpness_norm": 0.845,
+                "total": 3.672
+              },
+              "source_frame_index": 127
+            },
+            {
+              "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0046,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 910.99,
+                "sharpness_norm": 0.871,
+                "total": 3.636
+              },
+              "source_frame_index": 25
+            },
+            {
+              "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.005,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 440.69,
+                "sharpness_norm": 0.778,
+                "total": 3.589
+              },
+              "source_frame_index": 76
+            },
+            {
+              "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0063,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 360.87,
+                "sharpness_norm": 0.753,
+                "total": 3.576
+              },
+              "source_frame_index": 51
+            }
           ],
+          "select_score": {
+            "area_frac": 0.0063,
+            "area_sweetspot": 0.0,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 891.9,
+            "sharpness_norm": 0.868,
+            "total": 3.734
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_1be7ae541f0c1d8db185a51734c57da3/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.064,
-          "total_s": 0.064
+          "crop_s": 0.078,
+          "total_s": 0.078
         }
       }
     },
@@ -1187,25 +2679,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0196,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 36.96,
+                "sharpness_norm": 0.465,
+                "total": 3.532
+              },
+              "source_frame_index": 48
+            },
+            {
+              "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0192,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 30.46,
+                "sharpness_norm": 0.441,
+                "total": 3.52
+              },
+              "source_frame_index": 73
+            },
+            {
+              "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0128,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 24.07,
+                "sharpness_norm": 0.412,
+                "total": 3.506
+              },
+              "source_frame_index": 121
+            },
+            {
+              "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0134,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 21.32,
+                "sharpness_norm": 0.397,
+                "total": 3.498
+              },
+              "source_frame_index": 97
+            },
+            {
+              "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0178,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 15.08,
+                "sharpness_norm": 0.355,
+                "total": 3.478
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.017,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 29.35,
+                "sharpness_norm": 0.436,
+                "total": 3.418
+              },
+              "source_frame_index": 24
+            }
           ],
-          "source_frame_index": 0,
+          "select_score": {
+            "area_frac": 0.0196,
+            "area_sweetspot": 0.0,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 36.96,
+            "sharpness_norm": 0.465,
+            "total": 3.532
+          },
+          "source_frame_index": 48,
           "source_frame": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_d5245aa03410c1d14a71219e7fd6b732/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.061,
-          "total_s": 0.061
+          "crop_s": 0.062,
+          "total_s": 0.062
         }
       }
     },
@@ -1265,25 +2852,120 @@
           "media_type": "image",
           "reference_kind": "bbox_crop",
           "views": [
-            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
-            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-01.jpg",
-            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-02.jpg",
-            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-03.jpg",
-            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-04.jpg",
-            "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-05.jpg"
+            {
+              "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
+              "selected": true,
+              "select_score": {
+                "area_frac": 0.0149,
+                "area_sweetspot": 0.0,
+                "confidence": 1.0,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 26.52,
+                "sharpness_norm": 0.424,
+                "total": 3.512
+              },
+              "source_frame_index": 0
+            },
+            {
+              "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-01.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0285,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 32.8,
+                "sharpness_norm": 0.45,
+                "total": 3.425
+              },
+              "source_frame_index": 52
+            },
+            {
+              "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-02.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0159,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 24.48,
+                "sharpness_norm": 0.414,
+                "total": 3.407
+              },
+              "source_frame_index": 87
+            },
+            {
+              "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-03.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0149,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 19.96,
+                "sharpness_norm": 0.389,
+                "total": 3.394
+              },
+              "source_frame_index": 35
+            },
+            {
+              "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-04.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0269,
+                "area_sweetspot": 0.0,
+                "confidence": 0.9,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 10.7,
+                "sharpness_norm": 0.314,
+                "total": 3.357
+              },
+              "source_frame_index": 70
+            },
+            {
+              "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-05.jpg",
+              "selected": false,
+              "select_score": {
+                "area_frac": 0.0073,
+                "area_sweetspot": 0.0,
+                "confidence": 0.8,
+                "in_hand": 1.0,
+                "not_clipped": 1.0,
+                "sharpness": 48.65,
+                "sharpness_norm": 0.499,
+                "total": 3.35
+              },
+              "source_frame_index": 17
+            }
           ],
+          "select_score": {
+            "area_frac": 0.0149,
+            "area_sweetspot": 0.0,
+            "confidence": 1.0,
+            "in_hand": 1.0,
+            "not_clipped": 1.0,
+            "sharpness": 26.52,
+            "sharpness_norm": 0.424,
+            "total": 3.512
+          },
           "source_frame_index": 0,
           "source_frame": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-source-frame.jpg",
           "path": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
           "raw": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
-          "cutout": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg"
+          "cutout": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg",
+          "selected_cutout": "media/samples/easy/s2v_a042a9b6ac47163382b15a14f2f2ac10/ref-00-view-00.jpg"
         }
       ],
-      "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+      "notes": "Easy: Gemma HOI bbox crops across keyframes; one selected view ranked by clip/area/confidence/sharpness (no SAM / edit / face).",
       "timing": {
         "easy_references": {
-          "crop_s": 0.056,
-          "total_s": 0.056
+          "crop_s": 0.069,
+          "total_s": 0.069
         }
       }
     }
@@ -1292,7 +2974,7 @@
   "source": {
     "pipeline": "easy",
     "run": "real-hoi-easy-internal-gallery",
-    "note": "Internal human_w_object only (~50w). Gemma HOI bbox crops across keyframes. No HOIGen/HuMo/GOKU. No SAM, no completion edit, no face.",
+    "note": "Gemma detects hand-interacted objects; bbox crops kept across keyframes. No SAM, no completion edit, no face.",
     "by_dataset": {
       "datatang_human_object_annolabeled": 4,
       "abakatrain_gemmalabeled": 4,
@@ -1300,7 +2982,6 @@
       "human_portrait_annolabeled": 2,
       "datatang_human_woobject_gemmalabeled": 2,
       "human_portrait_gemmalabeled": 1
-    },
-    "corpus": "human_w_object_pairs.jsonl (~513k complete)"
+    }
   }
 }

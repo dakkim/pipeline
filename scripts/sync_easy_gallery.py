@@ -122,12 +122,25 @@ def _sync_row(row: dict, media_root: Path) -> dict | None:
 
     refs = []
     for idx, ref in enumerate(object_refs):
-        cutouts = [
-            Path(path)
-            for path in (ref.get("multi_view_cutouts") or [])
-            if path
-        ]
-        if not cutouts:
+        view_rows = list(ref.get("views") or [])
+        if view_rows:
+            cutout_items = [
+                {
+                    "path": Path(str(view.get("path") or "")),
+                    "selected": bool(view.get("selected")),
+                    "select_score": view.get("select_score"),
+                    "source_frame_index": view.get("source_frame_index"),
+                }
+                for view in view_rows
+                if view.get("path")
+            ]
+        else:
+            cutout_items = [
+                {"path": Path(path), "selected": False, "select_score": None}
+                for path in (ref.get("multi_view_cutouts") or [])
+                if path
+            ]
+        if not cutout_items:
             primary = Path(
                 ref.get("selected_cutout")
                 or ref.get("cutout")
@@ -135,13 +148,23 @@ def _sync_row(row: dict, media_root: Path) -> dict | None:
                 or ""
             )
             if primary.is_file():
-                cutouts = [primary]
+                cutout_items = [
+                    {
+                        "path": primary,
+                        "selected": True,
+                        "select_score": ref.get("select_score"),
+                    }
+                ]
+        # Ensure exactly one selected; prefer pipeline flag, else first.
+        if cutout_items and not any(item.get("selected") for item in cutout_items):
+            cutout_items[0]["selected"] = True
         entry = {
             "role": "object",
             "name": ref.get("name"),
             "media_type": "image",
             "reference_kind": "bbox_crop",
             "views": [],
+            "select_score": ref.get("select_score"),
             "source_frame_index": ref.get("source_frame_index"),
         }
         source_frame = Path(ref.get("source_frame") or "")
@@ -149,17 +172,32 @@ def _sync_row(row: dict, media_root: Path) -> dict | None:
             name = f"ref-{idx:02d}-source-frame.jpg"
             _copy_image(source_frame, out / name, max_side=640)
             entry["source_frame"] = f"media/samples/{rel}/{name}"
-        for vidx, cutout in enumerate(cutouts):
+        for vidx, item in enumerate(cutout_items):
+            cutout = item["path"]
             if not cutout.is_file():
                 continue
             name = f"ref-{idx:02d}-view-{vidx:02d}.jpg"
             _copy_image(cutout, out / name)
             view_url = f"media/samples/{rel}/{name}"
-            entry["views"].append(view_url)
-            if vidx == 0:
+            entry["views"].append(
+                {
+                    "path": view_url,
+                    "selected": bool(item.get("selected")),
+                    "select_score": item.get("select_score"),
+                    "source_frame_index": item.get("source_frame_index"),
+                }
+            )
+            if item.get("selected") or not entry.get("path"):
                 entry["path"] = view_url
                 entry["raw"] = view_url
                 entry["cutout"] = view_url
+                entry["selected_cutout"] = view_url
+                if item.get("selected"):
+                    entry["source_frame_index"] = (
+                        item.get("source_frame_index")
+                        if item.get("source_frame_index") is not None
+                        else entry.get("source_frame_index")
+                    )
         if entry.get("views"):
             refs.append(entry)
 
@@ -197,7 +235,10 @@ def _sync_row(row: dict, media_root: Path) -> dict | None:
         },
         "candidate_frames": frame_urls,
         "references": refs,
-        "notes": "Easy: Gemma HOI bbox crops across keyframes (no SAM / edit / face).",
+        "notes": (
+            "Easy: Gemma HOI bbox crops across keyframes; one selected "
+            "view ranked by clip/area/confidence/sharpness (no SAM / edit / face)."
+        ),
         "timing": row.get("timing"),
     }
     print(

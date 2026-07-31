@@ -291,6 +291,22 @@ body {
   border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
 }
 
+.ref-tile.is-selected {
+  width: 124px;
+  height: 138px;
+  border: 2px solid #e67a2e;
+  box-shadow: 0 0 0 1px color-mix(in srgb, #e67a2e 35%, transparent);
+}
+
+.ref-tile.is-selected .ref-caption {
+  color: #9a4a12;
+  font-weight: 700;
+}
+
+.ref-tile.is-selected img {
+  height: 106px;
+}
+
 .ref-tile.is-extract-frame {
   width: 118px;
   height: 132px;
