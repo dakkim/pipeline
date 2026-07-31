@@ -568,7 +568,34 @@
         "nano_banana",
         "nano_banana"
       ],
-      "face_ref_count": 2
+      "face_ref_count": 2,
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-01.jpg",
+          "frame_index": 1,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-02.jpg",
+          "frame_index": 2,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-03.jpg",
+          "frame_index": 3,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_3c690f6c970663deab321e48fb858c80/frame-04.jpg",
+          "frame_index": 4,
+          "timestamp": null
+        }
+      ]
     },
     {
       "id": "s2v_42d820c6f6554f4f9fa56f615222dcb0",
@@ -672,7 +699,34 @@
         "nano_banana",
         "nano_banana"
       ],
-      "face_ref_count": 2
+      "face_ref_count": 2,
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-01.jpg",
+          "frame_index": 1,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-02.jpg",
+          "frame_index": 2,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-03.jpg",
+          "frame_index": 3,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_42d820c6f6554f4f9fa56f615222dcb0/frame-04.jpg",
+          "frame_index": 4,
+          "timestamp": null
+        }
+      ]
     },
     {
       "id": "s2v_46ff73e5cf9345773eb183649843bcce",
@@ -753,7 +807,34 @@
       "completion_backend": [
         "nano_banana"
       ],
-      "face_ref_count": 2
+      "face_ref_count": 2,
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-01.jpg",
+          "frame_index": 1,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-02.jpg",
+          "frame_index": 2,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-03.jpg",
+          "frame_index": 3,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_46ff73e5cf9345773eb183649843bcce/frame-04.jpg",
+          "frame_index": 4,
+          "timestamp": null
+        }
+      ]
     },
     {
       "id": "s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558",
@@ -835,7 +916,34 @@
       "completion_backend": [
         "nano_banana"
       ],
-      "face_ref_count": 2
+      "face_ref_count": 2,
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-01.jpg",
+          "frame_index": 1,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-02.jpg",
+          "frame_index": 2,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-03.jpg",
+          "frame_index": 3,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_7dc2c1c41a9dc5d5a75b74c68fdd5558/frame-04.jpg",
+          "frame_index": 4,
+          "timestamp": null
+        }
+      ]
     },
     {
       "id": "s2v_99e6641431434c95fcf687c94a73f197",
@@ -942,7 +1050,34 @@
         "nano_banana",
         "nano_banana"
       ],
-      "face_ref_count": 2
+      "face_ref_count": 2,
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-01.jpg",
+          "frame_index": 1,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-02.jpg",
+          "frame_index": 2,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-03.jpg",
+          "frame_index": 3,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_99e6641431434c95fcf687c94a73f197/frame-04.jpg",
+          "frame_index": 4,
+          "timestamp": null
+        }
+      ]
     },
     {
       "id": "s2v_a03a4e8a07b47523c336977d8819debc",
@@ -1138,7 +1273,34 @@
       "completion_backend": [
         "nano_banana"
       ],
-      "face_ref_count": 2
+      "face_ref_count": 2,
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-01.jpg",
+          "frame_index": 1,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-02.jpg",
+          "frame_index": 2,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-03.jpg",
+          "frame_index": 3,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_b2fe07048d12ba188a45b854d20ebc97/frame-04.jpg",
+          "frame_index": 4,
+          "timestamp": null
+        }
+      ]
     },
     {
       "id": "s2v_baaf21a0e1c6f5cfebe84f64723da49e",
@@ -1219,7 +1381,34 @@
       "completion_backend": [
         "nano_banana"
       ],
-      "face_ref_count": 2
+      "face_ref_count": 2,
+      "candidate_frames": [
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-00.jpg",
+          "frame_index": 0,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-01.jpg",
+          "frame_index": 1,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-02.jpg",
+          "frame_index": 2,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-03.jpg",
+          "frame_index": 3,
+          "timestamp": null
+        },
+        {
+          "path": "media/samples/multi_imgs_to_v_real/s2v_baaf21a0e1c6f5cfebe84f64723da49e/frame-04.jpg",
+          "frame_index": 4,
+          "timestamp": null
+        }
+      ]
     },
     {
       "id": "s2v_e8f229e626a6f0f2ccc5a452c729a341",
