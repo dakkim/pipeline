@@ -377,12 +377,24 @@ function renderSample(sample) {
     );
   }
 
+  const status = sample.status || (refs.length ? "accepted" : "");
+  const statusChip =
+    status === "rejected"
+      ? el("span", {
+          className: "chip chip-rejected",
+          text: `rejected · ${sample.reason || "unknown"}`,
+        })
+      : status === "accepted"
+        ? el("span", { className: "chip chip-accepted", text: "accepted" })
+        : null;
+
   return el(
     "article",
     {
       className: "sample",
       "data-task": sample.task,
       "data-dataset": sample.dataset || "",
+      "data-status": status || "",
     },
     [
     el("div", { className: "media-stack" }, [
@@ -395,6 +407,7 @@ function renderSample(sample) {
     el("div", { className: "meta" }, [
       el("h2", { text: TASK_LABELS[sample.task] || sample.task }),
       el("div", { className: "chips" }, [
+        statusChip,
         el("span", { className: "chip", text: sample.task }),
         el("span", { className: "chip", text: sample.dataset || "unknown" }),
         sample.pipeline
@@ -414,9 +427,15 @@ function renderSample(sample) {
           : null,
         refs.length
           ? el("span", { className: "chip", text: `${refs.length} reference(s)` })
-          : el("span", { className: "chip", text: "text only" }),
+          : el("span", {
+              className: "chip",
+              text: status === "rejected" ? "no object crop" : "text only",
+            }),
       ]),
       el("p", { className: "prompt", text: truncate(sample.prompt) }),
+      sample.notes
+        ? el("p", { className: "ids", text: sample.notes })
+        : null,
       el("p", {
         className: "ids",
         text: `${sample.id}${sample.original_id ? ` · ${sample.original_id}` : ""}`,
@@ -426,12 +445,16 @@ function renderSample(sample) {
   );
 }
 
-function applyFilter(dataset) {
+function applyFilter(key) {
   for (const button of document.querySelectorAll(".filter")) {
-    button.classList.toggle("is-active", button.dataset.task === dataset);
+    button.classList.toggle("is-active", button.dataset.task === key);
   }
   for (const card of document.querySelectorAll(".sample")) {
-    const show = dataset === "all" || card.dataset.dataset === dataset;
+    let show = true;
+    if (key === "all") show = true;
+    else if (key === "status:accepted") show = card.dataset.status === "accepted";
+    else if (key === "status:rejected") show = card.dataset.status === "rejected";
+    else show = card.dataset.dataset === key;
     card.classList.toggle("hidden", !show);
   }
 }
@@ -439,6 +462,7 @@ function applyFilter(dataset) {
 function buildDatasetFilters(samples) {
   const nav = document.querySelector(".filters");
   if (!nav) return;
+  const isEasy = document.body.dataset.pipeline === "easy";
   const datasets = [
     ...new Set(
       samples
@@ -446,13 +470,33 @@ function buildDatasetFilters(samples) {
         .filter((name) => typeof name === "string" && name)
     ),
   ].sort();
-  nav.replaceChildren(
+  const acceptedN = samples.filter((s) => s.status === "accepted").length;
+  const rejectedN = samples.filter((s) => s.status === "rejected").length;
+  const buttons = [
     el("button", {
       type: "button",
       className: "filter is-active",
       "data-task": "all",
-      text: "All sources",
+      text: "All",
     }),
+  ];
+  if (isEasy && (acceptedN || rejectedN)) {
+    buttons.push(
+      el("button", {
+        type: "button",
+        className: "filter",
+        "data-task": "status:accepted",
+        text: `Accepted (${acceptedN})`,
+      }),
+      el("button", {
+        type: "button",
+        className: "filter",
+        "data-task": "status:rejected",
+        text: `Rejected (${rejectedN})`,
+      })
+    );
+  }
+  buttons.push(
     ...datasets.map((name) =>
       el("button", {
         type: "button",
@@ -462,6 +506,7 @@ function buildDatasetFilters(samples) {
       })
     )
   );
+  nav.replaceChildren(...buttons);
 }
 
 async function main() {
@@ -480,7 +525,7 @@ async function main() {
 
   const caseLabel =
     pipelineFilter === "easy" ? " easy bbox-crop cases" : " HOI object cases";
-  document.getElementById("hero-meta").replaceChildren(
+  const metaChildren = [
     el("span", {}, [
       el("strong", { text: fmt(samples.length) }),
       caseLabel,
@@ -500,8 +545,22 @@ async function main() {
         }
       ),
       " run",
-    ])
-  );
+    ]),
+  ];
+  if (pipelineFilter === "easy" && source.by_status) {
+    metaChildren.push(
+      el("span", {}, [
+        el(
+          "strong",
+          {
+            text: `${source.by_status.accepted || 0}✓ / ${source.by_status.rejected || 0}✗`,
+          }
+        ),
+        " in preview",
+      ])
+    );
+  }
+  document.getElementById("hero-meta").replaceChildren(...metaChildren);
 
   buildDatasetFilters(samples);
   const gallery = document.getElementById("gallery");

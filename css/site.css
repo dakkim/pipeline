@@ -370,6 +370,18 @@ body {
   letter-spacing: 0.01em;
 }
 
+.chip-accepted {
+  border-color: color-mix(in srgb, #2f7d4a 55%, var(--line));
+  background: color-mix(in srgb, #2f7d4a 14%, transparent);
+  color: #1f5a34;
+}
+
+.chip-rejected {
+  border-color: color-mix(in srgb, #b44a3a 55%, var(--line));
+  background: color-mix(in srgb, #b44a3a 14%, transparent);
+  color: #8a2f2f;
+}
+
 .prompt {
   margin: 0;
   color: var(--ink-soft);
