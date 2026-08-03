@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import random
 import re
 import subprocess
@@ -75,10 +76,83 @@ def _copy_image(src: Path, dst: Path, max_side: int = 720) -> None:
 
 
 def _pick(rows: list[dict], limit: int, seed: int) -> list[dict]:
-    if limit <= 0 or len(rows) <= limit:
+    if limit == 0:
+        return []
+    if limit < 0 or len(rows) <= limit:
         return list(rows)
     rng = random.Random(seed)
     return rng.sample(rows, limit)
+
+
+def _pick_stratified(rows: list[dict], limit: int, seed: int) -> list[dict]:
+    if limit == 0:
+        return []
+    if limit < 0 or len(rows) <= limit:
+        return list(rows)
+    groups: dict[str, list[dict]] = {}
+    for row in rows:
+        groups.setdefault(str(row.get("dataset") or "unknown"), []).append(row)
+    rng = random.Random(seed)
+    for group in groups.values():
+        rng.shuffle(group)
+    chosen: list[dict] = []
+    keys = sorted(groups)
+    while len(chosen) < limit:
+        added = False
+        for key in keys:
+            if groups[key] and len(chosen) < limit:
+                chosen.append(groups[key].pop())
+                added = True
+        if not added:
+            break
+    return chosen
+
+
+def _snapshot_rows(path: Path):
+    """Read only the complete-line prefix visible when the file is opened."""
+    with path.open("rb") as handle:
+        remaining = os.fstat(handle.fileno()).st_size
+        pending = b""
+        while remaining:
+            chunk = handle.read(min(1024 * 1024, remaining))
+            if not chunk:
+                break
+            remaining -= len(chunk)
+            lines = (pending + chunk).split(b"\n")
+            pending = lines.pop()
+            for raw in lines:
+                try:
+                    row = json.loads(raw)
+                except json.JSONDecodeError:
+                    continue
+                if isinstance(row, dict):
+                    yield row
+
+
+def _existing_ids(path: Path) -> set[str]:
+    if not path.is_file():
+        return set()
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return {
+        str(sample.get("id"))
+        for sample in payload.get("samples") or []
+        if sample.get("id")
+    }
+
+
+def _load_record(row: dict) -> dict | None:
+    record_path = Path(str(row.get("record_json") or ""))
+    if not record_path.is_file():
+        return None
+    try:
+        record = json.loads(record_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if not record.get("video") and row.get("video"):
+        record["video"] = row["video"]
+    if not record.get("dataset") and row.get("dataset"):
+        record["dataset"] = row["dataset"]
+    return record
 
 
 def _sync_record(record: dict, media_root: Path) -> dict | None:
@@ -234,6 +308,27 @@ def main() -> None:
     parser.add_argument("--accepted", type=int, default=24)
     parser.add_argument("--rejected", type=int, default=12)
     parser.add_argument("--seed", type=int, default=7)
+    parser.add_argument(
+        "--frames",
+        type=int,
+        help="only sample records with exactly this many candidate frames",
+    )
+    parser.add_argument(
+        "--newer-than",
+        type=float,
+        default=0,
+        help="only sample record.json files newer than this Unix timestamp",
+    )
+    parser.add_argument(
+        "--exclude-existing",
+        action="store_true",
+        help="exclude IDs already present in data/catalog_easy.json",
+    )
+    parser.add_argument(
+        "--stratify-dataset",
+        action="store_true",
+        help="round-robin datasets so represented sources receive equal slots",
+    )
     args = parser.parse_args()
 
     corpus = args.corpus.resolve()
@@ -241,30 +336,31 @@ def main() -> None:
     if not index_path.is_file():
         raise SystemExit(f"missing index: {index_path}")
 
+    catalog_path = ROOT / "data" / "catalog_easy.json"
+    excluded = _existing_ids(catalog_path) if args.exclude_existing else set()
     accepted_rows: list[dict] = []
     rejected_rows: list[dict] = []
-    for line in index_path.read_text(encoding="utf-8").splitlines():
-        if not line.strip():
+    for row in _snapshot_rows(index_path):
+        if str(row.get("sample_id") or "") in excluded:
             continue
-        row = json.loads(line)
+        if args.frames is not None and len(row.get("candidate_frames") or []) != args.frames:
+            continue
         record_path = Path(str(row.get("record_json") or ""))
         if not record_path.is_file():
             continue
-        record = json.loads(record_path.read_text(encoding="utf-8"))
-        # Prefer fields from full record; keep index video fallback.
-        if not record.get("video") and row.get("video"):
-            record["video"] = row["video"]
-        if not record.get("dataset") and row.get("dataset"):
-            record["dataset"] = row["dataset"]
-        state = str((record.get("status") or {}).get("state") or row.get("state") or "")
+        if args.newer_than and record_path.stat().st_mtime <= args.newer_than:
+            continue
+        state = str(row.get("state") or "")
         if state == "accepted":
-            accepted_rows.append(record)
+            accepted_rows.append(row)
         elif state == "rejected":
-            rejected_rows.append(record)
+            rejected_rows.append(row)
 
-    chosen = _pick(accepted_rows, args.accepted, args.seed) + _pick(
+    picker = _pick_stratified if args.stratify_dataset else _pick
+    selected_rows = picker(accepted_rows, args.accepted, args.seed) + picker(
         rejected_rows, args.rejected, args.seed + 1
     )
+    chosen = [record for row in selected_rows if (record := _load_record(row))]
     media_root = ROOT / "media" / "samples" / "easy"
     media_root.mkdir(parents=True, exist_ok=True)
 
@@ -292,28 +388,39 @@ def main() -> None:
             by_status.get(str(sample.get("status") or "?"), 0) + 1
         )
 
+    accepted_only = set(by_status) == {"accepted"}
     catalog = {
-        "title": "Easy HOI corpus preview (accepted + rejected)",
+        "title": (
+            "Easy HOI corpus preview (new accepted sample)"
+            if accepted_only
+            else "Easy HOI corpus preview (accepted + rejected)"
+        ),
         "samples": samples,
         "sample_count": len(samples),
         "source": {
             "pipeline": "easy",
             "run": corpus.name,
             "note": (
-                "Preview from easy_hoi_reusable_v1. Accepted = Gemma found "
-                "hand-object + bbox crops. Rejected = no_hand_object."
+                "New accepted sample from easy_hoi_reusable_v1. Accepted = "
+                "Gemma found hand-object + bbox crops."
+                if accepted_only
+                else "Preview from easy_hoi_reusable_v1. Accepted = Gemma "
+                "found hand-object + bbox crops. Rejected = no_hand_object."
             ),
             "by_dataset": by_dataset,
             "by_status": by_status,
             "corpus_index": str(index_path),
         },
     }
-    out = ROOT / "data" / "catalog_easy.json"
-    out.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
+    catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
     print(
         json.dumps(
             {
-                "written": str(out),
+                "written": str(catalog_path),
+                "eligible": {
+                    "accepted": len(accepted_rows),
+                    "rejected": len(rejected_rows),
+                },
                 "samples": len(samples),
                 "by_status": by_status,
                 "by_dataset": by_dataset,

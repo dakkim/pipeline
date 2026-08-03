@@ -315,6 +315,9 @@ function collectReferenceTiles(sample) {
 }
 
 function renderSample(sample) {
+  const targetWidth = Number(sample.target?.width || 0);
+  const targetHeight = Number(sample.target?.height || 0);
+  const isPortrait = targetHeight > targetWidth && targetWidth > 0;
   const video = el("video", {
     src: sample.target.path,
     poster: sample.target.poster,
@@ -398,10 +401,17 @@ function renderSample(sample) {
     },
     [
     el("div", { className: "media-stack" }, [
-      el("div", { className: "video-shell" }, [
-        video,
-        el("span", { className: "play-hint", text: "hover to play · 2.5s preview" }),
-      ]),
+      el(
+        "div",
+        { className: `video-shell${isPortrait ? " is-portrait" : ""}` },
+        [
+          video,
+          el("span", {
+            className: "play-hint",
+            text: "hover to play · 2.5s preview",
+          }),
+        ]
+      ),
       ...refBlocks,
     ]),
     el("div", { className: "meta" }, [

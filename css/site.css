@@ -234,6 +234,11 @@ body {
   display: block;
 }
 
+.video-shell.is-portrait video,
+.video-shell.is-portrait img {
+  object-fit: contain;
+}
+
 .play-hint {
   position: absolute;
   left: 0.8rem;
